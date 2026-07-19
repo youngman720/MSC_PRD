@@ -2,6 +2,8 @@
 
 A static site that surfaces trending songs from indie-leaning bands, rebuilt automatically every week. Deployed on GitHub Pages, updated by a GitHub Actions cron job.
 
+(日本語版: [README.ja.md](README.ja.md))
+
 ## How "indie-leaning" is defined (v1)
 
 There's no clean API for "indie" as a genre, so this project defines it structurally instead of by tag/genre metadata:
