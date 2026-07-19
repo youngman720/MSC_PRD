@@ -1,5 +1,6 @@
 name: Weekly indie update
 
+# Re-push to force GitHub to (re-)index this workflow if it wasn't picked up initially.
 on:
   schedule:
     - cron: "0 3 * * 1" # every Monday 03:00 UTC
