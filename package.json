@@ -1,0 +1,17 @@
+{
+  "name": "indie-weekly",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Weekly-updating site that surfaces trending songs from indie-leaning bands, curated from independent music blogs.",
+  "scripts": {
+    "fetch": "node scripts/fetch_songs.js",
+    "build": "node scripts/build_site.js",
+    "upload-youtube": "node scripts/upload_youtube_playlist.js",
+    "get-youtube-token": "node scripts/get_youtube_refresh_token.js"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0",
+    "rss-parser": "^3.13.0"
+  }
+}

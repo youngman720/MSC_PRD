@@ -1,0 +1,32 @@
+{
+  "_comment": "Curated list of independent-focused music blogs used as the 'indie-leaning' signal source. Add/remove feeds here to tune coverage. All URLs verified reachable as of 2026-07-20.",
+  "lookbackDays": 10,
+  "maxSongsPerWeek": 12,
+  "blogs": [
+    {
+      "name": "Gorilla vs. Bear",
+      "feedUrl": "https://www.gorillavsbear.net/feed",
+      "homepage": "https://www.gorillavsbear.net"
+    },
+    {
+      "name": "So Young Magazine",
+      "feedUrl": "https://www.soyoungmagazine.com/feed",
+      "homepage": "https://www.soyoungmagazine.com"
+    },
+    {
+      "name": "The Line of Best Fit",
+      "feedUrl": "https://www.thelineofbestfit.com/feed",
+      "homepage": "https://www.thelineofbestfit.com"
+    },
+    {
+      "name": "Beats Per Minute",
+      "feedUrl": "https://beatsperminute.com/feed/",
+      "homepage": "https://beatsperminute.com"
+    },
+    {
+      "name": "Brooklyn Vegan",
+      "feedUrl": "https://www.brooklynvegan.com/feed/",
+      "homepage": "https://www.brooklynvegan.com"
+    }
+  ]
+}
