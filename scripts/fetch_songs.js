@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import Parser from "rss-parser";
 import { parseArtistTitle, extractYoutubeId, dedupeKey, isExcludedByKeyword } from "./lib/extract.js";
 import { createYoutubeStatsClient } from "./lib/youtube_stats.js";
+import { fetchEggsRanking } from "./lib/eggs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -121,6 +122,39 @@ async function main() {
     }
   }
 
+  // eggs.mu is a distribution platform exclusively for independent/unsigned artists, so unlike
+  // the RSS blog sources, no nationality/newcomer-keyword guessing is needed — everything on it
+  // is indie by construction, and every entry is flagged as a newcomer for the 🌱 tab.
+  if (config.eggs?.enabled !== false) {
+    try {
+      const eggsEntries = await fetchEggsRanking({ limit: config.eggs?.limit ?? 20 });
+      for (const entry of eggsEntries) {
+        if (isExcludedByKeyword(entry.artist, config.excludeArtists)) continue;
+
+        const key = dedupeKey({ artist: entry.artist, title: entry.title });
+        if (!groups.has(key)) {
+          groups.set(key, {
+            artist: entry.artist,
+            title: entry.title,
+            firstSeen: now,
+            youtubeId: null,
+            newcomer: true,
+            snsBuzz: false,
+            sources: new Map(),
+          });
+        }
+        const group = groups.get(key);
+        group.newcomer = true;
+        if (!group.sources.has("eggs")) {
+          group.sources.set("eggs", entry.url);
+          usedBlogs.add("eggs");
+        }
+      }
+    } catch (err) {
+      console.warn(`[warn] failed to fetch eggs.mu ranking: ${err.message}`);
+    }
+  }
+
   const songs = Array.from(groups.values())
     .map((g) => ({
       artist: g.artist,
@@ -153,7 +187,7 @@ async function main() {
   const output = {
     weekOf,
     generatedAt: now.toISOString(),
-    blogsChecked: config.blogs.map((b) => b.name),
+    blogsChecked: [...config.blogs.map((b) => b.name), ...(config.eggs?.enabled !== false ? ["eggs"] : [])],
     blogsWithResults: Array.from(usedBlogs),
     songs,
   };
