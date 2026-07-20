@@ -20,15 +20,21 @@
   header.site p { color: var(--muted); margin: 0; }
   header.site nav { margin-top: 1rem; font-size: 0.9rem; }
   header.site nav a { color: var(--accent); text-decoration: none; }
+  p.week-label { font-size: 0.95rem; margin: 0 0 1.5rem; color: var(--muted); }
+  section.category { margin-bottom: 2.5rem; }
   h2.week { font-size: 1.2rem; margin: 0 0 1.25rem; color: var(--muted); font-weight: 600; }
+  h2.category-title { font-size: 1.3rem; margin: 0 0 1rem; }
+  p.empty-note { color: var(--muted); font-size: 0.9rem; }
   .song { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; margin-bottom: 1rem; }
   .song h3 { margin: 0 0 0.15rem; font-size: 1.05rem; }
   .song .artist { color: var(--muted); font-size: 0.95rem; margin: 0 0 0.6rem; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 0.7rem; padding: 0.1rem 0.5rem; border-radius: 999px; margin-left: 0.4rem; vertical-align: middle; }
   .song iframe { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 6px; }
-  .sources { font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; }
+  .stats { font-size: 0.8rem; color: var(--muted); margin: 0.5rem 0 0; }
+  .sources { font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem; }
   .sources a { color: inherit; }
   .no-video { font-size: 0.85rem; }
-  .no-video a { color: var(--accent); }
+  .no-video a, .stats a { color: var(--accent); }
   footer { margin-top: 3rem; color: var(--muted); font-size: 0.8rem; }
   </style>
 </head>
@@ -39,118 +45,17 @@
   <p>Songs from indie-leaning bands, surfaced weekly from independent music blogs.</p>
   <nav><a href="./">Latest</a> · <a href="./archive/">Archive</a></nav>
 </header>
-<h2 class="week">Week of July 20, 2026</h2>
-  <article class="song">
-    <h3>熱中症</h3>
-    <p class="artist">SUKISHA</p>
-    <p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=SUKISHA%20%E7%86%B1%E4%B8%AD%E7%97%87" target="_blank" rel="noopener">search on YouTube</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/sukisha-necchushou-zettakun" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>One Step</h3>
-    <p class="artist">SANDEI</p>
-    <p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=SANDEI%20One%20Step" target="_blank" rel="noopener">search on YouTube</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/sandei-one-step" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>それはいつでもいい</h3>
-    <p class="artist">諭吉佳作/men</p>
-    <p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=%E8%AB%AD%E5%90%89%E4%BD%B3%E4%BD%9C%2Fmen%20%E3%81%9D%E3%82%8C%E3%81%AF%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E3%81%84%E3%81%84" target="_blank" rel="noopener">search on YouTube</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/yukichikasakumen-sorehaitsudemoii" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>SWEAT</h3>
-    <p class="artist">lili maua</p>
-    <p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=lili%20maua%20SWEAT" target="_blank" rel="noopener">search on YouTube</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/lili-maua-sweat-prod-matt-cab" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>MUBÖ</h3>
-    <p class="artist">Doona</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/Z9He4RkHsrQ" title="MUBÖ" allowfullscreen loading="lazy"></iframe>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/doona-mubo" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
+<p class="week-label">Week of July 20, 2026</p>
+<section class="category"><h2 class="category-title">🔥 直近1週間で急上昇した曲</h2><p class="empty-note">YouTube APIキーが未設定のため、この項目は表示できません（README参照）。</p></section>
+<section class="category"><h2 class="category-title">🌱 注目の若手バンド</h2>
   <article class="song">
     <h3>The Bird</h3>
-    <p class="artist">luvis</p>
+    <p class="artist">luvis<span class="badge">新人</span></p>
     <iframe src="https://www.youtube-nocookie.com/embed/-QRErM9VXXs" title="The Bird" allowfullscreen loading="lazy"></iframe>
+    <p class="stats"><a href="https://www.tiktok.com/search?q=luvis%20The%20Bird" target="_blank" rel="noopener">TikTokで検索</a></p>
     <p class="sources">Spotted on: <a href="https://spincoaster.com/news/luvis-the-bird" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>somehow</h3>
-    <p class="artist">Lilhana</p>
-    <p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=Lilhana%20somehow" target="_blank" rel="noopener">search on YouTube</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/lilhana-somehow-ft-agul" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>EXTRA 15</h3>
-    <p class="artist">Lil’ Leise But Gold</p>
-    <p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=Lil%E2%80%99%20Leise%20But%20Gold%20EXTRA%2015" target="_blank" rel="noopener">search on YouTube</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/lil-leise-but-gold-extra-15" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>motion</h3>
-    <p class="artist">DURDN</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/A1iNIRV1pno" title="motion" allowfullscreen loading="lazy"></iframe>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/durdn-motion" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>TRAVEL</h3>
-    <p class="artist">otuyyuto</p>
-    <p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=otuyyuto%20TRAVEL" target="_blank" rel="noopener">search on YouTube</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/otuyyuto-travel-ft-only-u" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>親父が言うとった</h3>
-    <p class="artist">PM Kenobi</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/nAWIOZB6p-0" title="親父が言うとった" allowfullscreen loading="lazy"></iframe>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/pm-kenobi-my-dad-said" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>Globster</h3>
-    <p class="artist">cero</p>
-    <p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=cero%20Globster" target="_blank" rel="noopener">search on YouTube</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/cero-globster" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>Summer Time</h3>
-    <p class="artist">Manaka</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/tk0q6VXlw68" title="Summer Time" allowfullscreen loading="lazy"></iframe>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/manaka-summer-time-ft-dada" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>夜だけのフレンド</h3>
-    <p class="artist">Sad Kid Yaz</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/6o_F-vf0V1E" title="夜だけのフレンド" allowfullscreen loading="lazy"></iframe>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/sad-kid-yaz-yoruakenofriends" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>I got new shoes</h3>
-    <p class="artist">in-d × ziproom</p>
-    <p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=in-d%20%C3%97%20ziproom%20I%20got%20new%20shoes" target="_blank" rel="noopener">search on YouTube</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/in-d-ziproom-i-got-new-shoes" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>Mooove Bitch</h3>
-    <p class="artist">3Li¥en</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/TCeUEeTcjQU" title="Mooove Bitch" allowfullscreen loading="lazy"></iframe>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/3liyen-mooove-bitch-feat-anarchy" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
+  </article></section>
+<section class="category"><h2 class="category-title">⭐ いま売れているバンド</h2><p class="empty-note">YouTube APIキーが未設定のため、この項目は表示できません（README参照）。</p></section>
 <footer>Auto-generated weekly. Song picks are curated from independent music blog coverage, not label promotion.</footer>
 </div>
 </body>
