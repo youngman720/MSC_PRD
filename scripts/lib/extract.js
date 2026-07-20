@@ -33,15 +33,17 @@ function stripLeadTags(title) {
   return title.replace(LEAD_TAGS, "").replace(JP_LEAD_TAGS, "").trim();
 }
 
-// Japanese music-news convention (e.g. Spincoaster): song titles are wrapped in curly double quotes
-// (“”), immediately preceded by a release-keyword, while album/EP/event titles use 『』
-// instead — so requiring the curly quotes right after one of these keywords keeps album/tour/event
-// posts from being misread as a song title.
+// Japanese music-news convention: song titles are wrapped in quotes immediately preceded by a
+// release-keyword, while album/EP/event titles use 『』 instead — so requiring the quote right
+// after one of these keywords keeps album/tour/event posts from being misread as a song title.
+// Different outlets use different quote styles for songs (Spincoaster/ROCKIN'ON JAPAN use curly
+// “…”; Gekirock uses corner brackets 「…」) but all of them reserve 『』 for albums, so both quote
+// styles are accepted as song-title delimiters without colliding with the album convention.
 const JP_RELEASE_KEYWORDS = "新曲|ニューシングル|シングル|コラボ曲|楽曲";
-const JP_OPEN_QUOTE = String.fromCodePoint(0x201c); // “ LEFT DOUBLE QUOTATION MARK
-const JP_CLOSE_QUOTE = String.fromCodePoint(0x201d); // ” RIGHT DOUBLE QUOTATION MARK
+const JP_OPEN_QUOTE = String.fromCodePoint(0x201c) + String.fromCodePoint(0x300c); // “ 「
+const JP_CLOSE_QUOTE = String.fromCodePoint(0x201d) + String.fromCodePoint(0x300d); // ” 」
 const JP_ARTIST_TITLE = new RegExp(
-  `^(.+?)(?:${JP_RELEASE_KEYWORDS})${JP_OPEN_QUOTE}([^${JP_CLOSE_QUOTE}]{1,60})${JP_CLOSE_QUOTE}`
+  `^(.+?)(?:${JP_RELEASE_KEYWORDS})[${JP_OPEN_QUOTE}]([^${JP_CLOSE_QUOTE}]{1,60})[${JP_CLOSE_QUOTE}]`
 );
 
 const JP_SCRIPT_CHAR = new RegExp("[\\u3040-\\u30ff\\u4e00-\\u9fff]");

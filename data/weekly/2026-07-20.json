@@ -1,15 +1,61 @@
 {
   "weekOf": "2026-07-20",
-  "generatedAt": "2026-07-20T12:56:23.118Z",
+  "generatedAt": "2026-07-20T13:10:56.293Z",
   "blogsChecked": [
     "Spincoaster",
-    "ROCKIN'ON JAPAN"
+    "ROCKIN'ON JAPAN",
+    "Gekirock"
   ],
   "blogsWithResults": [
     "Spincoaster",
-    "ROCKIN'ON JAPAN"
+    "ROCKIN'ON JAPAN",
+    "Gekirock"
   ],
   "songs": [
+    {
+      "artist": "Verde/",
+      "title": "Reimei/",
+      "firstSeen": "2026-07-20T04:30:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Verde%2F%20Reimei%2F",
+      "sources": [
+        {
+          "blog": "Gekirock",
+          "url": "https://gekirock.com/news/2026/07/verde_reimei_mv.php"
+        }
+      ],
+      "youtube": {
+        "videoId": "W38JI3w4ymM",
+        "viewCount": 2650,
+        "publishedAt": "2026-07-19T13:00:06Z",
+        "channelSubscriberCount": 10700,
+        "viewVelocity": 2630.20366858501
+      }
+    },
+    {
+      "artist": "coldrain",
+      "title": "EX-HUMANITY",
+      "firstSeen": "2026-07-17T12:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=coldrain%20EX-HUMANITY",
+      "sources": [
+        {
+          "blog": "Gekirock",
+          "url": "https://gekirock.com/news/2026/07/coldrain_ex-humanity_mv.php"
+        }
+      ],
+      "youtube": {
+        "videoId": "0luBJ94BGQM",
+        "viewCount": 83123,
+        "publishedAt": "2026-07-17T12:00:06Z",
+        "channelSubscriberCount": 246000,
+        "viewVelocity": 27260.653682400723
+      }
+    },
     {
       "artist": "SUKISHA",
       "title": "熱中症",
@@ -29,7 +75,7 @@
         "viewCount": 1703,
         "publishedAt": "2026-07-09T10:01:31Z",
         "channelSubscriberCount": 699,
-        "viewVelocity": 153.12770002344843
+        "viewVelocity": 152.9886772489304
       }
     },
     {
@@ -48,10 +94,10 @@
       ],
       "youtube": {
         "videoId": "58-0cxKLkww",
-        "viewCount": 49204,
+        "viewCount": 49331,
         "publishedAt": "2026-07-15T11:00:27Z",
         "channelSubscriberCount": 3,
-        "viewVelocity": 9684.853281849008
+        "viewVelocity": 9690.574201932475
       }
     },
     {
@@ -73,7 +119,7 @@
         "viewCount": 438,
         "publishedAt": "2026-07-15T14:24:28Z",
         "channelSubscriberCount": 758,
-        "viewVelocity": 88.68492913344588
+        "viewVelocity": 88.503826272905
       }
     },
     {
@@ -95,7 +141,7 @@
         "viewCount": 671,
         "publishedAt": "2026-07-15T11:00:36Z",
         "channelSubscriberCount": 9800,
-        "viewVelocity": 132.07604657288127
+        "viewVelocity": 131.81383606599525
       }
     },
     {
@@ -114,10 +160,10 @@
       ],
       "youtube": {
         "videoId": "klb8oQ8R0cw",
-        "viewCount": 6524,
+        "viewCount": 6541,
         "publishedAt": "2026-07-15T11:00:22Z",
         "channelSubscriberCount": 3170,
-        "viewVelocity": 1284.1082658259497
+        "viewVelocity": 1284.8984469703457
       }
     },
     {
@@ -136,10 +182,10 @@
       ],
       "youtube": {
         "videoId": "Z9He4RkHsrQ",
-        "viewCount": 2162,
+        "viewCount": 2172,
         "publishedAt": "2026-07-15T11:00:34Z",
         "channelSubscriberCount": 8610,
-        "viewVelocity": 425.55456279559036
+        "viewVelocity": 426.6741431408071
       }
     },
     {
@@ -158,10 +204,10 @@
       ],
       "youtube": {
         "videoId": "-QRErM9VXXs",
-        "viewCount": 21788,
+        "viewCount": 21872,
         "publishedAt": "2026-07-15T10:00:38Z",
         "channelSubscriberCount": 7850,
-        "viewVelocity": 4253.765601364063
+        "viewVelocity": 4261.756517113289
       }
     },
     {
@@ -183,7 +229,7 @@
         "viewCount": 430,
         "publishedAt": "2026-07-14T10:03:45Z",
         "channelSubscriberCount": 14,
-        "viewVelocity": 70.26275102976291
+        "viewVelocity": 70.14691256167902
       }
     },
     {
@@ -205,7 +251,7 @@
         "viewCount": 340,
         "publishedAt": "2026-07-14T10:04:01Z",
         "channelSubscriberCount": 904,
-        "viewVelocity": 55.55827500770423
+        "viewVelocity": 55.46667626155576
       }
     },
     {
@@ -224,10 +270,10 @@
       ],
       "youtube": {
         "videoId": "A1iNIRV1pno",
-        "viewCount": 3876983,
+        "viewCount": 3881349,
         "publishedAt": "2026-07-05T15:01:11Z",
         "channelSubscriberCount": 212000,
-        "viewVelocity": 259967.54436421994
+        "viewVelocity": 260084.05355682925
       }
     },
     {
@@ -249,7 +295,7 @@
         "viewCount": 123,
         "publishedAt": "2026-07-14T10:04:28Z",
         "channelSubscriberCount": 22,
-        "viewVelocity": 20.10004941829562
+        "viewVelocity": 20.066908843092573
       }
     },
     {
@@ -268,10 +314,10 @@
       ],
       "youtube": {
         "videoId": "nAWIOZB6p-0",
-        "viewCount": 445020,
+        "viewCount": 445018,
         "publishedAt": "2026-02-11T11:01:28Z",
         "channelSubscriberCount": 12000,
-        "viewVelocity": 2797.4638333310368
+        "viewVelocity": 2797.2735528360427
       }
     },
     {
@@ -290,10 +336,10 @@
       ],
       "youtube": {
         "videoId": "Er4T2Laje6I",
-        "viewCount": 3539,
+        "viewCount": 3567,
         "publishedAt": "2026-07-14T10:02:25Z",
         "channelSubscriberCount": 2080,
-        "viewVelocity": 578.1913020120081
+        "viewVelocity": 581.8052287588288
       }
     },
     {
@@ -312,10 +358,10 @@
       ],
       "youtube": {
         "videoId": "tk0q6VXlw68",
-        "viewCount": 341636,
+        "viewCount": 342000,
         "publishedAt": "2026-07-14T11:00:06Z",
         "channelSubscriberCount": 40200,
-        "viewVelocity": 56183.16707885249
+        "viewVelocity": 56149.70745488972
       }
     },
     {
@@ -334,10 +380,10 @@
       ],
       "youtube": {
         "videoId": "6o_F-vf0V1E",
-        "viewCount": 24794,
+        "viewCount": 24822,
         "publishedAt": "2026-07-14T10:00:06Z",
         "channelSubscriberCount": 11900,
-        "viewVelocity": 4049.7056056023957
+        "viewVelocity": 4047.5976484927605
       }
     },
     {
@@ -356,10 +402,10 @@
       ],
       "youtube": {
         "videoId": "NzP2-SCJ6ro",
-        "viewCount": 2353,
+        "viewCount": 2369,
         "publishedAt": "2026-07-19T15:00:16Z",
         "channelSubscriberCount": 134000,
-        "viewVelocity": 2353
+        "viewVelocity": 2369
       }
     },
     {
@@ -378,10 +424,10 @@
       ],
       "youtube": {
         "videoId": "TCeUEeTcjQU",
-        "viewCount": 299607,
+        "viewCount": 299770,
         "publishedAt": "2026-07-13T10:00:06Z",
         "channelSubscriberCount": 22900,
-        "viewVelocity": 42065.3352924962
+        "viewVelocity": 42028.585291074254
       }
     },
     {
@@ -400,10 +446,10 @@
       ],
       "youtube": {
         "videoId": "5bdIoJSvChI",
-        "viewCount": 87801,
+        "viewCount": 87893,
         "publishedAt": "2026-07-08T12:00:20Z",
         "channelSubscriberCount": 6450,
-        "viewVelocity": 7293.093043508585
+        "viewVelocity": 7294.611389691484
       }
     }
   ]

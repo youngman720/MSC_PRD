@@ -1,6 +1,6 @@
 {
   "_comment": "Japanese-band-only mode. Sources: Spincoaster (indie/R&B/hip-hop leaning) and ROCKIN'ON JAPAN's news feed (broader rock scene, including the live-house/college-band circuit) — both use the same “…”-for-songs/『』-for-albums convention. excludeKeywords is a best-effort nationality filter (see README). excludeArtists is a manual safety net for major-label/veteran acts that slip through (either because they still match the release-announcement format, or because the YouTube search fallback occasionally attaches the wrong channel's stats and skews the buzz ratio).",
-  "lookbackDays": 14,
+  "lookbackDays": 21,
   "maxSongsPerWeek": 50,
   "excludeKeywords": [
     "韓国", "台湾", "中国", "香港", "タイ拠点", "タイ出身",
@@ -18,7 +18,8 @@
   ],
   "snsBuzzRatioThreshold": 0.5,
   "excludeArtists": [
-    "Ado", "King Gnu", "Mrs. GREEN APPLE", "星野源", "スピッツ", "サカナクション", "My Hair is Bad"
+    "Ado", "King Gnu", "Mrs. GREEN APPLE", "星野源", "スピッツ", "サカナクション", "My Hair is Bad",
+    "MARILYN MANSON", "GREEN DAY"
   ],
   "blogs": [
     {
@@ -30,6 +31,11 @@
       "name": "ROCKIN'ON JAPAN",
       "feedUrl": "https://rockinon.com/news.rss",
       "homepage": "https://rockinon.com"
+    },
+    {
+      "name": "Gekirock",
+      "feedUrl": "https://gekirock.com/news/index.xml",
+      "homepage": "https://gekirock.com"
     }
   ]
 }
