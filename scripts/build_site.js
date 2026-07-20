@@ -124,6 +124,7 @@ async function main() {
   const weeks = await loadWeeks();
   await fs.rm(OUT_DIR, { recursive: true, force: true });
   await fs.mkdir(path.join(OUT_DIR, "archive"), { recursive: true });
+  await fs.writeFile(path.join(OUT_DIR, ".nojekyll"), "", "utf-8");
 
   const nav = `<a href="./">Latest</a> · <a href="./archive/">Archive</a>`;
 
