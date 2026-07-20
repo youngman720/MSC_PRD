@@ -15,18 +15,21 @@ The site is currently scoped to **Japanese bands only**, sourced from [Spincoast
 **On the 50-song target:** `maxSongsPerWeek` is set to 50, but that's a ceiling, not a guarantee — actual weekly output depends on how many qualifying posts Spincoaster publishes in the lookback window. In testing this has been in the 15–20/week range. To get closer to 50 reliably, add more Japan-focused sources with a similar release-announcement convention to `config/blogs.json` (each new source needs its title format checked against `scripts/lib/extract.js`'s patterns, or a new pattern added).
 
 This is a heuristic, not a strict rule — you said you'd tune it later. The easiest knobs:
-- `config/blogs.json` — add/remove blogs, change `lookbackDays`, `maxSongsPerWeek`, `excludeKeywords`, `newcomerKeywords`, or `popularWithinDays`.
+- `config/blogs.json` — add/remove blogs, change `lookbackDays`, `maxSongsPerWeek`, `excludeKeywords`, `newcomerKeywords`, `popularWithinDays`, `snsKeywords`, or `snsBuzzRatioThreshold`.
 - `scripts/lib/extract.js` — the regex patterns that pull "Artist" and "Title" out of post headlines (`JP_ARTIST_TITLE`/`extractJpArtist` for the Japanese convention; `ARTIST_TITLE_DASH`/`ARTIST_SHARE_TITLE` are older English-blog patterns kept for reference but disabled whenever the title contains Japanese script).
 
 ## Categories on the site
 
-The page groups songs into three sections instead of one flat list:
+The page shows four tabs instead of one long scrolling list (`🔥 急上昇` / `🎓 大学生世代に人気` / `🌱 若手バンド` / `⭐ いま売れている`), switchable client-side with no page reload (plain CSS/JS, no framework).
 
-- **🔥 直近1週間で急上昇した曲 (surging this week)** — ranked by YouTube "view velocity" (view count ÷ days since the video was published), a proxy for how fast a song is gaining views. Requires `YOUTUBE_API_KEY` (see below); shows a placeholder note if not configured.
-- **🌱 注目の若手バンド (notable young bands)** — there's no reliable free data source for actual band formation date, so this is a proxy: posts whose raw headline contains a debut-ish keyword (`newcomerKeywords` in `config/blogs.json`, e.g. デビュー/初シングル/1stアルバム). This is not a real "formed within 5 years" check.
-- **⭐ いま売れているバンド (currently popular)** — songs whose YouTube video was published within `popularWithinDays` (365, configurable), ranked by absolute view count. Also requires `YOUTUBE_API_KEY`.
+Each song appears in **at most one** tab. Categories are claimed in priority order — newcomer first, then youth/SNS, then surging, then popular — so the narrower/rarer signals get first pick and the broad "popular" catch-all fills in with whatever's left (see `categorize()` in `scripts/build_site.js`). With a small weekly song count, "popular" can end up empty some weeks if everything was already claimed by a more specific category — that's expected, not a bug.
 
-**TikTok** was considered as a data source too, but there's no practical free/legitimate API access for it (official API requires business/app review; scraping would violate ToS and break constantly), so each song instead gets a plain TikTok search link (`tiktokUrl` field) rather than real view-count data.
+- **🔥 急上昇 (surging this week)** — ranked by YouTube "view velocity" (view count ÷ days since the video was published), a proxy for how fast a song is gaining views. Requires `YOUTUBE_API_KEY` (see below); shows a placeholder note if not configured.
+- **🎓 大学生世代に人気 (popular with college-age listeners)** — neither YouTube nor TikTok expose viewer-age demographics to third parties, so there's no direct way to measure this. Proxy instead: a song qualifies if (a) the post headline mentions an SNS/viral keyword (`snsKeywords` in `config/blogs.json`, e.g. Z世代/TikTok/バズ/バイラル), or (b) its view-velocity-to-subscriber-count ratio is at or above `snsBuzzRatioThreshold` (default 0.5) — i.e. it's getting disproportionately more views than its channel's usual subscriber base would predict, a common signature of something spreading via TikTok/SNS rather than an artist's existing fanbase. Ranked by that ratio.
+- **🌱 若手バンド (notable young bands)** — there's no reliable free data source for actual band formation date, so this is a proxy: posts whose raw headline contains a debut-ish keyword (`newcomerKeywords` in `config/blogs.json`, e.g. デビュー/初シングル/1stアルバム). This is not a real "formed within 5 years" check.
+- **⭐ いま売れている (currently popular)** — songs whose YouTube video was published within `popularWithinDays` (365, configurable), ranked by absolute view count. Also requires `YOUTUBE_API_KEY`.
+
+**TikTok** was considered as a real data source too, but there's no practical free/legitimate API access for it (official API requires business/app review; scraping would violate ToS and break constantly), so each song instead gets a plain TikTok search link (`tiktokUrl` field) rather than real view-count data.
 
 ### Enabling YouTube stats (view count / subscriber count)
 

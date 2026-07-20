@@ -89,6 +89,7 @@ async function main() {
       const youtubeId = extractYoutubeId(html);
 
       const isNewcomer = isExcludedByKeyword(title, config.newcomerKeywords);
+      const isSnsBuzz = isExcludedByKeyword(title, config.snsKeywords);
 
       if (!groups.has(key)) {
         groups.set(key, {
@@ -97,6 +98,7 @@ async function main() {
           firstSeen: pubDate,
           youtubeId,
           newcomer: false,
+          snsBuzz: false,
           sources: new Map(),
         });
       }
@@ -104,6 +106,7 @@ async function main() {
       if (pubDate < group.firstSeen) group.firstSeen = pubDate;
       if (!group.youtubeId && youtubeId) group.youtubeId = youtubeId;
       if (isNewcomer) group.newcomer = true;
+      if (isSnsBuzz) group.snsBuzz = true;
       if (!group.sources.has(blog.name)) {
         group.sources.set(blog.name, item.link || blog.homepage);
         usedBlogs.add(blog.name);
@@ -118,6 +121,7 @@ async function main() {
       firstSeen: g.firstSeen.toISOString(),
       youtubeId: g.youtubeId,
       newcomer: g.newcomer,
+      snsBuzz: g.snsBuzz,
       tiktokUrl: `https://www.tiktok.com/search?q=${encodeURIComponent(
         [g.artist, g.title].filter(Boolean).join(" ")
       )}`,

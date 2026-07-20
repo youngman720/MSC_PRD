@@ -13,6 +13,10 @@
     "待望のデビュー", "結成"
   ],
   "popularWithinDays": 365,
+  "snsKeywords": [
+    "Z世代", "TikTok", "ティックトック", "SNSで話題", "SNS発", "バズ", "バイラル", "話題沸騰"
+  ],
+  "snsBuzzRatioThreshold": 0.5,
   "blogs": [
     {
       "name": "Spincoaster",

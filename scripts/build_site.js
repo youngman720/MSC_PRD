@@ -71,14 +71,17 @@ function styleBlock() {
   header.site nav { margin-top: 1rem; font-size: 0.9rem; }
   header.site nav a { color: var(--accent); text-decoration: none; }
   p.week-label { font-size: 0.95rem; margin: 0 0 1.5rem; color: var(--muted); }
-  section.category { margin-bottom: 2.5rem; }
   h2.week { font-size: 1.2rem; margin: 0 0 1.25rem; color: var(--muted); font-weight: 600; }
-  h2.category-title { font-size: 1.3rem; margin: 0 0 1rem; }
   p.empty-note { color: var(--muted); font-size: 0.9rem; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem; }
+  .tab-btn { font: inherit; cursor: pointer; background: transparent; border: 1px solid var(--border); color: var(--fg); padding: 0.4rem 0.9rem; border-radius: 999px; font-size: 0.85rem; }
+  .tab-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .tab-panel[hidden] { display: none; }
   .song { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; margin-bottom: 1rem; }
   .song h3 { margin: 0 0 0.15rem; font-size: 1.05rem; }
   .song .artist { color: var(--muted); font-size: 0.95rem; margin: 0 0 0.6rem; }
   .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 0.7rem; padding: 0.1rem 0.5rem; border-radius: 999px; margin-left: 0.4rem; vertical-align: middle; }
+  .badge-sns { background: #4a7fd6; }
   .song iframe { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 6px; }
   .stats { font-size: 0.8rem; color: var(--muted); margin: 0.5rem 0 0; }
   .sources { font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem; }
@@ -90,9 +93,11 @@ function styleBlock() {
 }
 
 function songCard(song) {
-  const artistLine = song.artist
-    ? `<p class="artist">${escapeHtml(song.artist)}${song.newcomer ? '<span class="badge">新人</span>' : ""}</p>`
-    : "";
+  const badges = [
+    song.newcomer ? '<span class="badge">新人</span>' : "",
+    song.snsBuzz ? '<span class="badge badge-sns">SNSで話題</span>' : "",
+  ].join("");
+  const artistLine = song.artist ? `<p class="artist">${escapeHtml(song.artist)}${badges}</p>` : "";
   const videoId = song.youtube?.videoId || song.youtubeId;
   const media = videoId
     ? `<iframe src="https://www.youtube-nocookie.com/embed/${escapeHtml(videoId)}" title="${escapeHtml(song.title)}" allowfullscreen loading="lazy"></iframe>`
@@ -123,33 +128,79 @@ function songCard(song) {
   </article>`;
 }
 
+function velocityRatio(song) {
+  const subs = song.youtube?.channelSubscriberCount;
+  if (!song.youtube || !subs) return 0;
+  return song.youtube.viewVelocity / Math.max(subs, 1);
+}
+
+// Categories are claimed in priority order so a song only shows up in one tab: the narrower,
+// harder-to-satisfy signals (newcomer, SNS breakout) get first pick, then the broader
+// velocity/absolute-popularity rankings fill in with whatever's left.
 function categorize(songs, config, referenceDate) {
   const withStats = songs.filter((s) => s.youtube);
   const hasStats = withStats.length > 0;
+  const claimed = new Set();
+  const unclaimed = (list) => list.filter((s) => !claimed.has(s));
+  const claim = (list) => {
+    list.forEach((s) => claimed.add(s));
+    return list;
+  };
 
-  const surging = [...withStats]
-    .sort((a, b) => b.youtube.viewVelocity - a.youtube.viewVelocity)
-    .slice(0, 10);
+  const newcomers = claim(
+    unclaimed(songs.filter((s) => s.newcomer))
+      .sort((a, b) => new Date(b.firstSeen) - new Date(a.firstSeen))
+      .slice(0, 10)
+  );
 
-  const newcomers = songs
-    .filter((s) => s.newcomer)
-    .sort((a, b) => new Date(b.firstSeen) - new Date(a.firstSeen))
-    .slice(0, 10);
+  const buzzThreshold = config.snsBuzzRatioThreshold ?? 0.5;
+  const youth = claim(
+    unclaimed(withStats.filter((s) => s.snsBuzz || velocityRatio(s) >= buzzThreshold))
+      .sort((a, b) => velocityRatio(b) - velocityRatio(a))
+      .slice(0, 10)
+  );
+
+  const surging = claim(
+    unclaimed(withStats)
+      .sort((a, b) => b.youtube.viewVelocity - a.youtube.viewVelocity)
+      .slice(0, 10)
+  );
 
   const popularWithinDays = config.popularWithinDays ?? 365;
   const popularCutoff = referenceDate.getTime() - popularWithinDays * 24 * 60 * 60 * 1000;
-  const popular = withStats
-    .filter((s) => new Date(s.youtube.publishedAt).getTime() >= popularCutoff)
-    .sort((a, b) => b.youtube.viewCount - a.youtube.viewCount)
-    .slice(0, 10);
+  const popular = claim(
+    unclaimed(withStats)
+      .filter((s) => new Date(s.youtube.publishedAt).getTime() >= popularCutoff)
+      .sort((a, b) => b.youtube.viewCount - a.youtube.viewCount)
+      .slice(0, 10)
+  );
 
-  return { hasStats, surging, newcomers, popular };
+  return { hasStats, newcomers, youth, surging, popular };
 }
 
-function categorySection(title, list, emptyNote) {
+function tabPanel(id, list, emptyNote, active) {
   const body = list.length ? list.map(songCard).join("\n") : `<p class="empty-note">${emptyNote}</p>`;
-  return `<section class="category"><h2 class="category-title">${title}</h2>${body}</section>`;
+  return `<div class="tab-panel" id="panel-${id}" role="tabpanel" ${active ? "" : "hidden"}>${body}</div>`;
 }
+
+function tabButton(id, label, active) {
+  return `<button type="button" class="tab-btn${active ? " active" : ""}" data-tab="${id}" role="tab" aria-selected="${active}">${label}</button>`;
+}
+
+const TAB_SCRIPT = `
+document.querySelectorAll('.tabs').forEach(function (tabs) {
+  tabs.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      tabs.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      var panels = tabs.parentElement.querySelectorAll('.tab-panel');
+      panels.forEach(function (p) { p.hidden = true; });
+      document.getElementById('panel-' + btn.dataset.tab).hidden = false;
+    });
+  });
+});
+`;
 
 function weekBody(week, config) {
   const label = formatWeekLabel(week.weekOf);
@@ -158,14 +209,20 @@ function weekBody(week, config) {
   }
 
   const referenceDate = new Date(week.generatedAt);
-  const { hasStats, surging, newcomers, popular } = categorize(week.songs, config, referenceDate);
+  const { hasStats, newcomers, youth, surging, popular } = categorize(week.songs, config, referenceDate);
   const noStatsNote = "YouTube APIキーが未設定のため、この項目は表示できません（README参照）。";
+
+  const tabs = [
+    { id: "surging", label: "🔥 急上昇", list: surging, emptyNote: hasStats ? "対象曲がありませんでした。" : noStatsNote },
+    { id: "youth", label: "🎓 大学生世代に人気", list: youth, emptyNote: hasStats ? "対象曲がありませんでした（SNSでの話題性/伸び率で判定）。" : noStatsNote },
+    { id: "newcomer", label: "🌱 若手バンド", list: newcomers, emptyNote: "対象曲が見つかりませんでした（デビュー/初シングル等のキーワード検出）。" },
+    { id: "popular", label: "⭐ いま売れている", list: popular, emptyNote: hasStats ? "対象曲がありませんでした。" : noStatsNote },
+  ];
 
   return [
     `<p class="week-label">Week of ${label}</p>`,
-    categorySection("🔥 直近1週間で急上昇した曲", surging, hasStats ? "対象曲がありませんでした。" : noStatsNote),
-    categorySection("🌱 注目の若手バンド", newcomers, "対象曲が見つかりませんでした（デビュー/初シングル等のキーワード検出）。"),
-    categorySection("⭐ いま売れているバンド", popular, hasStats ? "対象曲がありませんでした。" : noStatsNote),
+    `<div class="tabs" role="tablist">${tabs.map((t, i) => tabButton(t.id, t.label, i === 0)).join("")}</div>`,
+    tabs.map((t, i) => tabPanel(t.id, t.list, t.emptyNote, i === 0)).join("\n"),
   ].join("\n");
 }
 
@@ -188,6 +245,7 @@ function pageShell({ title, body, nav }) {
 ${body}
 <footer>Auto-generated weekly. Song picks are curated from independent music blog coverage, not label promotion.</footer>
 </div>
+<script>${TAB_SCRIPT}</script>
 </body>
 </html>`;
 }
