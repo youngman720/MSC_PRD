@@ -1,6 +1,6 @@
 {
   "weekOf": "2026-07-20",
-  "generatedAt": "2026-07-20T13:57:25.375Z",
+  "generatedAt": "2026-07-20T21:47:42.795Z",
   "blogsChecked": [
     "Spincoaster",
     "ROCKIN'ON JAPAN",
@@ -12,7 +12,6 @@
     "Spincoaster",
     "ROCKIN'ON JAPAN",
     "Gekirock",
-    "BARKS",
     "eggs"
   ],
   "songs": [
@@ -31,37 +30,22 @@
           "url": "https://rockinon.com/news/detail/215461"
         },
         {
-          "blog": "BARKS",
-          "url": "https://barks.jp/news/1078946"
-        },
-        {
           "blog": "eggs",
           "url": "https://eggs.mu/artist/marinbluedaisy/song/ec8caf86-07c5-49d1-801b-5b9cd1d95b26"
         }
       ],
-      "youtube": null
-    },
-    {
-      "artist": "the奥歯's",
-      "title": "指先",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=the%E5%A5%A5%E6%AD%AF's%20%E6%8C%87%E5%85%88",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/okuba_010101/song/4f5e3632-59fa-4a0a-826a-d50769941de9"
-        }
-      ],
-      "youtube": null
+      "youtube": {
+        "videoId": "5bdIoJSvChI",
+        "viewCount": 89936,
+        "publishedAt": "2026-07-08T12:00:20Z",
+        "channelSubscriberCount": 6450,
+        "viewVelocity": 7248.283777701245
+      }
     },
     {
       "artist": "Atlas Youth",
       "title": "星に揺られて",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
+      "firstSeen": "2026-07-20T21:47:42.795Z",
       "youtubeId": null,
       "newcomer": true,
       "snsBuzz": false,
@@ -73,228 +57,13 @@
           "url": "https://eggs.mu/artist/atlas_youth/song/2d706f24-ab7f-4f86-a739-ea8fa2802ad3"
         }
       ],
-      "youtube": null
-    },
-    {
-      "artist": "sorato",
-      "title": "tomato(three-piece ver.)",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=sorato%20tomato(three-piece%20ver.)",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/mrkmsorajiroo/song/21282647-6f23-4851-a4f9-2fa2817c17f5"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "ARUKUHOLE",
-      "title": "バーミリオン",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=ARUKUHOLE%20%E3%83%90%E3%83%BC%E3%83%9F%E3%83%AA%E3%82%AA%E3%83%B3",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/arukuhole/song/a45b0331-52c8-4dbe-accc-e21678f7dadb"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "マリンブルーデージー",
-      "title": "Life",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%96%E3%83%AB%E3%83%BC%E3%83%87%E3%83%BC%E3%82%B8%E3%83%BC%20Life",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/marinbluedaisy/song/d9759087-35a2-40f5-810e-8bddbc1f7681"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "ARUKUHOLE",
-      "title": "New Ager",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=ARUKUHOLE%20New%20Ager",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/arukuhole/song/5f1d458c-b5b7-4ae7-858b-07fa3ebf6f88"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "BIRTH",
-      "title": "Delay",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=BIRTH%20Delay",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/YuuuuK1/song/e41ee75c-6457-4f70-b982-a8d3f77e4d83"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "Unti Morel",
-      "title": "さいけでりっく・らぶ！feat.初音ミク",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Unti%20Morel%20%E3%81%95%E3%81%84%E3%81%91%E3%81%A7%E3%82%8A%E3%81%A3%E3%81%8F%E3%83%BB%E3%82%89%E3%81%B6%EF%BC%81feat.%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/te_so_kannen/song/4fb1bb3c-3ead-4736-bab0-bdb2dba80659"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "Schema",
-      "title": "名前のないラブソング",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Schema%20%E5%90%8D%E5%89%8D%E3%81%AE%E3%81%AA%E3%81%84%E3%83%A9%E3%83%96%E3%82%BD%E3%83%B3%E3%82%B0",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/Schema/song/942d6a7d-e3e9-4d3b-ae99-0f9b250585e7"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "Schema",
-      "title": "SAND BOX",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Schema%20SAND%20BOX",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/Schema/song/bc91da0e-0deb-40cd-9ed5-93420a2f055f"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "MAYLIE",
-      "title": "それでもまだ",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=MAYLIE%20%E3%81%9D%E3%82%8C%E3%81%A7%E3%82%82%E3%81%BE%E3%81%A0",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/maylie_band/song/42d3d402-4b54-4e62-a8f0-958dbdf87147"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "エントラスト",
-      "title": "Survive",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%82%A8%E3%83%B3%E3%83%88%E3%83%A9%E3%82%B9%E3%83%88%20Survive",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/entrust_band_2026/song/aa54340d-5552-42f2-a37d-805111809a96"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "u named (radica)",
-      "title": "はるいちばん",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=u%20named%20(radica)%20%E3%81%AF%E3%82%8B%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/radicalism/song/84c1a67e-de57-45b1-9b3a-6859fccbf3e0"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "Re:DROP",
-      "title": "水鏡に映して",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Re%3ADROP%20%E6%B0%B4%E9%8F%A1%E3%81%AB%E6%98%A0%E3%81%97%E3%81%A6",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/re_drop_x/song/f4ccfdcb-7276-4b6a-bbea-1c73eb1eb152"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "Leap back",
-      "title": "潤む瞳、君の嘘",
-      "firstSeen": "2026-07-20T13:57:25.375Z",
-      "youtubeId": null,
-      "newcomer": true,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Leap%20back%20%E6%BD%A4%E3%82%80%E7%9E%B3%E3%80%81%E5%90%9B%E3%81%AE%E5%98%98",
-      "sources": [
-        {
-          "blog": "eggs",
-          "url": "https://eggs.mu/artist/Leap_back_band/song/2c452864-e4d5-4f3c-9af7-a007c994af25"
-        }
-      ],
-      "youtube": null
+      "youtube": {
+        "videoId": "eCvyQx16DJ0",
+        "viewCount": 2143,
+        "publishedAt": "2026-04-26T10:03:28Z",
+        "channelSubscriberCount": 26,
+        "viewVelocity": 25.06753491977256
+      }
     },
     {
       "artist": "Verde/",
@@ -430,7 +199,13 @@
           "url": "https://spincoaster.com/news/doona-mubo"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "Z9He4RkHsrQ",
+        "viewCount": 2203,
+        "publishedAt": "2026-07-15T11:00:34Z",
+        "channelSubscriberCount": 8610,
+        "viewVelocity": 404.26414446465617
+      }
     },
     {
       "artist": "luvis",
@@ -447,7 +222,13 @@
           "url": "https://spincoaster.com/news/luvis-the-bird"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "-QRErM9VXXs",
+        "viewCount": 24452,
+        "publishedAt": "2026-07-15T10:00:38Z",
+        "channelSubscriberCount": 7850,
+        "viewVelocity": 4453.082600794505
+      }
     },
     {
       "artist": "Lilhana",
@@ -498,7 +279,13 @@
           "url": "https://spincoaster.com/news/durdn-motion"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "A1iNIRV1pno",
+        "viewCount": 3969205,
+        "publishedAt": "2026-07-05T15:01:11Z",
+        "channelSubscriberCount": 212000,
+        "viewVelocity": 259725.41884812302
+      }
     },
     {
       "artist": "otuyyuto",
@@ -532,7 +319,13 @@
           "url": "https://spincoaster.com/news/pm-kenobi-my-dad-said"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "nAWIOZB6p-0",
+        "viewCount": 445172,
+        "publishedAt": "2026-02-11T11:01:28Z",
+        "channelSubscriberCount": 12000,
+        "viewVelocity": 2791.9435535362845
+      }
     },
     {
       "artist": "cero",
@@ -566,7 +359,13 @@
           "url": "https://spincoaster.com/news/manaka-summer-time-ft-dada"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "tk0q6VXlw68",
+        "viewCount": 351391,
+        "publishedAt": "2026-07-14T11:00:06Z",
+        "channelSubscriberCount": 40200,
+        "viewVelocity": 54481.493401978165
+      }
     },
     {
       "artist": "Sad Kid Yaz",
@@ -583,7 +382,13 @@
           "url": "https://spincoaster.com/news/sad-kid-yaz-yoruakenofriends"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "6o_F-vf0V1E",
+        "viewCount": 25465,
+        "publishedAt": "2026-07-14T10:00:06Z",
+        "channelSubscriberCount": 12000,
+        "viewVelocity": 3922.883737193556
+      }
     },
     {
       "artist": "in-d × ziproom",
@@ -617,7 +422,13 @@
           "url": "https://spincoaster.com/news/3liyen-mooove-bitch-feat-anarchy"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "TCeUEeTcjQU",
+        "viewCount": 325330,
+        "publishedAt": "2026-07-13T10:00:06Z",
+        "channelSubscriberCount": 23000,
+        "viewVelocity": 43427.14084600688
+      }
     }
   ]
 }
