@@ -24,7 +24,8 @@
   ],
   "eggs": {
     "enabled": true,
-    "limit": 20
+    "limit": 20,
+    "minViewCount": 1000
   },
   "blogs": [
     {

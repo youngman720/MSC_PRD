@@ -82,6 +82,7 @@ function styleBlock() {
   .song .artist { color: var(--muted); font-size: 0.95rem; margin: 0 0 0.6rem; }
   .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 0.7rem; padding: 0.1rem 0.5rem; border-radius: 999px; margin-left: 0.4rem; vertical-align: middle; }
   .badge-sns { background: #4a7fd6; }
+  .badge-circuit { background: #2f9e5c; }
   .song iframe { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 6px; }
   .stats { font-size: 0.8rem; color: var(--muted); margin: 0.5rem 0 0; }
   .sources { font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem; }
@@ -96,6 +97,7 @@ function songCard(song) {
   const badges = [
     song.newcomer ? '<span class="badge">新人</span>' : "",
     song.snsBuzz ? '<span class="badge badge-sns">SNSで話題</span>' : "",
+    song.inCircuitScene ? '<span class="badge badge-circuit">対バンシーン出演実績</span>' : "",
   ].join("");
   const artistLine = song.artist ? `<p class="artist">${escapeHtml(song.artist)}${badges}</p>` : "";
   const videoId = song.youtube?.videoId || song.youtubeId;

@@ -1,0 +1,27 @@
+{
+  "_comment": "Cross-validation allowlist for the 'is this band actually part of the touring circuit scene, not just an obscure upload' check. Compiled from the lineup pages of two real Japanese live-house circuit events (each a one-time-per-event announcement, so this is a static curated list refreshed manually rather than scraped weekly). Source event pages: 見放題東京2026 (https://tokyo.mihoudai.jp/artists/), Maxell presents FM802 MINAMI WHEEL 2026 1st lineup (https://minamiwheel.jp/artist/). Add more circuit-event lineups here as they're announced.",
+  "artists": [
+    "愛しておくれ", "Ivy to Fraudulent Game", "akebono", "アシュラシンドローム", "Atomic Skipper",
+    "Arakezuri", "アルステイク", "アンと私", "UNFAIR RULE", "anewhite", "稲生 司", "EVE OF THE LAIN",
+    "ENEMY FLECK", "Organic Call", "Ochunism", "おもかげ", "ORCALAND", "かずき山盛り", "KALMA", "Gum-9",
+    "'97,Kids", "銀幕一楼とTIMECAFE", "kurage", "クリトリック・リス", "クレイジーウォウォオ!!", "Cloudy",
+    "Cloque.", "COPES", "Sunny Girl", "ザ・あどばん", "The Cheserasera", "ザ・シスターズハイ",
+    "the shes gone", "the paddles", "THE BOYS&GIRLS", "至福ぽんちょ", "Shawoo", "終活クラブ", "JIJIM",
+    "Junkie Machine", "Stain hung over", "すなお", "SLACK", "3markets[ ]", "セカンドバッカー",
+    "セブンス・ベガ", "Dannie May", "CheChe", "チセツナガラ", "ちゃくら", "超☆社会的サンダル",
+    "月追う彼方", "つきみ", "鉄風東京", "DNA GAINZ", "DJ禁欲(カザマタカフミ)", "Daisycall", "DeNeel",
+    "東京、君がいない街", "TRACK15", "Doona", "猫背のネイビーセゾン", "猫は液体", "NOCOGIRI",
+    "ハイドアウト", "BACK TO BOYS", "バックドロップシンデレラ", "パーカーズ", "PURPLE BUBBLE",
+    "PAIL OUT", "Viewtrade", "ビレッジマンズストア", "Fish and Lips", "Brown Basket", "Blue Mash",
+    "Broken my toybox", "プッシュプルポット", "プピリットパロ", "ペルシカリア", "HOLIC", "POT",
+    "Maverick Mom", "前髪ぱっつん少年", "Marie's Girl", "ミニマムジーク", "ミニマムズ", "ミーマイナー",
+    "MUSHRO.mo", "May Forth", "メルトタイマー", "夕方と猫", "Lavt", "らそんぶる", "Laughing Hick",
+    "Lala", "爛漫天国", "リアクション ザ ブッタ", "Rip van cats", "ルサンチマン", "LUCCI", "レイラ",
+    "RAINCOVER", "LEODRAT", "Recca", "ロマンス＆バカンス", "浪漫派マシュマロ",
+    "Wash My Friday", "Esteban", "OSHIKIKEIGO", "カライドスコープ", "KI_EN", "クレイジーウォウウォ!!",
+    "幻想痛", "コロブチカ", "sanetii", "三四少女", "TheΣ", "ざらばんし", "水平線", "ステレオドロシー",
+    "スーパー登山部", "Chimothy→", "Tyrkouaz", "デビューまでスラストンズ", "なきごと", "Natsudaidai",
+    "niina", "NELKE", "ハク。", "harha", "FUJIBASE", "Fluffy", "Baby Canta", "the Po", "Messy last girl",
+    "MONONOKE", "MON7A", "『ユイカ』", "Luov", "Leina", "レトロマイガール!!", "ん・フェニ"
+  ]
+}

@@ -52,6 +52,23 @@ async function loadConfig() {
   return JSON.parse(raw);
 }
 
+// A Japanese-safe normalizer for exact-ish artist-name matching. extract.js's normalizeKey()
+// strips any character outside [a-z0-9], which would reduce every Japanese-script name (kanji/
+// kana) to an empty string and make them all falsely match each other — not usable here.
+function normalizeArtistName(str) {
+  return str.toLowerCase().trim().replace(/\s+/g, "");
+}
+
+async function loadCircuitArtists() {
+  try {
+    const raw = await fs.readFile(path.join(ROOT, "config", "circuit_artists.json"), "utf-8");
+    const parsed = JSON.parse(raw);
+    return new Set((parsed.artists || []).map(normalizeArtistName));
+  } catch {
+    return new Set();
+  }
+}
+
 async function fetchFeed(parser, blog) {
   try {
     const feed = await parser.parseURL(blog.feedUrl);
@@ -64,6 +81,7 @@ async function fetchFeed(parser, blog) {
 
 async function main() {
   const config = await loadConfig();
+  const circuitArtists = await loadCircuitArtists();
   const now = new Date();
   const cutoff = new Date(now.getTime() - config.lookbackDays * 24 * 60 * 60 * 1000);
 
@@ -163,6 +181,9 @@ async function main() {
       youtubeId: g.youtubeId,
       newcomer: g.newcomer,
       snsBuzz: g.snsBuzz,
+      // Cross-checks the artist against real touring-circuit event lineups (config/circuit_artists.json)
+      // as an independent signal that this isn't just an obscure upload — see README.
+      inCircuitScene: g.artist ? circuitArtists.has(normalizeArtistName(g.artist)) : false,
       tiktokUrl: `https://www.tiktok.com/search?q=${encodeURIComponent(
         [g.artist, g.title].filter(Boolean).join(" ")
       )}`,
@@ -175,11 +196,30 @@ async function main() {
     .slice(0, config.maxSongsPerWeek);
 
   const youtubeStats = createYoutubeStatsClient(process.env.YOUTUBE_API_KEY);
+  let finalSongs = songs;
   if (youtubeStats) {
     console.log("Fetching YouTube stats (views/subscribers)...");
     await youtubeStats.enrichSongs(songs, now);
+
+    // eggs.mu entries have no external editorial curation behind them (unlike the RSS sources),
+    // so a song that isn't corroborated by a real touring-circuit lineup needs a minimum view
+    // count to prove it's not just an obscure upload with near-zero listeners.
+    const minViewCount = config.eggs?.minViewCount ?? 1000;
+    finalSongs = songs.filter((song) => {
+      const isEggsOnly = song.sources.length === 1 && song.sources[0].blog === "eggs";
+      if (!isEggsOnly) return true;
+      if (song.inCircuitScene) return true;
+      return song.youtube && song.youtube.viewCount >= minViewCount;
+    });
+    const droppedCount = songs.length - finalSongs.length;
+    if (droppedCount > 0) {
+      console.log(
+        `Dropped ${droppedCount} eggs-only song(s): not in the circuit-scene allowlist and under ${minViewCount} views.`
+      );
+    }
   } else {
     console.log("[skip] YOUTUBE_API_KEY not set — songs will have no view/subscriber stats.");
+    console.log("[skip] eggs-only quality filter needs view counts too, so it's skipped this run.");
     for (const song of songs) song.youtube = null;
   }
 
@@ -189,7 +229,7 @@ async function main() {
     generatedAt: now.toISOString(),
     blogsChecked: [...config.blogs.map((b) => b.name), ...(config.eggs?.enabled !== false ? ["eggs"] : [])],
     blogsWithResults: Array.from(usedBlogs),
-    songs,
+    songs: finalSongs,
   };
 
   const outDir = path.join(ROOT, "data", "weekly");
@@ -197,8 +237,8 @@ async function main() {
   const outFile = path.join(outDir, `${weekOf}.json`);
   await fs.writeFile(outFile, JSON.stringify(output, null, 2) + "\n", "utf-8");
 
-  console.log(`Wrote ${songs.length} songs to ${path.relative(ROOT, outFile)}`);
-  if (songs.length === 0) {
+  console.log(`Wrote ${finalSongs.length} songs to ${path.relative(ROOT, outFile)}`);
+  if (finalSongs.length === 0) {
     console.warn("[warn] no songs matched this week — check feed health and parsing patterns.");
   }
 }
