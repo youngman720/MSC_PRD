@@ -1,6 +1,10 @@
 const LEAD_TAGS =
   /^(track premiere|song premiere|video premiere|premiere|listen|watch|stream|new music|new song|new video)\s*:\s*/i;
 
+// Some Japanese outlets (e.g. ROCKIN'ON JAPAN's news feed) prefix every headline with a category
+// label like "ニュース - " (News -) using a dash, not a colon, so it needs its own strip pattern.
+const JP_LEAD_TAGS = /^ニュース\s*[-–—]\s*/;
+
 // Posts in these categories aren't single-song premieres (album/EP reviews, interviews, tour
 // announcements, retrospectives, etc.) — extracting an "artist/title" from them would misrepresent
 // an album name or feature topic as a song.
@@ -26,7 +30,7 @@ const ARTIST_SHARE_TITLE = new RegExp(
 );
 
 function stripLeadTags(title) {
-  return title.replace(LEAD_TAGS, "").trim();
+  return title.replace(LEAD_TAGS, "").replace(JP_LEAD_TAGS, "").trim();
 }
 
 // Japanese music-news convention (e.g. Spincoaster): song titles are wrapped in curly double quotes

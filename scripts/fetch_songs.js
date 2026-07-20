@@ -40,6 +40,12 @@ function decodeEntities(str) {
   return str.replace(/&#?[a-z0-9]+;/gi, (m) => HTML_ENTITIES[m] ?? m);
 }
 
+// Some feeds (e.g. ROCKIN'ON JAPAN's news.rss) pretty-print titles with leading/trailing
+// whitespace and newlines, which breaks the `^`-anchored lead-tag stripping in extract.js.
+function normalizeTitle(str) {
+  return decodeEntities(str).replace(/\s+/g, " ").trim();
+}
+
 async function loadConfig() {
   const raw = await fs.readFile(path.join(ROOT, "config", "blogs.json"), "utf-8");
   return JSON.parse(raw);
@@ -78,11 +84,12 @@ async function main() {
       if (!pubDate || pubDate < cutoff || pubDate > now) continue;
       if (!item.title) continue;
 
-      const title = decodeEntities(item.title);
+      const title = normalizeTitle(item.title);
       if (isExcludedByKeyword(title, config.excludeKeywords)) continue;
 
       const parsed = parseArtistTitle(title);
       if (!parsed.confident) continue; // skip low-confidence headlines (not clearly a song post)
+      if (parsed.artist && isExcludedByKeyword(parsed.artist, config.excludeArtists)) continue;
 
       const key = dedupeKey(parsed);
       const html = item["content:encoded"] || item.content || item.contentSnippet || "";

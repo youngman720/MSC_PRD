@@ -1,5 +1,5 @@
 {
-  "_comment": "Japanese-band-only mode. Primary source is Spincoaster's main feed (very active, ~5 posts/day, uses a consistent “…” quoted-title convention for song releases). excludeKeywords is a best-effort nationality filter: any post whose raw title contains one of these substrings is treated as a non-Japanese act and skipped. This is a heuristic (see README) — tune both lists here.",
+  "_comment": "Japanese-band-only mode. Sources: Spincoaster (indie/R&B/hip-hop leaning) and ROCKIN'ON JAPAN's news feed (broader rock scene, including the live-house/college-band circuit) — both use the same “…”-for-songs/『』-for-albums convention. excludeKeywords is a best-effort nationality filter (see README). excludeArtists is a manual safety net for major-label/veteran acts that slip through (either because they still match the release-announcement format, or because the YouTube search fallback occasionally attaches the wrong channel's stats and skews the buzz ratio).",
   "lookbackDays": 14,
   "maxSongsPerWeek": 50,
   "excludeKeywords": [
@@ -17,11 +17,19 @@
     "Z世代", "TikTok", "ティックトック", "SNSで話題", "SNS発", "バズ", "バイラル", "話題沸騰"
   ],
   "snsBuzzRatioThreshold": 0.5,
+  "excludeArtists": [
+    "Ado", "King Gnu", "Mrs. GREEN APPLE", "星野源", "スピッツ", "サカナクション", "My Hair is Bad"
+  ],
   "blogs": [
     {
       "name": "Spincoaster",
       "feedUrl": "https://spincoaster.com/feed",
       "homepage": "https://spincoaster.com"
+    },
+    {
+      "name": "ROCKIN'ON JAPAN",
+      "feedUrl": "https://rockinon.com/news.rss",
+      "homepage": "https://rockinon.com"
     }
   ]
 }

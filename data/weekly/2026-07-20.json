@@ -1,11 +1,13 @@
 {
   "weekOf": "2026-07-20",
-  "generatedAt": "2026-07-20T12:10:35.705Z",
+  "generatedAt": "2026-07-20T12:56:23.118Z",
   "blogsChecked": [
-    "Spincoaster"
+    "Spincoaster",
+    "ROCKIN'ON JAPAN"
   ],
   "blogsWithResults": [
-    "Spincoaster"
+    "Spincoaster",
+    "ROCKIN'ON JAPAN"
   ],
   "songs": [
     {
@@ -27,7 +29,29 @@
         "viewCount": 1703,
         "publishedAt": "2026-07-09T10:01:31Z",
         "channelSubscriberCount": 699,
-        "viewVelocity": 153.56678300486982
+        "viewVelocity": 153.12770002344843
+      }
+    },
+    {
+      "artist": "Cloudy",
+      "title": "自分勝手",
+      "firstSeen": "2026-07-16T12:40:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Cloudy%20%E8%87%AA%E5%88%86%E5%8B%9D%E6%89%8B",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215512"
+        }
+      ],
+      "youtube": {
+        "videoId": "58-0cxKLkww",
+        "viewCount": 49204,
+        "publishedAt": "2026-07-15T11:00:27Z",
+        "channelSubscriberCount": 3,
+        "viewVelocity": 9684.853281849008
       }
     },
     {
@@ -49,7 +73,7 @@
         "viewCount": 438,
         "publishedAt": "2026-07-15T14:24:28Z",
         "channelSubscriberCount": 758,
-        "viewVelocity": 89.25962886725063
+        "viewVelocity": 88.68492913344588
       }
     },
     {
@@ -71,7 +95,7 @@
         "viewCount": 671,
         "publishedAt": "2026-07-15T11:00:36Z",
         "channelSubscriberCount": 9800,
-        "viewVelocity": 132.90793032517067
+        "viewVelocity": 132.07604657288127
       }
     },
     {
@@ -90,10 +114,10 @@
       ],
       "youtube": {
         "videoId": "klb8oQ8R0cw",
-        "viewCount": 6453,
+        "viewCount": 6524,
         "publishedAt": "2026-07-15T11:00:22Z",
         "channelSubscriberCount": 3170,
-        "viewVelocity": 1278.1331572331042
+        "viewVelocity": 1284.1082658259497
       }
     },
     {
@@ -115,7 +139,7 @@
         "viewCount": 2162,
         "publishedAt": "2026-07-15T11:00:34Z",
         "channelSubscriberCount": 8610,
-        "viewVelocity": 428.2349148543562
+        "viewVelocity": 425.55456279559036
       }
     },
     {
@@ -134,10 +158,10 @@
       ],
       "youtube": {
         "videoId": "-QRErM9VXXs",
-        "viewCount": 21742,
+        "viewCount": 21788,
         "publishedAt": "2026-07-15T10:00:38Z",
         "channelSubscriberCount": 7850,
-        "viewVelocity": 4271.301961432472
+        "viewVelocity": 4253.765601364063
       }
     },
     {
@@ -159,7 +183,7 @@
         "viewCount": 430,
         "publishedAt": "2026-07-14T10:03:45Z",
         "channelSubscriberCount": 14,
-        "viewVelocity": 70.6297412711401
+        "viewVelocity": 70.26275102976291
       }
     },
     {
@@ -181,7 +205,7 @@
         "viewCount": 340,
         "publishedAt": "2026-07-14T10:04:01Z",
         "channelSubscriberCount": 904,
-        "viewVelocity": 55.84847094610962
+        "viewVelocity": 55.55827500770423
       }
     },
     {
@@ -200,10 +224,10 @@
       ],
       "youtube": {
         "videoId": "A1iNIRV1pno",
-        "viewCount": 3865498,
+        "viewCount": 3876983,
         "publishedAt": "2026-07-05T15:01:11Z",
         "channelSubscriberCount": 212000,
-        "viewVelocity": 259751.27945357622
+        "viewVelocity": 259967.54436421994
       }
     },
     {
@@ -225,7 +249,7 @@
         "viewCount": 123,
         "publishedAt": "2026-07-14T10:04:28Z",
         "channelSubscriberCount": 22,
-        "viewVelocity": 20.205042817220118
+        "viewVelocity": 20.10004941829562
       }
     },
     {
@@ -244,10 +268,10 @@
       ],
       "youtube": {
         "videoId": "nAWIOZB6p-0",
-        "viewCount": 444995,
+        "viewCount": 445020,
         "publishedAt": "2026-02-11T11:01:28Z",
         "channelSubscriberCount": 12000,
-        "viewVelocity": 2797.865950195743
+        "viewVelocity": 2797.4638333310368
       }
     },
     {
@@ -269,7 +293,7 @@
         "viewCount": 3539,
         "publishedAt": "2026-07-14T10:02:25Z",
         "channelSubscriberCount": 2080,
-        "viewVelocity": 581.210800901719
+        "viewVelocity": 578.1913020120081
       }
     },
     {
@@ -288,10 +312,10 @@
       ],
       "youtube": {
         "videoId": "tk0q6VXlw68",
-        "viewCount": 340586,
+        "viewCount": 341636,
         "publishedAt": "2026-07-14T11:00:06Z",
-        "channelSubscriberCount": 40100,
-        "viewVelocity": 56304.93276305449
+        "channelSubscriberCount": 40200,
+        "viewVelocity": 56183.16707885249
       }
     },
     {
@@ -310,10 +334,10 @@
       ],
       "youtube": {
         "videoId": "6o_F-vf0V1E",
-        "viewCount": 24694,
+        "viewCount": 24794,
         "publishedAt": "2026-07-14T10:00:06Z",
         "channelSubscriberCount": 11900,
-        "viewVelocity": 4054.430184628213
+        "viewVelocity": 4049.7056056023957
       }
     },
     {
@@ -332,10 +356,10 @@
       ],
       "youtube": {
         "videoId": "NzP2-SCJ6ro",
-        "viewCount": 2300,
+        "viewCount": 2353,
         "publishedAt": "2026-07-19T15:00:16Z",
         "channelSubscriberCount": 134000,
-        "viewVelocity": 2300
+        "viewVelocity": 2353
       }
     },
     {
@@ -354,10 +378,32 @@
       ],
       "youtube": {
         "videoId": "TCeUEeTcjQU",
-        "viewCount": 298770,
+        "viewCount": 299607,
         "publishedAt": "2026-07-13T10:00:06Z",
         "channelSubscriberCount": 22900,
-        "viewVelocity": 42135.93919674528
+        "viewVelocity": 42065.3352924962
+      }
+    },
+    {
+      "artist": "め組",
+      "title": "二の舞",
+      "firstSeen": "2026-07-08T12:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%82%81%E7%B5%84%20%E4%BA%8C%E3%81%AE%E8%88%9E",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215461"
+        }
+      ],
+      "youtube": {
+        "videoId": "5bdIoJSvChI",
+        "viewCount": 87801,
+        "publishedAt": "2026-07-08T12:00:20Z",
+        "channelSubscriberCount": 6450,
+        "viewVelocity": 7293.093043508585
       }
     }
   ]
