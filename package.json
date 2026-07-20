@@ -8,10 +8,15 @@
     "fetch": "node scripts/fetch_songs.js",
     "build": "node scripts/build_site.js",
     "upload-youtube": "node scripts/upload_youtube_playlist.js",
-    "get-youtube-token": "node scripts/get_youtube_refresh_token.js"
+    "get-youtube-token": "node scripts/get_youtube_refresh_token.js",
+    "deploy": "gh-pages -d public -b gh-pages",
+    "weekly": "node scripts/weekly_local_run.js"
   },
   "dependencies": {
     "googleapis": "^144.0.0",
     "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
