@@ -38,7 +38,7 @@ This is a separate, simpler credential from the YouTube *upload* OAuth setup bel
 1. In [Google Cloud Console](https://console.cloud.google.com/) (same project as below is fine), go to **APIs & Services → Library**, search **YouTube Data API v3**, and enable it.
 2. **APIs & Services → Credentials → + Create Credentials → API key**.
 3. (Recommended) Restrict the key to "YouTube Data API v3" only.
-4. Set it as an environment variable before running the pipeline: `YOUTUBE_API_KEY=xxx npm run fetch` (or add it wherever `npm run weekly` picks up environment variables, e.g. a Task Scheduler action's environment).
+4. Add it as a GitHub repo secret: **Settings → Secrets and variables → Actions → New repository secret**, name `YOUTUBE_API_KEY`. The workflow already passes it through to the fetch step. For local runs, set it as an environment variable instead: `YOUTUBE_API_KEY=xxx npm run fetch`.
 
 Without this key, `fetch_songs.js` still runs fine — songs just get `youtube: null` and the surging/popular sections show a "not configured" note.
 
@@ -52,19 +52,20 @@ scripts/fetch_songs.js         pulls feeds, extracts artist/title, filters, rank
 scripts/lib/youtube_stats.js   read-only YouTube Data API client (view/subscriber counts, video search fallback) — needs YOUTUBE_API_KEY
 scripts/build_site.js          renders data/weekly/*.json into public/ (static HTML, split into the 3 categories below)
 scripts/upload_youtube_playlist.js   posts the week's songs as a YouTube playlist (see below)
-scripts/weekly_local_run.js     local one-shot pipeline: fetch -> build -> commit -> push -> deploy -> (optional) YouTube upload
-.github/workflows/weekly-update.yml  GitHub Actions equivalent of the above (currently unused — see below)
+scripts/weekly_local_run.js     local one-shot pipeline (kept as a manual fallback — see below): fetch -> build -> commit -> push -> deploy -> (optional) YouTube upload
+.github/workflows/weekly-update.yml  GitHub Actions equivalent of the above — the active automation path
 ```
 
 **Known limitation:** RSS feeds usually only include a short excerpt of each post, not the full article, so embedded YouTube videos in the original post aren't always present in the feed content. Songs without a detected video show a "search on YouTube" link instead of a playable embed.
 
-## Publishing: local run, not GitHub Actions
+## Publishing: GitHub Actions
 
-GitHub Actions was blocked on this account (jobs stuck in `queued`/`Startup failure` — looked like new-account anti-abuse review, not a problem with this repo's workflow file), so the working setup is:
+GitHub Actions was blocked for a while on this account right after the repo was created (jobs stuck in `queued`/`Startup failure` — looked like new-account anti-abuse review, not a problem with this repo's workflow file). It has since started working, so **Actions is the active automation path**:
 
-- **Hosting:** GitHub Pages, source = **Deploy from a branch** → `gh-pages` (not "GitHub Actions"). Configure this once in **Settings → Pages**.
-- **Publishing:** run `npm run weekly` locally, or set it up in **Windows Task Scheduler** to run weekly (see `README.ja.md`/repo notes for the exact steps already used). This does fetch → build → commit → push → `npm run deploy` (publishes `public/` to the `gh-pages` branch via the `gh-pages` package) → optional YouTube upload.
-- `.github/workflows/weekly-update.yml` is kept in the repo in case Actions becomes usable on this account later, but it isn't the active path right now — don't expect it to run.
+- **Hosting:** GitHub Pages, source = **GitHub Actions** (Settings → Pages). The workflow's `deploy-pages` step handles publishing directly — no `gh-pages` branch involved.
+- **Schedule:** runs every Monday 03:00 UTC (`workflow_dispatch` also available for manual runs from the **Actions** tab).
+- **Required secrets** (Settings → Secrets and variables → Actions): `YOUTUBE_API_KEY` for view/subscriber stats (see above), and optionally `YOUTUBE_CLIENT_ID`/`YOUTUBE_CLIENT_SECRET`/`YOUTUBE_REFRESH_TOKEN` for playlist auto-posting (see below).
+- **Don't run both Actions and the local pipeline on a recurring schedule at the same time** — if you set up Windows Task Scheduler earlier while Actions was blocked, disable/remove that scheduled task now to avoid the two racing to push data/deploy the site. `scripts/weekly_local_run.js` and `npm run deploy` (gh-pages branch) are still fine to use as manual one-off tools (e.g. testing changes before pushing), just not as a second recurring scheduler.
 
 ## Local development
 

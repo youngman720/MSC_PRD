@@ -38,7 +38,7 @@
 1. [Google Cloud Console](https://console.cloud.google.com/)（下記と同じプロジェクトでOK）で **APIs & Services → Library** から「**YouTube Data API v3**」を検索して有効化する。
 2. **APIs & Services → Credentials → + CREATE CREDENTIALS → API key** でAPIキーを作成する。
 3. （推奨）作成したキーを「YouTube Data API v3」のみに制限する。
-4. パイプライン実行時に環境変数として設定する：`YOUTUBE_API_KEY=xxx npm run fetch`（`npm run weekly` を使う場合も同様に、実行環境の環境変数として設定してください。例：タスクスケジューラのアクション設定）。
+4. GitHubリポジトリのSecretsに追加する：**Settings → Secrets and variables → Actions → New repository secret**、名前は `YOUTUBE_API_KEY`。ワークフロー側は既にfetchステップへ渡す設定済みです。ローカルで実行する場合は環境変数として設定してください：`YOUTUBE_API_KEY=xxx npm run fetch`。
 
 このキーがなくても `fetch_songs.js` 自体は問題なく動きます。各曲の `youtube` フィールドが `null` になり、急上昇/いま売れている セクションには未設定の旨が表示されるだけです。
 
@@ -52,19 +52,20 @@ scripts/fetch_songs.js                フィード取得 → アーティスト/
 scripts/lib/youtube_stats.js          読み取り専用のYouTube Data APIクライアント（再生数/登録者数、動画検索フォールバック）。YOUTUBE_API_KEY が必要
 scripts/build_site.js                 data/weekly/*.json を public/（静的HTML、上記4カテゴリのタブUIに分割）に変換
 scripts/upload_youtube_playlist.js    その週の曲をYouTubeプレイリストとして投稿（詳細は下記）
-scripts/weekly_local_run.js           ローカル用一括実行スクリプト：fetch → build → commit → push → deploy → （任意）YouTube投稿
-.github/workflows/weekly-update.yml   GitHub Actions版の同等スクリプト（現在は未使用、下記参照）
+scripts/weekly_local_run.js           ローカル用一括実行スクリプト（手動フォールバックとして保持。下記参照）：fetch → build → commit → push → deploy → （任意）YouTube投稿
+.github/workflows/weekly-update.yml   GitHub Actions版の同等スクリプト（現在の自動実行の本体）
 ```
 
 **既知の制限:** RSSフィードには通常、記事の短い抜粋しか含まれないため、元記事に埋め込まれたYouTube動画がフィードの内容に含まれないことがあります。動画が検出できなかった曲は「YouTubeで検索」リンクの表示になります。
 
-## 公開方法について：GitHub ActionsではなくローカルPCから実行
+## 公開方法：GitHub Actions
 
-このGitHubアカウントではActionsの実行がブロックされてしまったため（`queued`のまま進まない／`Startup failure` — ワークフローファイル自体の問題ではなく、新規アカウントに対する不正利用防止の審査待ちと思われる）、現在は以下の運用にしています。
+このGitHubアカウントでは一時期Actionsの実行がブロックされていましたが（`queued`のまま進まない／`Startup failure` — ワークフローファイル自体の問題ではなく、新規アカウントに対する不正利用防止の審査待ちだったと思われます）、その後正常に動作するようになったため、**現在はGitHub Actionsが自動実行の本体**です。
 
-- **公開方法:** GitHub Pagesの Source を **Deploy from a branch** → `gh-pages` に設定（**Settings → Pages** で一度だけ設定）。
-- **更新方法:** `npm run weekly` をローカルで実行するか、**Windowsのタスクスケジューラ**で毎週自動実行するように設定。fetch → build → commit → push → `npm run deploy`（`gh-pages` パッケージで `public/` を `gh-pages` ブランチにpublish）→ （任意で）YouTube投稿、まで一括で行います。
-- `.github/workflows/weekly-update.yml` は、将来このアカウントでActionsが使えるようになった場合に備えてリポジトリに残していますが、現時点では使われていません。
+- **公開方法:** GitHub Pagesの Source を **GitHub Actions** に設定（**Settings → Pages**）。ワークフロー内の `deploy-pages` ステップが直接公開まで行うため、`gh-pages` ブランチは使いません。
+- **実行スケジュール:** 毎週月曜03:00 UTCに自動実行（**Actions** タブから `workflow_dispatch` で手動実行も可能）。
+- **必要なSecrets**（Settings → Secrets and variables → Actions）: 再生数/登録者数取得用の `YOUTUBE_API_KEY`（上記参照）。プレイリスト自動投稿を使う場合は追加で `YOUTUBE_CLIENT_ID`/`YOUTUBE_CLIENT_SECRET`/`YOUTUBE_REFRESH_TOKEN`（下記参照）。
+- **ActionsとローカルPCの両方を定期実行しないでください** — Actionsがブロックされていた間にWindowsタスクスケジューラを設定していた場合は、データのpush・サイトのデプロイが競合する（後から実行した方で上書きされる）ため、そのスケジュールタスクは無効化・削除してください。`scripts/weekly_local_run.js` や `npm run deploy`（`gh-pages` ブランチ方式）自体は、変更をpushする前の動作確認など手動での単発利用には引き続き使えます。
 
 ## ローカルでの開発
 
