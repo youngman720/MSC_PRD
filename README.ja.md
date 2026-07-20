@@ -15,15 +15,39 @@
 **50曲という目標について:** `maxSongsPerWeek` は50に設定していますが、これは上限であって保証ではありません。実際の件数はSpincoasterがその期間内に何件の対象記事を出すか次第です。テストでは週15〜20件程度でした。50件に近づけたい場合は、同様の新曲告知フォーマットを持つ日本の音楽メディアを `config/blogs.json` に追加してください（追加する際は、その媒体の見出し形式が `scripts/lib/extract.js` のパターンに合うか要確認、合わなければ新しいパターンの追加が必要です）。
 
 これはあくまでヒューリスティック（経験則）であり、厳密なルールではありません。後からブラッシュアップしたいとのことでしたので、調整しやすい箇所は主に以下の2つです。
-- `config/blogs.json` — ブログの追加・削除、`lookbackDays`・`maxSongsPerWeek`・`excludeKeywords` の変更
+- `config/blogs.json` — ブログの追加・削除、`lookbackDays`・`maxSongsPerWeek`・`excludeKeywords`・`newcomerKeywords`・`popularWithinDays` の変更
 - `scripts/lib/extract.js` — 見出しから「アーティスト名」と「曲名」を抽出する正規表現パターン（日本語の投稿形式向けは `JP_ARTIST_TITLE`/`extractJpArtist`。`ARTIST_TITLE_DASH`/`ARTIST_SHARE_TITLE` は元々の英語ブログ向けパターンで、日本語が含まれる見出しには発動しないようガードしてあります）
+
+## サイト上のカテゴリ分け
+
+1つのリストではなく、3つのセクションに分けて表示しています。
+
+- **🔥 直近1週間で急上昇した曲**：YouTubeの「再生速度」（再生数 ÷ 動画公開からの経過日数）でランキングした、伸びの速さを示す指標です。`YOUTUBE_API_KEY`（下記）が必要で、未設定の場合はその旨のメッセージを表示します。
+- **🌱 注目の若手バンド**：「バンドの結成年」を機械的に取得できる信頼できる無料データソースがないため、代理指標として使っています。記事見出しにデビュー系キーワード（`config/blogs.json` の `newcomerKeywords`。例：デビュー/初シングル/1stアルバム 等）が含まれる投稿を対象にしており、「結成5年以内」を厳密に判定しているわけではありません。
+- **⭐ いま売れているバンド**：YouTube動画の公開日が `popularWithinDays`（デフォルト365日、設定変更可）以内の曲を、再生数の絶対値でランキングしたものです。こちらも `YOUTUBE_API_KEY` が必要です。
+
+**TikTok**についても検討しましたが、公式APIは企業審査が必要で個人利用では実質使えず、スクレイピングは規約違反かつ不安定なため、実際の再生数データの代わりに各曲へTikTok検索リンク（`tiktokUrl`）を付与するだけに留めています。
+
+### YouTubeの統計情報（再生数・登録者数）を有効にする
+
+下記のYouTube投稿用OAuth設定とは別の、もっと簡単な認証情報です。同意画面不要の、読み取り専用のAPIキーだけで動きます。
+
+1. [Google Cloud Console](https://console.cloud.google.com/)（下記と同じプロジェクトでOK）で **APIs & Services → Library** から「**YouTube Data API v3**」を検索して有効化する。
+2. **APIs & Services → Credentials → + CREATE CREDENTIALS → API key** でAPIキーを作成する。
+3. （推奨）作成したキーを「YouTube Data API v3」のみに制限する。
+4. パイプライン実行時に環境変数として設定する：`YOUTUBE_API_KEY=xxx npm run fetch`（`npm run weekly` を使う場合も同様に、実行環境の環境変数として設定してください。例：タスクスケジューラのアクション設定）。
+
+このキーがなくても `fetch_songs.js` 自体は問題なく動きます。各曲の `youtube` フィールドが `null` になり、急上昇/いま売れている セクションには未設定の旨が表示されるだけです。
+
+**クォータについて:** 動画IDが見つからなかった曲1件につきYouTubeの`search`呼び出しが1回発生し、これは100クォータ消費します（無料枠は1日10,000）。1日あたり100件程度までは安全な範囲です。動画/チャンネル情報の取得はまとめて行うためほとんど消費しません。
 
 ## 仕組み
 
 ```
-config/blogs.json                     ブログRSSフィードの一覧と各種設定値（blogs, lookbackDays, maxSongsPerWeek, excludeKeywords）
-scripts/fetch_songs.js                フィード取得 → アーティスト/曲名抽出 → フィルタ → ランキング → data/weekly/<月曜日>.json に書き出し
-scripts/build_site.js                 data/weekly/*.json を public/（静的HTML）に変換
+config/blogs.json                     ブログRSSフィードの一覧と各種設定値（blogs, lookbackDays, maxSongsPerWeek, excludeKeywords, newcomerKeywords, popularWithinDays）
+scripts/fetch_songs.js                フィード取得 → アーティスト/曲名抽出 → フィルタ → ランキング → YouTube統計情報付与 → data/weekly/<月曜日>.json に書き出し
+scripts/lib/youtube_stats.js          読み取り専用のYouTube Data APIクライアント（再生数/登録者数、動画検索フォールバック）。YOUTUBE_API_KEY が必要
+scripts/build_site.js                 data/weekly/*.json を public/（静的HTML、上記3カテゴリに分割）に変換
 scripts/upload_youtube_playlist.js    その週の曲をYouTubeプレイリストとして投稿（詳細は下記）
 scripts/weekly_local_run.js           ローカル用一括実行スクリプト：fetch → build → commit → push → deploy → （任意）YouTube投稿
 .github/workflows/weekly-update.yml   GitHub Actions版の同等スクリプト（現在は未使用、下記参照）

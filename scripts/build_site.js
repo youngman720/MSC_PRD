@@ -25,6 +25,17 @@ function formatWeekLabel(weekOf) {
   return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 }
 
+function formatCount(n) {
+  if (n == null) return null;
+  if (n >= 10000) return `${(n / 10000).toFixed(1)}万`;
+  return n.toLocaleString("en-US");
+}
+
+async function loadConfig() {
+  const raw = await fs.readFile(path.join(ROOT, "config", "blogs.json"), "utf-8");
+  return JSON.parse(raw);
+}
+
 async function loadWeeks() {
   let files = [];
   try {
@@ -59,24 +70,46 @@ function styleBlock() {
   header.site p { color: var(--muted); margin: 0; }
   header.site nav { margin-top: 1rem; font-size: 0.9rem; }
   header.site nav a { color: var(--accent); text-decoration: none; }
+  p.week-label { font-size: 0.95rem; margin: 0 0 1.5rem; color: var(--muted); }
+  section.category { margin-bottom: 2.5rem; }
   h2.week { font-size: 1.2rem; margin: 0 0 1.25rem; color: var(--muted); font-weight: 600; }
+  h2.category-title { font-size: 1.3rem; margin: 0 0 1rem; }
+  p.empty-note { color: var(--muted); font-size: 0.9rem; }
   .song { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; margin-bottom: 1rem; }
   .song h3 { margin: 0 0 0.15rem; font-size: 1.05rem; }
   .song .artist { color: var(--muted); font-size: 0.95rem; margin: 0 0 0.6rem; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 0.7rem; padding: 0.1rem 0.5rem; border-radius: 999px; margin-left: 0.4rem; vertical-align: middle; }
   .song iframe { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 6px; }
-  .sources { font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; }
+  .stats { font-size: 0.8rem; color: var(--muted); margin: 0.5rem 0 0; }
+  .sources { font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem; }
   .sources a { color: inherit; }
   .no-video { font-size: 0.85rem; }
-  .no-video a { color: var(--accent); }
+  .no-video a, .stats a { color: var(--accent); }
   footer { margin-top: 3rem; color: var(--muted); font-size: 0.8rem; }
   `;
 }
 
 function songCard(song) {
-  const artistLine = song.artist ? `<p class="artist">${escapeHtml(song.artist)}</p>` : "";
-  const media = song.youtubeId
-    ? `<iframe src="https://www.youtube-nocookie.com/embed/${escapeHtml(song.youtubeId)}" title="${escapeHtml(song.title)}" allowfullscreen loading="lazy"></iframe>`
+  const artistLine = song.artist
+    ? `<p class="artist">${escapeHtml(song.artist)}${song.newcomer ? '<span class="badge">新人</span>' : ""}</p>`
+    : "";
+  const videoId = song.youtube?.videoId || song.youtubeId;
+  const media = videoId
+    ? `<iframe src="https://www.youtube-nocookie.com/embed/${escapeHtml(videoId)}" title="${escapeHtml(song.title)}" allowfullscreen loading="lazy"></iframe>`
     : `<p class="no-video">No video found yet — <a href="https://www.youtube.com/results?search_query=${encodeURIComponent((song.artist ? song.artist + " " : "") + song.title)}" target="_blank" rel="noopener">search on YouTube</a></p>`;
+
+  const statsParts = [];
+  if (song.youtube) {
+    statsParts.push(`再生数 ${formatCount(song.youtube.viewCount)}回`);
+    if (song.youtube.channelSubscriberCount != null) {
+      statsParts.push(`登録者数 ${formatCount(song.youtube.channelSubscriberCount)}人`);
+    }
+  }
+  if (song.tiktokUrl) {
+    statsParts.push(`<a href="${escapeHtml(song.tiktokUrl)}" target="_blank" rel="noopener">TikTokで検索</a>`);
+  }
+  const stats = statsParts.length ? `<p class="stats">${statsParts.join(" ・ ")}</p>` : "";
+
   const sources = song.sources
     .map((s) => `<a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.blog)}</a>`)
     .join(" · ");
@@ -85,8 +118,55 @@ function songCard(song) {
     <h3>${escapeHtml(song.title)}</h3>
     ${artistLine}
     ${media}
+    ${stats}
     <p class="sources">Spotted on: ${sources}</p>
   </article>`;
+}
+
+function categorize(songs, config, referenceDate) {
+  const withStats = songs.filter((s) => s.youtube);
+  const hasStats = withStats.length > 0;
+
+  const surging = [...withStats]
+    .sort((a, b) => b.youtube.viewVelocity - a.youtube.viewVelocity)
+    .slice(0, 10);
+
+  const newcomers = songs
+    .filter((s) => s.newcomer)
+    .sort((a, b) => new Date(b.firstSeen) - new Date(a.firstSeen))
+    .slice(0, 10);
+
+  const popularWithinDays = config.popularWithinDays ?? 365;
+  const popularCutoff = referenceDate.getTime() - popularWithinDays * 24 * 60 * 60 * 1000;
+  const popular = withStats
+    .filter((s) => new Date(s.youtube.publishedAt).getTime() >= popularCutoff)
+    .sort((a, b) => b.youtube.viewCount - a.youtube.viewCount)
+    .slice(0, 10);
+
+  return { hasStats, surging, newcomers, popular };
+}
+
+function categorySection(title, list, emptyNote) {
+  const body = list.length ? list.map(songCard).join("\n") : `<p class="empty-note">${emptyNote}</p>`;
+  return `<section class="category"><h2 class="category-title">${title}</h2>${body}</section>`;
+}
+
+function weekBody(week, config) {
+  const label = formatWeekLabel(week.weekOf);
+  if (week.songs.length === 0) {
+    return `<h2 class="week">Week of ${label}</h2><p>No qualifying songs found this week.</p>`;
+  }
+
+  const referenceDate = new Date(week.generatedAt);
+  const { hasStats, surging, newcomers, popular } = categorize(week.songs, config, referenceDate);
+  const noStatsNote = "YouTube APIキーが未設定のため、この項目は表示できません（README参照）。";
+
+  return [
+    `<p class="week-label">Week of ${label}</p>`,
+    categorySection("🔥 直近1週間で急上昇した曲", surging, hasStats ? "対象曲がありませんでした。" : noStatsNote),
+    categorySection("🌱 注目の若手バンド", newcomers, "対象曲が見つかりませんでした（デビュー/初シングル等のキーワード検出）。"),
+    categorySection("⭐ いま売れているバンド", popular, hasStats ? "対象曲がありませんでした。" : noStatsNote),
+  ].join("\n");
 }
 
 function pageShell({ title, body, nav }) {
@@ -112,15 +192,8 @@ ${body}
 </html>`;
 }
 
-function weekBody(week) {
-  const label = formatWeekLabel(week.weekOf);
-  if (week.songs.length === 0) {
-    return `<h2 class="week">Week of ${label}</h2><p>No qualifying songs found this week.</p>`;
-  }
-  return `<h2 class="week">Week of ${label}</h2>` + week.songs.map(songCard).join("\n");
-}
-
 async function main() {
+  const config = await loadConfig();
   const weeks = await loadWeeks();
   await fs.rm(OUT_DIR, { recursive: true, force: true });
   await fs.mkdir(path.join(OUT_DIR, "archive"), { recursive: true });
@@ -130,7 +203,7 @@ async function main() {
 
   if (weeks.length > 0) {
     const latest = weeks[0];
-    const html = pageShell({ title: SITE_TITLE, body: weekBody(latest), nav });
+    const html = pageShell({ title: SITE_TITLE, body: weekBody(latest, config), nav });
     await fs.writeFile(path.join(OUT_DIR, "index.html"), html, "utf-8");
   } else {
     const html = pageShell({ title: SITE_TITLE, body: "<p>No data yet. Run the weekly fetch to populate this site.</p>", nav });
@@ -138,7 +211,7 @@ async function main() {
   }
 
   for (const week of weeks) {
-    const html = pageShell({ title: `${SITE_TITLE} – ${week.weekOf}`, body: weekBody(week), nav });
+    const html = pageShell({ title: `${SITE_TITLE} – ${week.weekOf}`, body: weekBody(week, config), nav });
     await fs.writeFile(path.join(OUT_DIR, "archive", `${week.weekOf}.html`), html, "utf-8");
   }
 

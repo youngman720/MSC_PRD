@@ -15,15 +15,39 @@ The site is currently scoped to **Japanese bands only**, sourced from [Spincoast
 **On the 50-song target:** `maxSongsPerWeek` is set to 50, but that's a ceiling, not a guarantee — actual weekly output depends on how many qualifying posts Spincoaster publishes in the lookback window. In testing this has been in the 15–20/week range. To get closer to 50 reliably, add more Japan-focused sources with a similar release-announcement convention to `config/blogs.json` (each new source needs its title format checked against `scripts/lib/extract.js`'s patterns, or a new pattern added).
 
 This is a heuristic, not a strict rule — you said you'd tune it later. The easiest knobs:
-- `config/blogs.json` — add/remove blogs, change `lookbackDays`, `maxSongsPerWeek`, or `excludeKeywords`.
+- `config/blogs.json` — add/remove blogs, change `lookbackDays`, `maxSongsPerWeek`, `excludeKeywords`, `newcomerKeywords`, or `popularWithinDays`.
 - `scripts/lib/extract.js` — the regex patterns that pull "Artist" and "Title" out of post headlines (`JP_ARTIST_TITLE`/`extractJpArtist` for the Japanese convention; `ARTIST_TITLE_DASH`/`ARTIST_SHARE_TITLE` are older English-blog patterns kept for reference but disabled whenever the title contains Japanese script).
+
+## Categories on the site
+
+The page groups songs into three sections instead of one flat list:
+
+- **🔥 直近1週間で急上昇した曲 (surging this week)** — ranked by YouTube "view velocity" (view count ÷ days since the video was published), a proxy for how fast a song is gaining views. Requires `YOUTUBE_API_KEY` (see below); shows a placeholder note if not configured.
+- **🌱 注目の若手バンド (notable young bands)** — there's no reliable free data source for actual band formation date, so this is a proxy: posts whose raw headline contains a debut-ish keyword (`newcomerKeywords` in `config/blogs.json`, e.g. デビュー/初シングル/1stアルバム). This is not a real "formed within 5 years" check.
+- **⭐ いま売れているバンド (currently popular)** — songs whose YouTube video was published within `popularWithinDays` (365, configurable), ranked by absolute view count. Also requires `YOUTUBE_API_KEY`.
+
+**TikTok** was considered as a data source too, but there's no practical free/legitimate API access for it (official API requires business/app review; scraping would violate ToS and break constantly), so each song instead gets a plain TikTok search link (`tiktokUrl` field) rather than real view-count data.
+
+### Enabling YouTube stats (view count / subscriber count)
+
+This is a separate, simpler credential from the YouTube *upload* OAuth setup below — just a plain API key, read-only, no consent screen:
+
+1. In [Google Cloud Console](https://console.cloud.google.com/) (same project as below is fine), go to **APIs & Services → Library**, search **YouTube Data API v3**, and enable it.
+2. **APIs & Services → Credentials → + Create Credentials → API key**.
+3. (Recommended) Restrict the key to "YouTube Data API v3" only.
+4. Set it as an environment variable before running the pipeline: `YOUTUBE_API_KEY=xxx npm run fetch` (or add it wherever `npm run weekly` picks up environment variables, e.g. a Task Scheduler action's environment).
+
+Without this key, `fetch_songs.js` still runs fine — songs just get `youtube: null` and the surging/popular sections show a "not configured" note.
+
+**Quota note:** each song without an embedded video ID triggers one YouTube `search` call (100 quota units; free daily quota is 10,000), so up to ~100 such songs/day is safe. Video/channel stats lookups are batched and cost far less.
 
 ## How it works
 
 ```
-config/blogs.json              curated blog RSS feeds + tuning knobs (blogs, lookbackDays, maxSongsPerWeek, excludeKeywords)
-scripts/fetch_songs.js         pulls feeds, extracts artist/title, filters, ranks, writes data/weekly/<monday>.json
-scripts/build_site.js          renders data/weekly/*.json into public/ (static HTML)
+config/blogs.json              curated blog RSS feeds + tuning knobs (blogs, lookbackDays, maxSongsPerWeek, excludeKeywords, newcomerKeywords, popularWithinDays)
+scripts/fetch_songs.js         pulls feeds, extracts artist/title, filters, ranks, enriches with YouTube stats, writes data/weekly/<monday>.json
+scripts/lib/youtube_stats.js   read-only YouTube Data API client (view/subscriber counts, video search fallback) — needs YOUTUBE_API_KEY
+scripts/build_site.js          renders data/weekly/*.json into public/ (static HTML, split into the 3 categories below)
 scripts/upload_youtube_playlist.js   posts the week's songs as a YouTube playlist (see below)
 scripts/weekly_local_run.js     local one-shot pipeline: fetch -> build -> commit -> push -> deploy -> (optional) YouTube upload
 .github/workflows/weekly-update.yml  GitHub Actions equivalent of the above (currently unused — see below)

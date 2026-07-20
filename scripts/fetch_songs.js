@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import Parser from "rss-parser";
 import { parseArtistTitle, extractYoutubeId, dedupeKey, isExcludedByKeyword } from "./lib/extract.js";
+import { createYoutubeStatsClient } from "./lib/youtube_stats.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -87,18 +88,22 @@ async function main() {
       const html = item["content:encoded"] || item.content || item.contentSnippet || "";
       const youtubeId = extractYoutubeId(html);
 
+      const isNewcomer = isExcludedByKeyword(title, config.newcomerKeywords);
+
       if (!groups.has(key)) {
         groups.set(key, {
           artist: parsed.artist,
           title: parsed.title,
           firstSeen: pubDate,
           youtubeId,
+          newcomer: false,
           sources: new Map(),
         });
       }
       const group = groups.get(key);
       if (pubDate < group.firstSeen) group.firstSeen = pubDate;
       if (!group.youtubeId && youtubeId) group.youtubeId = youtubeId;
+      if (isNewcomer) group.newcomer = true;
       if (!group.sources.has(blog.name)) {
         group.sources.set(blog.name, item.link || blog.homepage);
         usedBlogs.add(blog.name);
@@ -112,6 +117,10 @@ async function main() {
       title: g.title,
       firstSeen: g.firstSeen.toISOString(),
       youtubeId: g.youtubeId,
+      newcomer: g.newcomer,
+      tiktokUrl: `https://www.tiktok.com/search?q=${encodeURIComponent(
+        [g.artist, g.title].filter(Boolean).join(" ")
+      )}`,
       sources: Array.from(g.sources.entries()).map(([blog, url]) => ({ blog, url })),
     }))
     .sort((a, b) => {
@@ -119,6 +128,15 @@ async function main() {
       return new Date(b.firstSeen) - new Date(a.firstSeen);
     })
     .slice(0, config.maxSongsPerWeek);
+
+  const youtubeStats = createYoutubeStatsClient(process.env.YOUTUBE_API_KEY);
+  if (youtubeStats) {
+    console.log("Fetching YouTube stats (views/subscribers)...");
+    await youtubeStats.enrichSongs(songs, now);
+  } else {
+    console.log("[skip] YOUTUBE_API_KEY not set — songs will have no view/subscriber stats.");
+    for (const song of songs) song.youtube = null;
+  }
 
   const weekOf = isoDate(mostRecentMonday(now));
   const output = {
