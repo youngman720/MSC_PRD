@@ -21,14 +21,17 @@
   header.site nav { margin-top: 1rem; font-size: 0.9rem; }
   header.site nav a { color: var(--accent); text-decoration: none; }
   p.week-label { font-size: 0.95rem; margin: 0 0 1.5rem; color: var(--muted); }
-  section.category { margin-bottom: 2.5rem; }
   h2.week { font-size: 1.2rem; margin: 0 0 1.25rem; color: var(--muted); font-weight: 600; }
-  h2.category-title { font-size: 1.3rem; margin: 0 0 1rem; }
   p.empty-note { color: var(--muted); font-size: 0.9rem; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem; }
+  .tab-btn { font: inherit; cursor: pointer; background: transparent; border: 1px solid var(--border); color: var(--fg); padding: 0.4rem 0.9rem; border-radius: 999px; font-size: 0.85rem; }
+  .tab-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .tab-panel[hidden] { display: none; }
   .song { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; margin-bottom: 1rem; }
   .song h3 { margin: 0 0 0.15rem; font-size: 1.05rem; }
   .song .artist { color: var(--muted); font-size: 0.95rem; margin: 0 0 0.6rem; }
   .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 0.7rem; padding: 0.1rem 0.5rem; border-radius: 999px; margin-left: 0.4rem; vertical-align: middle; }
+  .badge-sns { background: #4a7fd6; }
   .song iframe { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 6px; }
   .stats { font-size: 0.8rem; color: var(--muted); margin: 0.5rem 0 0; }
   .sources { font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem; }
@@ -46,39 +49,8 @@
   <nav><a href="./">Latest</a> · <a href="./archive/">Archive</a></nav>
 </header>
 <p class="week-label">Week of July 20, 2026</p>
-<section class="category"><h2 class="category-title">🔥 直近1週間で急上昇した曲</h2>
-  <article class="song">
-    <h3>motion</h3>
-    <p class="artist">DURDN</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/A1iNIRV1pno" title="motion" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 384.3万回 ・ 登録者数 21.2万人 ・ <a href="https://www.tiktok.com/search?q=DURDN%20motion" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/durdn-motion" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>Summer Time</h3>
-    <p class="artist">Manaka</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/tk0q6VXlw68" title="Summer Time" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 33.9万回 ・ 登録者数 4.0万人 ・ <a href="https://www.tiktok.com/search?q=Manaka%20Summer%20Time" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/manaka-summer-time-ft-dada" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>Mooove Bitch</h3>
-    <p class="artist">3Li¥en</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/TCeUEeTcjQU" title="Mooove Bitch" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 29.8万回 ・ 登録者数 2.3万人 ・ <a href="https://www.tiktok.com/search?q=3Li%C2%A5en%20Mooove%20Bitch" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/3liyen-mooove-bitch-feat-anarchy" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>The Bird</h3>
-    <p class="artist">luvis<span class="badge">新人</span></p>
-    <iframe src="https://www.youtube-nocookie.com/embed/-QRErM9VXXs" title="The Bird" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 2.2万回 ・ 登録者数 7,850人 ・ <a href="https://www.tiktok.com/search?q=luvis%20The%20Bird" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/luvis-the-bird" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
+<div class="tabs" role="tablist"><button type="button" class="tab-btn active" data-tab="surging" role="tab" aria-selected="true">🔥 急上昇</button><button type="button" class="tab-btn" data-tab="youth" role="tab" aria-selected="false">🎓 大学生世代に人気</button><button type="button" class="tab-btn" data-tab="newcomer" role="tab" aria-selected="false">🌱 若手バンド</button><button type="button" class="tab-btn" data-tab="popular" role="tab" aria-selected="false">⭐ いま売れている</button></div>
+<div class="tab-panel" id="panel-surging" role="tabpanel" >
   <article class="song">
     <h3>夜だけのフレンド</h3>
     <p class="artist">Sad Kid Yaz</p>
@@ -88,18 +60,10 @@
   </article>
 
   <article class="song">
-    <h3>親父が言うとった</h3>
-    <p class="artist">PM Kenobi</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/nAWIOZB6p-0" title="親父が言うとった" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 44.5万回 ・ 登録者数 1.2万人 ・ <a href="https://www.tiktok.com/search?q=PM%20Kenobi%20%E8%A6%AA%E7%88%B6%E3%81%8C%E8%A8%80%E3%81%86%E3%81%A8%E3%81%A3%E3%81%9F" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/pm-kenobi-my-dad-said" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
     <h3>I got new shoes</h3>
     <p class="artist">in-d × ziproom</p>
     <iframe src="https://www.youtube-nocookie.com/embed/NzP2-SCJ6ro" title="I got new shoes" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 2,228回 ・ 登録者数 13.4万人 ・ <a href="https://www.tiktok.com/search?q=in-d%20%C3%97%20ziproom%20I%20got%20new%20shoes" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="stats">再生数 2,300回 ・ 登録者数 13.4万人 ・ <a href="https://www.tiktok.com/search?q=in-d%20%C3%97%20ziproom%20I%20got%20new%20shoes" target="_blank" rel="noopener">TikTokで検索</a></p>
     <p class="sources">Spotted on: <a href="https://spincoaster.com/news/in-d-ziproom-i-got-new-shoes" target="_blank" rel="noopener">Spincoaster</a></p>
   </article>
 
@@ -107,7 +71,7 @@
     <h3>SWEAT</h3>
     <p class="artist">lili maua</p>
     <iframe src="https://www.youtube-nocookie.com/embed/klb8oQ8R0cw" title="SWEAT" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 6,397回 ・ 登録者数 3,170人 ・ <a href="https://www.tiktok.com/search?q=lili%20maua%20SWEAT" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="stats">再生数 6,453回 ・ 登録者数 3,170人 ・ <a href="https://www.tiktok.com/search?q=lili%20maua%20SWEAT" target="_blank" rel="noopener">TikTokで検索</a></p>
     <p class="sources">Spotted on: <a href="https://spincoaster.com/news/lili-maua-sweat-prod-matt-cab" target="_blank" rel="noopener">Spincoaster</a></p>
   </article>
 
@@ -115,7 +79,7 @@
     <h3>Globster</h3>
     <p class="artist">cero</p>
     <iframe src="https://www.youtube-nocookie.com/embed/Er4T2Laje6I" title="Globster" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 3,517回 ・ 登録者数 2,080人 ・ <a href="https://www.tiktok.com/search?q=cero%20Globster" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="stats">再生数 3,539回 ・ 登録者数 2,080人 ・ <a href="https://www.tiktok.com/search?q=cero%20Globster" target="_blank" rel="noopener">TikTokで検索</a></p>
     <p class="sources">Spotted on: <a href="https://spincoaster.com/news/cero-globster" target="_blank" rel="noopener">Spincoaster</a></p>
   </article>
 
@@ -125,96 +89,111 @@
     <iframe src="https://www.youtube-nocookie.com/embed/Z9He4RkHsrQ" title="MUBÖ" allowfullscreen loading="lazy"></iframe>
     <p class="stats">再生数 2,162回 ・ 登録者数 8,610人 ・ <a href="https://www.tiktok.com/search?q=Doona%20MUB%C3%96" target="_blank" rel="noopener">TikTokで検索</a></p>
     <p class="sources">Spotted on: <a href="https://spincoaster.com/news/doona-mubo" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article></section>
-<section class="category"><h2 class="category-title">🌱 注目の若手バンド</h2>
-  <article class="song">
-    <h3>The Bird</h3>
-    <p class="artist">luvis<span class="badge">新人</span></p>
-    <iframe src="https://www.youtube-nocookie.com/embed/-QRErM9VXXs" title="The Bird" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 2.2万回 ・ 登録者数 7,850人 ・ <a href="https://www.tiktok.com/search?q=luvis%20The%20Bird" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/luvis-the-bird" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article></section>
-<section class="category"><h2 class="category-title">⭐ いま売れているバンド</h2>
-  <article class="song">
-    <h3>motion</h3>
-    <p class="artist">DURDN</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/A1iNIRV1pno" title="motion" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 384.3万回 ・ 登録者数 21.2万人 ・ <a href="https://www.tiktok.com/search?q=DURDN%20motion" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/durdn-motion" target="_blank" rel="noopener">Spincoaster</a></p>
   </article>
 
   <article class="song">
-    <h3>親父が言うとった</h3>
-    <p class="artist">PM Kenobi</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/nAWIOZB6p-0" title="親父が言うとった" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 44.5万回 ・ 登録者数 1.2万人 ・ <a href="https://www.tiktok.com/search?q=PM%20Kenobi%20%E8%A6%AA%E7%88%B6%E3%81%8C%E8%A8%80%E3%81%86%E3%81%A8%E3%81%A3%E3%81%9F" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/pm-kenobi-my-dad-said" target="_blank" rel="noopener">Spincoaster</a></p>
+    <h3>熱中症</h3>
+    <p class="artist">SUKISHA</p>
+    <iframe src="https://www.youtube-nocookie.com/embed/8Z37kjdcV0E" title="熱中症" allowfullscreen loading="lazy"></iframe>
+    <p class="stats">再生数 1,703回 ・ 登録者数 699人 ・ <a href="https://www.tiktok.com/search?q=SUKISHA%20%E7%86%B1%E4%B8%AD%E7%97%87" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/sukisha-necchushou-zettakun" target="_blank" rel="noopener">Spincoaster</a></p>
   </article>
 
   <article class="song">
-    <h3>Summer Time</h3>
-    <p class="artist">Manaka</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/tk0q6VXlw68" title="Summer Time" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 33.9万回 ・ 登録者数 4.0万人 ・ <a href="https://www.tiktok.com/search?q=Manaka%20Summer%20Time" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/manaka-summer-time-ft-dada" target="_blank" rel="noopener">Spincoaster</a></p>
+    <h3>それはいつでもいい</h3>
+    <p class="artist">諭吉佳作/men</p>
+    <iframe src="https://www.youtube-nocookie.com/embed/1M7tpRo5GE0" title="それはいつでもいい" allowfullscreen loading="lazy"></iframe>
+    <p class="stats">再生数 671回 ・ 登録者数 9,800人 ・ <a href="https://www.tiktok.com/search?q=%E8%AB%AD%E5%90%89%E4%BD%B3%E4%BD%9C%2Fmen%20%E3%81%9D%E3%82%8C%E3%81%AF%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E3%81%84%E3%81%84" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/yukichikasakumen-sorehaitsudemoii" target="_blank" rel="noopener">Spincoaster</a></p>
+  </article>
+
+  <article class="song">
+    <h3>One Step</h3>
+    <p class="artist">SANDEI</p>
+    <iframe src="https://www.youtube-nocookie.com/embed/l-5KjK4wxJY" title="One Step" allowfullscreen loading="lazy"></iframe>
+    <p class="stats">再生数 438回 ・ 登録者数 758人 ・ <a href="https://www.tiktok.com/search?q=SANDEI%20One%20Step" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/sandei-one-step" target="_blank" rel="noopener">Spincoaster</a></p>
+  </article>
+
+  <article class="song">
+    <h3>EXTRA 15</h3>
+    <p class="artist">Lil’ Leise But Gold</p>
+    <iframe src="https://www.youtube-nocookie.com/embed/2-OJbwF777U" title="EXTRA 15" allowfullscreen loading="lazy"></iframe>
+    <p class="stats">再生数 340回 ・ 登録者数 904人 ・ <a href="https://www.tiktok.com/search?q=Lil%E2%80%99%20Leise%20But%20Gold%20EXTRA%2015" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/lil-leise-but-gold-extra-15" target="_blank" rel="noopener">Spincoaster</a></p>
+  </article></div>
+<div class="tab-panel" id="panel-youth" role="tabpanel" hidden>
+  <article class="song">
+    <h3>somehow</h3>
+    <p class="artist">Lilhana</p>
+    <iframe src="https://www.youtube-nocookie.com/embed/gA570sz6qx0" title="somehow" allowfullscreen loading="lazy"></iframe>
+    <p class="stats">再生数 430回 ・ 登録者数 14人 ・ <a href="https://www.tiktok.com/search?q=Lilhana%20somehow" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/lilhana-somehow-ft-agul" target="_blank" rel="noopener">Spincoaster</a></p>
   </article>
 
   <article class="song">
     <h3>Mooove Bitch</h3>
     <p class="artist">3Li¥en</p>
     <iframe src="https://www.youtube-nocookie.com/embed/TCeUEeTcjQU" title="Mooove Bitch" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 29.8万回 ・ 登録者数 2.3万人 ・ <a href="https://www.tiktok.com/search?q=3Li%C2%A5en%20Mooove%20Bitch" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="stats">再生数 29.9万回 ・ 登録者数 2.3万人 ・ <a href="https://www.tiktok.com/search?q=3Li%C2%A5en%20Mooove%20Bitch" target="_blank" rel="noopener">TikTokで検索</a></p>
     <p class="sources">Spotted on: <a href="https://spincoaster.com/news/3liyen-mooove-bitch-feat-anarchy" target="_blank" rel="noopener">Spincoaster</a></p>
   </article>
 
   <article class="song">
-    <h3>夜だけのフレンド</h3>
-    <p class="artist">Sad Kid Yaz</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/6o_F-vf0V1E" title="夜だけのフレンド" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 2.5万回 ・ 登録者数 1.2万人 ・ <a href="https://www.tiktok.com/search?q=Sad%20Kid%20Yaz%20%E5%A4%9C%E3%81%A0%E3%81%91%E3%81%AE%E3%83%95%E3%83%AC%E3%83%B3%E3%83%89" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/sad-kid-yaz-yoruakenofriends" target="_blank" rel="noopener">Spincoaster</a></p>
+    <h3>Summer Time</h3>
+    <p class="artist">Manaka</p>
+    <iframe src="https://www.youtube-nocookie.com/embed/tk0q6VXlw68" title="Summer Time" allowfullscreen loading="lazy"></iframe>
+    <p class="stats">再生数 34.1万回 ・ 登録者数 4.0万人 ・ <a href="https://www.tiktok.com/search?q=Manaka%20Summer%20Time" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/manaka-summer-time-ft-dada" target="_blank" rel="noopener">Spincoaster</a></p>
   </article>
 
+  <article class="song">
+    <h3>motion</h3>
+    <p class="artist">DURDN</p>
+    <iframe src="https://www.youtube-nocookie.com/embed/A1iNIRV1pno" title="motion" allowfullscreen loading="lazy"></iframe>
+    <p class="stats">再生数 386.5万回 ・ 登録者数 21.2万人 ・ <a href="https://www.tiktok.com/search?q=DURDN%20motion" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/durdn-motion" target="_blank" rel="noopener">Spincoaster</a></p>
+  </article>
+
+  <article class="song">
+    <h3>TRAVEL</h3>
+    <p class="artist">otuyyuto</p>
+    <iframe src="https://www.youtube-nocookie.com/embed/igMQfd0b7ns" title="TRAVEL" allowfullscreen loading="lazy"></iframe>
+    <p class="stats">再生数 123回 ・ 登録者数 22人 ・ <a href="https://www.tiktok.com/search?q=otuyyuto%20TRAVEL" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/otuyyuto-travel-ft-only-u" target="_blank" rel="noopener">Spincoaster</a></p>
+  </article>
+
+  <article class="song">
+    <h3>親父が言うとった</h3>
+    <p class="artist">PM Kenobi<span class="badge badge-sns">SNSで話題</span></p>
+    <iframe src="https://www.youtube-nocookie.com/embed/nAWIOZB6p-0" title="親父が言うとった" allowfullscreen loading="lazy"></iframe>
+    <p class="stats">再生数 44.5万回 ・ 登録者数 1.2万人 ・ <a href="https://www.tiktok.com/search?q=PM%20Kenobi%20%E8%A6%AA%E7%88%B6%E3%81%8C%E8%A8%80%E3%81%86%E3%81%A8%E3%81%A3%E3%81%9F" target="_blank" rel="noopener">TikTokで検索</a></p>
+    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/pm-kenobi-my-dad-said" target="_blank" rel="noopener">Spincoaster</a></p>
+  </article></div>
+<div class="tab-panel" id="panel-newcomer" role="tabpanel" hidden>
   <article class="song">
     <h3>The Bird</h3>
     <p class="artist">luvis<span class="badge">新人</span></p>
     <iframe src="https://www.youtube-nocookie.com/embed/-QRErM9VXXs" title="The Bird" allowfullscreen loading="lazy"></iframe>
     <p class="stats">再生数 2.2万回 ・ 登録者数 7,850人 ・ <a href="https://www.tiktok.com/search?q=luvis%20The%20Bird" target="_blank" rel="noopener">TikTokで検索</a></p>
     <p class="sources">Spotted on: <a href="https://spincoaster.com/news/luvis-the-bird" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>SWEAT</h3>
-    <p class="artist">lili maua</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/klb8oQ8R0cw" title="SWEAT" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 6,397回 ・ 登録者数 3,170人 ・ <a href="https://www.tiktok.com/search?q=lili%20maua%20SWEAT" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/lili-maua-sweat-prod-matt-cab" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>Globster</h3>
-    <p class="artist">cero</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/Er4T2Laje6I" title="Globster" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 3,517回 ・ 登録者数 2,080人 ・ <a href="https://www.tiktok.com/search?q=cero%20Globster" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/cero-globster" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>I got new shoes</h3>
-    <p class="artist">in-d × ziproom</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/NzP2-SCJ6ro" title="I got new shoes" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 2,228回 ・ 登録者数 13.4万人 ・ <a href="https://www.tiktok.com/search?q=in-d%20%C3%97%20ziproom%20I%20got%20new%20shoes" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/in-d-ziproom-i-got-new-shoes" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article>
-
-  <article class="song">
-    <h3>MUBÖ</h3>
-    <p class="artist">Doona</p>
-    <iframe src="https://www.youtube-nocookie.com/embed/Z9He4RkHsrQ" title="MUBÖ" allowfullscreen loading="lazy"></iframe>
-    <p class="stats">再生数 2,162回 ・ 登録者数 8,610人 ・ <a href="https://www.tiktok.com/search?q=Doona%20MUB%C3%96" target="_blank" rel="noopener">TikTokで検索</a></p>
-    <p class="sources">Spotted on: <a href="https://spincoaster.com/news/doona-mubo" target="_blank" rel="noopener">Spincoaster</a></p>
-  </article></section>
+  </article></div>
+<div class="tab-panel" id="panel-popular" role="tabpanel" hidden><p class="empty-note">対象曲がありませんでした。</p></div>
 <footer>Auto-generated weekly. Song picks are curated from independent music blog coverage, not label promotion.</footer>
 </div>
+<script>
+document.querySelectorAll('.tabs').forEach(function (tabs) {
+  tabs.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      tabs.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      var panels = tabs.parentElement.querySelectorAll('.tab-panel');
+      panels.forEach(function (p) { p.hidden = true; });
+      document.getElementById('panel-' + btn.dataset.tab).hidden = false;
+    });
+  });
+});
+</script>
 </body>
 </html>

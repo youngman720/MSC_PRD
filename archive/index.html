@@ -21,14 +21,17 @@
   header.site nav { margin-top: 1rem; font-size: 0.9rem; }
   header.site nav a { color: var(--accent); text-decoration: none; }
   p.week-label { font-size: 0.95rem; margin: 0 0 1.5rem; color: var(--muted); }
-  section.category { margin-bottom: 2.5rem; }
   h2.week { font-size: 1.2rem; margin: 0 0 1.25rem; color: var(--muted); font-weight: 600; }
-  h2.category-title { font-size: 1.3rem; margin: 0 0 1rem; }
   p.empty-note { color: var(--muted); font-size: 0.9rem; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem; }
+  .tab-btn { font: inherit; cursor: pointer; background: transparent; border: 1px solid var(--border); color: var(--fg); padding: 0.4rem 0.9rem; border-radius: 999px; font-size: 0.85rem; }
+  .tab-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .tab-panel[hidden] { display: none; }
   .song { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; margin-bottom: 1rem; }
   .song h3 { margin: 0 0 0.15rem; font-size: 1.05rem; }
   .song .artist { color: var(--muted); font-size: 0.95rem; margin: 0 0 0.6rem; }
   .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 0.7rem; padding: 0.1rem 0.5rem; border-radius: 999px; margin-left: 0.4rem; vertical-align: middle; }
+  .badge-sns { background: #4a7fd6; }
   .song iframe { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 6px; }
   .stats { font-size: 0.8rem; color: var(--muted); margin: 0.5rem 0 0; }
   .sources { font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem; }
@@ -48,5 +51,19 @@
 <h2 class="week">All weeks</h2><ul><li><a href="./2026-07-20.html">Week of July 20, 2026</a> (16 songs)</li></ul>
 <footer>Auto-generated weekly. Song picks are curated from independent music blog coverage, not label promotion.</footer>
 </div>
+<script>
+document.querySelectorAll('.tabs').forEach(function (tabs) {
+  tabs.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      tabs.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      var panels = tabs.parentElement.querySelectorAll('.tab-panel');
+      panels.forEach(function (p) { p.hidden = true; });
+      document.getElementById('panel-' + btn.dataset.tab).hidden = false;
+    });
+  });
+});
+</script>
 </body>
 </html>
