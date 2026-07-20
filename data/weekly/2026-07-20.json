@@ -1,17 +1,45 @@
 {
   "weekOf": "2026-07-20",
-  "generatedAt": "2026-07-20T13:10:56.293Z",
+  "generatedAt": "2026-07-20T13:20:57.535Z",
   "blogsChecked": [
     "Spincoaster",
     "ROCKIN'ON JAPAN",
-    "Gekirock"
+    "Gekirock",
+    "BARKS"
   ],
   "blogsWithResults": [
     "Spincoaster",
     "ROCKIN'ON JAPAN",
-    "Gekirock"
+    "Gekirock",
+    "BARKS"
   ],
   "songs": [
+    {
+      "artist": "め組",
+      "title": "二の舞",
+      "firstSeen": "2026-07-08T12:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%82%81%E7%B5%84%20%E4%BA%8C%E3%81%AE%E8%88%9E",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215461"
+        },
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1078946"
+        }
+      ],
+      "youtube": {
+        "videoId": "5bdIoJSvChI",
+        "viewCount": 87945,
+        "publishedAt": "2026-07-08T12:00:20Z",
+        "channelSubscriberCount": 6450,
+        "viewVelocity": 7294.71408689204
+      }
+    },
     {
       "artist": "Verde/",
       "title": "Reimei/",
@@ -28,10 +56,10 @@
       ],
       "youtube": {
         "videoId": "W38JI3w4ymM",
-        "viewCount": 2650,
+        "viewCount": 2657,
         "publishedAt": "2026-07-19T13:00:06Z",
         "channelSubscriberCount": 10700,
-        "viewVelocity": 2630.20366858501
+        "viewVelocity": 2619.0619479738716
       }
     },
     {
@@ -50,10 +78,10 @@
       ],
       "youtube": {
         "videoId": "0luBJ94BGQM",
-        "viewCount": 83123,
+        "viewCount": 83326,
         "publishedAt": "2026-07-17T12:00:06Z",
         "channelSubscriberCount": 246000,
-        "viewVelocity": 27260.653682400723
+        "viewVelocity": 27265.004916559188
       }
     },
     {
@@ -75,7 +103,7 @@
         "viewCount": 1703,
         "publishedAt": "2026-07-09T10:01:31Z",
         "channelSubscriberCount": 699,
-        "viewVelocity": 152.9886772489304
+        "viewVelocity": 152.8930970152656
       }
     },
     {
@@ -94,10 +122,10 @@
       ],
       "youtube": {
         "videoId": "58-0cxKLkww",
-        "viewCount": 49331,
+        "viewCount": 49413,
         "publishedAt": "2026-07-15T11:00:27Z",
         "channelSubscriberCount": 3,
-        "viewVelocity": 9690.574201932475
+        "viewVelocity": 9693.431451114078
       }
     },
     {
@@ -119,7 +147,7 @@
         "viewCount": 438,
         "publishedAt": "2026-07-15T14:24:28Z",
         "channelSubscriberCount": 758,
-        "viewVelocity": 88.503826272905
+        "viewVelocity": 88.37955369460396
       }
     },
     {
@@ -141,7 +169,7 @@
         "viewCount": 671,
         "publishedAt": "2026-07-15T11:00:36Z",
         "channelSubscriberCount": 9800,
-        "viewVelocity": 131.81383606599525
+        "viewVelocity": 131.6338902456257
       }
     },
     {
@@ -160,10 +188,10 @@
       ],
       "youtube": {
         "videoId": "klb8oQ8R0cw",
-        "viewCount": 6541,
+        "viewCount": 6561,
         "publishedAt": "2026-07-15T11:00:22Z",
         "channelSubscriberCount": 3170,
-        "viewVelocity": 1284.8984469703457
+        "viewVelocity": 1287.0678111837638
       }
     },
     {
@@ -185,7 +213,7 @@
         "viewCount": 2172,
         "publishedAt": "2026-07-15T11:00:34Z",
         "channelSubscriberCount": 8610,
-        "viewVelocity": 426.6741431408071
+        "viewVelocity": 426.09167105477235
       }
     },
     {
@@ -204,10 +232,10 @@
       ],
       "youtube": {
         "videoId": "-QRErM9VXXs",
-        "viewCount": 21872,
+        "viewCount": 21954,
         "publishedAt": "2026-07-15T10:00:38Z",
         "channelSubscriberCount": 7850,
-        "viewVelocity": 4261.756517113289
+        "viewVelocity": 4271.941773913168
       }
     },
     {
@@ -229,7 +257,7 @@
         "viewCount": 430,
         "publishedAt": "2026-07-14T10:03:45Z",
         "channelSubscriberCount": 14,
-        "viewVelocity": 70.14691256167902
+        "viewVelocity": 70.06737147881731
       }
     },
     {
@@ -251,7 +279,7 @@
         "viewCount": 340,
         "publishedAt": "2026-07-14T10:04:01Z",
         "channelSubscriberCount": 904,
-        "viewVelocity": 55.46667626155576
+        "viewVelocity": 55.403779514345025
       }
     },
     {
@@ -270,10 +298,10 @@
       ],
       "youtube": {
         "videoId": "A1iNIRV1pno",
-        "viewCount": 3881349,
+        "viewCount": 3884099,
         "publishedAt": "2026-07-05T15:01:11Z",
         "channelSubscriberCount": 212000,
-        "viewVelocity": 260084.05355682925
+        "viewVelocity": 260147.02052684606
       }
     },
     {
@@ -292,10 +320,10 @@
       ],
       "youtube": {
         "videoId": "igMQfd0b7ns",
-        "viewCount": 123,
+        "viewCount": 124,
         "publishedAt": "2026-07-14T10:04:28Z",
         "channelSubscriberCount": 22,
-        "viewVelocity": 20.066908843092573
+        "viewVelocity": 20.207113292041875
       }
     },
     {
@@ -314,10 +342,10 @@
       ],
       "youtube": {
         "videoId": "nAWIOZB6p-0",
-        "viewCount": 445018,
+        "viewCount": 445026,
         "publishedAt": "2026-02-11T11:01:28Z",
         "channelSubscriberCount": 12000,
-        "viewVelocity": 2797.2735528360427
+        "viewVelocity": 2797.2014852861375
       }
     },
     {
@@ -336,10 +364,10 @@
       ],
       "youtube": {
         "videoId": "Er4T2Laje6I",
-        "viewCount": 3567,
+        "viewCount": 3579,
         "publishedAt": "2026-07-14T10:02:25Z",
         "channelSubscriberCount": 2080,
-        "viewVelocity": 581.8052287588288
+        "viewVelocity": 583.100680431776
       }
     },
     {
@@ -358,10 +386,10 @@
       ],
       "youtube": {
         "videoId": "tk0q6VXlw68",
-        "viewCount": 342000,
+        "viewCount": 342224,
         "publishedAt": "2026-07-14T11:00:06Z",
         "channelSubscriberCount": 40200,
-        "viewVelocity": 56149.70745488972
+        "viewVelocity": 56122.36395970641
       }
     },
     {
@@ -380,10 +408,10 @@
       ],
       "youtube": {
         "videoId": "6o_F-vf0V1E",
-        "viewCount": 24822,
+        "viewCount": 24841,
         "publishedAt": "2026-07-14T10:00:06Z",
         "channelSubscriberCount": 11900,
-        "viewVelocity": 4047.5976484927605
+        "viewVelocity": 4046.104607841318
       }
     },
     {
@@ -402,10 +430,10 @@
       ],
       "youtube": {
         "videoId": "NzP2-SCJ6ro",
-        "viewCount": 2369,
+        "viewCount": 2380,
         "publishedAt": "2026-07-19T15:00:16Z",
         "channelSubscriberCount": 134000,
-        "viewVelocity": 2369
+        "viewVelocity": 2380
       }
     },
     {
@@ -424,32 +452,10 @@
       ],
       "youtube": {
         "videoId": "TCeUEeTcjQU",
-        "viewCount": 299770,
+        "viewCount": 299974,
         "publishedAt": "2026-07-13T10:00:06Z",
         "channelSubscriberCount": 22900,
-        "viewVelocity": 42028.585291074254
-      }
-    },
-    {
-      "artist": "め組",
-      "title": "二の舞",
-      "firstSeen": "2026-07-08T12:00:00.000Z",
-      "youtubeId": null,
-      "newcomer": false,
-      "snsBuzz": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%82%81%E7%B5%84%20%E4%BA%8C%E3%81%AE%E8%88%9E",
-      "sources": [
-        {
-          "blog": "ROCKIN'ON JAPAN",
-          "url": "https://rockinon.com/news/detail/215461"
-        }
-      ],
-      "youtube": {
-        "videoId": "5bdIoJSvChI",
-        "viewCount": 87893,
-        "publishedAt": "2026-07-08T12:00:20Z",
-        "channelSubscriberCount": 6450,
-        "viewVelocity": 7294.611389691484
+        "viewVelocity": 42016.193734526416
       }
     }
   ]

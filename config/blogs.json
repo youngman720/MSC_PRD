@@ -1,5 +1,5 @@
 {
-  "_comment": "Japanese-band-only mode. Sources: Spincoaster (indie/R&B/hip-hop leaning) and ROCKIN'ON JAPAN's news feed (broader rock scene, including the live-house/college-band circuit) — both use the same “…”-for-songs/『』-for-albums convention. excludeKeywords is a best-effort nationality filter (see README). excludeArtists is a manual safety net for major-label/veteran acts that slip through (either because they still match the release-announcement format, or because the YouTube search fallback occasionally attaches the wrong channel's stats and skews the buzz ratio).",
+  "_comment": "Japanese-band-only mode. Sources: Spincoaster (indie/R&B/hip-hop), ROCKIN'ON JAPAN news (broader rock/live-house scene), Gekirock (rock/metal/visual-kei), BARKS (broad, but only returns ~10 latest items so its net contribution is small/inconsistent). All share a compatible “…”/「…」-for-songs, 『』-for-albums convention. excludeKeywords is a best-effort nationality filter (see README). excludeArtists is a manual safety net for major-label/veteran/idol acts that slip through (either because they still match the release-announcement format, or because the YouTube search fallback occasionally attaches the wrong channel's stats and skews the buzz ratio).",
   "lookbackDays": 21,
   "maxSongsPerWeek": 50,
   "excludeKeywords": [
@@ -19,7 +19,8 @@
   "snsBuzzRatioThreshold": 0.5,
   "excludeArtists": [
     "Ado", "King Gnu", "Mrs. GREEN APPLE", "星野源", "スピッツ", "サカナクション", "My Hair is Bad",
-    "MARILYN MANSON", "GREEN DAY"
+    "MARILYN MANSON", "GREEN DAY",
+    "JO1", "ReoNa", "純烈", "木村拓哉", "BOYNEXTDOOR"
   ],
   "blogs": [
     {
@@ -36,6 +37,11 @@
       "name": "Gekirock",
       "feedUrl": "https://gekirock.com/news/index.xml",
       "homepage": "https://gekirock.com"
+    },
+    {
+      "name": "BARKS",
+      "feedUrl": "https://barks.jp/feed",
+      "homepage": "https://barks.jp"
     }
   ]
 }
