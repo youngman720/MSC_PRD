@@ -4,46 +4,49 @@ A static site that surfaces trending songs from indie-leaning bands, rebuilt aut
 
 (日本語版: [README.ja.md](README.ja.md))
 
-## How "indie-leaning" is defined (v1)
+## How "Japanese indie-leaning band" is defined (v2)
 
-There's no clean API for "indie" as a genre, so this project defines it structurally instead of by tag/genre metadata:
+The site is currently scoped to **Japanese bands only**, sourced from [Spincoaster](https://spincoaster.com/) (`config/blogs.json`), a Japan-based music media outlet with an indie/emerging-artist editorial slant and a very active feed (multiple posts/day).
 
-- A song qualifies only if it was **covered by one of the curated independent-focused music blogs** in `config/blogs.json` (see that file for the current list — Gorilla vs. Bear, So Young Magazine, The Line of Best Fit, Beats Per Minute, Brooklyn Vegan). These were chosen because they focus on emerging/unsigned/small-label acts rather than major-label promotion.
-- "Recently trending" = posted by one of those blogs within the last `lookbackDays` (10, configurable), ranked by:
-  1. Number of distinct blogs that covered it (cross-blog corroboration), then
-  2. Recency.
-- Stereogum was deliberately left out of the default list after testing — its main feed covers general/major-label music news (e.g. Martin Garrix, Leon Bridges, The Killers) too broadly for this filter.
+- A song qualifies if Spincoaster posted about it within the last `lookbackDays` (14, configurable) **and** it used their release-announcement phrasing — a title containing 新曲/ニューシングル/シングル/コラボ曲/楽曲 immediately followed by a curly-quoted (“…”) song title. Spincoaster uses 『』 for album/EP/event names and “…” specifically for song titles, so this reliably filters out tour announcements, festival lineups, and album-only posts.
+- **Nationality filter (heuristic):** Spincoaster covers both Japanese and overseas artists in the same feed, so any post whose raw title contains one of the `excludeKeywords` in `config/blogs.json` (country/city names, "来日", etc.) is treated as non-Japanese and skipped. This is a keyword blocklist, not a real nationality check — it can both over-exclude (e.g. a Japanese artist's post that happens to mention a foreign collaborator's country) and under-exclude (an overseas artist whose post doesn't mention a recognizable place name). Tune the list as you spot misses.
+- Ranked by number of distinct sources, then recency (currently there's only one source, so ranking is effectively by recency until more Japan-focused feeds are added).
 
-This is a heuristic, not a strict rule — you said you'd tune it later. The two easiest knobs:
-- `config/blogs.json` — add/remove blogs, change `lookbackDays` or `maxSongsPerWeek`.
-- `scripts/lib/extract.js` — the regex patterns that pull "Artist" and "Title" out of blog post headlines.
+**On the 50-song target:** `maxSongsPerWeek` is set to 50, but that's a ceiling, not a guarantee — actual weekly output depends on how many qualifying posts Spincoaster publishes in the lookback window. In testing this has been in the 15–20/week range. To get closer to 50 reliably, add more Japan-focused sources with a similar release-announcement convention to `config/blogs.json` (each new source needs its title format checked against `scripts/lib/extract.js`'s patterns, or a new pattern added).
+
+This is a heuristic, not a strict rule — you said you'd tune it later. The easiest knobs:
+- `config/blogs.json` — add/remove blogs, change `lookbackDays`, `maxSongsPerWeek`, or `excludeKeywords`.
+- `scripts/lib/extract.js` — the regex patterns that pull "Artist" and "Title" out of post headlines (`JP_ARTIST_TITLE`/`extractJpArtist` for the Japanese convention; `ARTIST_TITLE_DASH`/`ARTIST_SHARE_TITLE` are older English-blog patterns kept for reference but disabled whenever the title contains Japanese script).
 
 ## How it works
 
 ```
-config/blogs.json              curated blog RSS feeds + tuning knobs
-scripts/fetch_songs.js         pulls feeds, extracts artist/title, ranks, writes data/weekly/<monday>.json
+config/blogs.json              curated blog RSS feeds + tuning knobs (blogs, lookbackDays, maxSongsPerWeek, excludeKeywords)
+scripts/fetch_songs.js         pulls feeds, extracts artist/title, filters, ranks, writes data/weekly/<monday>.json
 scripts/build_site.js          renders data/weekly/*.json into public/ (static HTML)
 scripts/upload_youtube_playlist.js   posts the week's songs as a YouTube playlist (see below)
-.github/workflows/weekly-update.yml  runs the above every Monday, commits data, deploys to Pages
+scripts/weekly_local_run.js     local one-shot pipeline: fetch -> build -> commit -> push -> deploy -> (optional) YouTube upload
+.github/workflows/weekly-update.yml  GitHub Actions equivalent of the above (currently unused — see below)
 ```
 
-Song matching is heuristic (regex over blog post titles like `"Artist – Title"` or `"Artist announce ..., share new single 'Title'"`). Expect some noise — false positives/misses are easiest to fix by adjusting `scripts/lib/extract.js`.
+**Known limitation:** RSS feeds usually only include a short excerpt of each post, not the full article, so embedded YouTube videos in the original post aren't always present in the feed content. Songs without a detected video show a "search on YouTube" link instead of a playable embed.
 
-**Known limitation:** RSS feeds usually only include a short excerpt of each post, not the full article, so embedded YouTube videos in the original post are rarely present in the feed content. Most songs will show a "search on YouTube" link instead of a playable embed. Fetching full article pages to find embeds would fix this but isn't implemented yet.
+## Publishing: local run, not GitHub Actions
 
-## One-time setup
+GitHub Actions was blocked on this account (jobs stuck in `queued`/`Startup failure` — looked like new-account anti-abuse review, not a problem with this repo's workflow file), so the working setup is:
 
-1. Create a GitHub repo and push this project to it.
-2. In the repo, go to **Settings → Pages → Source** and select **GitHub Actions**.
-3. That's it — the workflow runs automatically every Monday (03:00 UTC), or trigger it manually from the **Actions** tab (**Weekly indie update → Run workflow**) to test it immediately.
+- **Hosting:** GitHub Pages, source = **Deploy from a branch** → `gh-pages` (not "GitHub Actions"). Configure this once in **Settings → Pages**.
+- **Publishing:** run `npm run weekly` locally, or set it up in **Windows Task Scheduler** to run weekly (see `README.ja.md`/repo notes for the exact steps already used). This does fetch → build → commit → push → `npm run deploy` (publishes `public/` to the `gh-pages` branch via the `gh-pages` package) → optional YouTube upload.
+- `.github/workflows/weekly-update.yml` is kept in the repo in case Actions becomes usable on this account later, but it isn't the active path right now — don't expect it to run.
 
 ## Local development
 
 ```
 npm install
-npm run fetch   # writes data/weekly/<monday>.json
-npm run build   # generates public/ — open public/index.html in a browser
+npm run fetch     # writes data/weekly/<monday>.json
+npm run build     # generates public/ — open public/index.html in a browser
+npm run deploy    # publishes public/ to the gh-pages branch
+npm run weekly    # runs all of the above plus git commit/push, in one go
 ```
 
 ## YouTube auto-posting (not yet enabled)

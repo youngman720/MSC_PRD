@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import Parser from "rss-parser";
-import { parseArtistTitle, extractYoutubeId, dedupeKey } from "./lib/extract.js";
+import { parseArtistTitle, extractYoutubeId, dedupeKey, isExcludedByKeyword } from "./lib/extract.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -17,6 +17,26 @@ function mostRecentMonday(date) {
 
 function isoDate(d) {
   return d.toISOString().slice(0, 10);
+}
+
+// Some feeds (WordPress in particular) double-encode entities, so titles can still contain literal
+// "&#8217;" etc. after XML parsing. Decode the common ones so they don't leak into artist/title text.
+const HTML_ENTITIES = {
+  "&amp;": "&",
+  "&#038;": "&",
+  "&#8217;": "’",
+  "&#8216;": "‘",
+  "&#8220;": "“",
+  "&#8221;": "”",
+  "&#8211;": "–",
+  "&#8212;": "—",
+  "&#124;": "|",
+  "&quot;": '"',
+  "&#039;": "'",
+};
+
+function decodeEntities(str) {
+  return str.replace(/&#?[a-z0-9]+;/gi, (m) => HTML_ENTITIES[m] ?? m);
 }
 
 async function loadConfig() {
@@ -57,7 +77,10 @@ async function main() {
       if (!pubDate || pubDate < cutoff || pubDate > now) continue;
       if (!item.title) continue;
 
-      const parsed = parseArtistTitle(item.title);
+      const title = decodeEntities(item.title);
+      if (isExcludedByKeyword(title, config.excludeKeywords)) continue;
+
+      const parsed = parseArtistTitle(title);
       if (!parsed.confident) continue; // skip low-confidence headlines (not clearly a song post)
 
       const key = dedupeKey(parsed);

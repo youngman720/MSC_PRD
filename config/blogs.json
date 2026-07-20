@@ -1,32 +1,18 @@
 {
-  "_comment": "Curated list of independent-focused music blogs used as the 'indie-leaning' signal source. Add/remove feeds here to tune coverage. All URLs verified reachable as of 2026-07-20.",
-  "lookbackDays": 10,
-  "maxSongsPerWeek": 12,
+  "_comment": "Japanese-band-only mode. Primary source is Spincoaster's main feed (very active, ~5 posts/day, uses a consistent “…” quoted-title convention for song releases). excludeKeywords is a best-effort nationality filter: any post whose raw title contains one of these substrings is treated as a non-Japanese act and skipped. This is a heuristic (see README) — tune both lists here.",
+  "lookbackDays": 14,
+  "maxSongsPerWeek": 50,
+  "excludeKeywords": [
+    "韓国", "台湾", "中国", "香港", "タイ拠点", "タイ出身",
+    "アメリカ", "イギリス", "フランス", "ドイツ",
+    "ロンドン", "ニューヨーク", "ロサンゼルス", "パリ", "ベルリン", "ソウル拠点", "ソウル出身",
+    "来日", "海外アーティスト"
+  ],
   "blogs": [
     {
-      "name": "Gorilla vs. Bear",
-      "feedUrl": "https://www.gorillavsbear.net/feed",
-      "homepage": "https://www.gorillavsbear.net"
-    },
-    {
-      "name": "So Young Magazine",
-      "feedUrl": "https://www.soyoungmagazine.com/feed",
-      "homepage": "https://www.soyoungmagazine.com"
-    },
-    {
-      "name": "The Line of Best Fit",
-      "feedUrl": "https://www.thelineofbestfit.com/feed",
-      "homepage": "https://www.thelineofbestfit.com"
-    },
-    {
-      "name": "Beats Per Minute",
-      "feedUrl": "https://beatsperminute.com/feed/",
-      "homepage": "https://beatsperminute.com"
-    },
-    {
-      "name": "Brooklyn Vegan",
-      "feedUrl": "https://www.brooklynvegan.com/feed/",
-      "homepage": "https://www.brooklynvegan.com"
+      "name": "Spincoaster",
+      "feedUrl": "https://spincoaster.com/feed",
+      "homepage": "https://spincoaster.com"
     }
   ]
 }
