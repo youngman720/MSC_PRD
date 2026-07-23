@@ -1,6 +1,6 @@
 {
   "weekOf": "2026-07-20",
-  "generatedAt": "2026-07-20T21:47:42.795Z",
+  "generatedAt": "2026-07-23T12:49:17.448Z",
   "blogsChecked": [
     "Spincoaster",
     "ROCKIN'ON JAPAN",
@@ -16,15 +16,19 @@
   ],
   "songs": [
     {
-      "artist": "め組",
-      "title": "二の舞",
+      "artist": "長谷川白紙",
+      "title": "窒息日記",
       "firstSeen": "2026-07-08T12:00:00.000Z",
-      "youtubeId": null,
+      "youtubeId": "pvEc9lBSe9Q",
       "newcomer": true,
       "snsBuzz": false,
       "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%82%81%E7%B5%84%20%E4%BA%8C%E3%81%AE%E8%88%9E",
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E9%95%B7%E8%B0%B7%E5%B7%9D%E7%99%BD%E7%B4%99%20%E7%AA%92%E6%81%AF%E6%97%A5%E8%A8%98",
       "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/hakushi-hasegawa-suffocation-diary"
+        },
         {
           "blog": "ROCKIN'ON JAPAN",
           "url": "https://rockinon.com/news/detail/215461"
@@ -35,17 +39,40 @@
         }
       ],
       "youtube": {
-        "videoId": "5bdIoJSvChI",
-        "viewCount": 89936,
-        "publishedAt": "2026-07-08T12:00:20Z",
-        "channelSubscriberCount": 6450,
-        "viewVelocity": 7248.283777701245
+        "videoId": "pvEc9lBSe9Q",
+        "viewCount": 19906,
+        "publishedAt": "2026-07-21T10:00:06Z",
+        "channelSubscriberCount": 53800,
+        "viewVelocity": 9400.736746286917
+      }
+    },
+    {
+      "artist": "the奥歯's",
+      "title": "指先",
+      "firstSeen": "2026-07-23T12:49:17.448Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=the%E5%A5%A5%E6%AD%AF's%20%E6%8C%87%E5%85%88",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/okuba_010101/song/4f5e3632-59fa-4a0a-826a-d50769941de9"
+        }
+      ],
+      "youtube": {
+        "videoId": "NgykMBnrZJk",
+        "viewCount": 4357906,
+        "publishedAt": "2023-10-28T12:00:30Z",
+        "channelSubscriberCount": 513000,
+        "viewVelocity": 4362.12032077901
       }
     },
     {
       "artist": "Atlas Youth",
       "title": "星に揺られて",
-      "firstSeen": "2026-07-20T21:47:42.795Z",
+      "firstSeen": "2026-07-23T12:49:17.448Z",
       "youtubeId": null,
       "newcomer": true,
       "snsBuzz": false,
@@ -59,45 +86,350 @@
       ],
       "youtube": {
         "videoId": "eCvyQx16DJ0",
-        "viewCount": 2143,
+        "viewCount": 2534,
         "publishedAt": "2026-04-26T10:03:28Z",
         "channelSubscriberCount": 26,
-        "viewVelocity": 25.06753491977256
+        "viewVelocity": 28.757822435433162
       }
     },
     {
-      "artist": "Verde/",
-      "title": "Reimei/",
-      "firstSeen": "2026-07-20T04:30:00.000Z",
+      "artist": "BIRTH",
+      "title": "Delay",
+      "firstSeen": "2026-07-23T12:49:17.448Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=BIRTH%20Delay",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/YuuuuK1/song/e41ee75c-6457-4f70-b982-a8d3f77e4d83"
+        }
+      ],
+      "youtube": {
+        "videoId": "NAEjCnnaCqg",
+        "viewCount": 654207,
+        "publishedAt": "2023-05-28T23:20:00Z",
+        "channelSubscriberCount": 532000,
+        "viewVelocity": 568.1040150154486
+      }
+    },
+    {
+      "artist": "4clutch",
+      "title": "光り",
+      "firstSeen": "2026-07-23T12:49:17.448Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=4clutch%20%E5%85%89%E3%82%8A",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/4clutch/song/96243c63-1cb9-4bd9-95d8-02f90441bc5e"
+        }
+      ],
+      "youtube": {
+        "videoId": "AAGt7AwHN4c",
+        "viewCount": 1927,
+        "publishedAt": "2019-10-28T18:29:53Z",
+        "channelSubscriberCount": 57,
+        "viewVelocity": 0.7834086560351159
+      }
+    },
+    {
+      "artist": "Syaron.",
+      "title": "FILM",
+      "firstSeen": "2026-07-23T12:49:17.448Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Syaron.%20FILM",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/syaronnagano/song/7747aa31-be72-4eab-b1d9-453e5bfed3d3"
+        }
+      ],
+      "youtube": {
+        "videoId": "Ap0ppAUKyGo",
+        "viewCount": 99079,
+        "publishedAt": "2026-07-09T10:00:06Z",
+        "channelSubscriberCount": 7550000,
+        "viewVelocity": 7018.172115340665
+      }
+    },
+    {
+      "artist": "SWEET GIRL",
+      "title": "バカなまま",
+      "firstSeen": "2026-07-23T12:49:17.448Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=SWEET%20GIRL%20%E3%83%90%E3%82%AB%E3%81%AA%E3%81%BE%E3%81%BE",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/sweetgirl_mygn/song/59d785fc-8d65-4810-97cd-9373823aae87"
+        }
+      ],
+      "youtube": {
+        "videoId": "ktTcLT8cMIs",
+        "viewCount": 2327,
+        "publishedAt": "2026-06-29T13:00:45Z",
+        "channelSubscriberCount": 54500,
+        "viewVelocity": 96.99049286619943
+      }
+    },
+    {
+      "artist": "sorato",
+      "title": "tomato(three-piece ver.)",
+      "firstSeen": "2026-07-23T12:49:17.448Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=sorato%20tomato(three-piece%20ver.)",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/mrkmsorajiroo/song/21282647-6f23-4851-a4f9-2fa2817c17f5"
+        }
+      ],
+      "youtube": {
+        "videoId": "4iNRYpjmyPc",
+        "viewCount": 251291,
+        "publishedAt": "2023-07-07T14:55:54Z",
+        "channelSubscriberCount": 25400,
+        "viewVelocity": 225.9989842817001
+      }
+    },
+    {
+      "artist": "Harunosuke",
+      "title": "編花",
+      "firstSeen": "2026-07-23T12:49:17.448Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Harunosuke%20%E7%B7%A8%E8%8A%B1",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/harunosuke0212/song/2ce75176-f490-4c58-9bc4-e6dcb4bae3c1"
+        }
+      ],
+      "youtube": {
+        "videoId": "jSFaf5EbrQ8",
+        "viewCount": 64071,
+        "publishedAt": "2015-03-19T02:56:32Z",
+        "channelSubscriberCount": 210,
+        "viewVelocity": 15.459612994517798
+      }
+    },
+    {
+      "artist": "ありす",
+      "title": "不在票（2026）",
+      "firstSeen": "2026-07-23T12:49:17.448Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%81%82%E3%82%8A%E3%81%99%20%E4%B8%8D%E5%9C%A8%E7%A5%A8%EF%BC%882026%EF%BC%89",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/Alice_0831_/song/5f54f867-b864-4b07-a356-4253810a25da"
+        }
+      ],
+      "youtube": {
+        "videoId": "lUFUvdbQC8U",
+        "viewCount": 5386566,
+        "publishedAt": "2023-03-02T10:22:35Z",
+        "channelSubscriberCount": 1830000,
+        "viewVelocity": 4347.153439227267
+      }
+    },
+    {
+      "artist": "クイーン Chelsea Wolfe",
+      "title": "Cold",
+      "firstSeen": "2026-07-23T11:30:00.000Z",
       "youtubeId": null,
       "newcomer": false,
       "snsBuzz": false,
       "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Verde%2F%20Reimei%2F",
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%82%AF%E3%82%A4%E3%83%BC%E3%83%B3%20Chelsea%20Wolfe%20Cold",
       "sources": [
         {
           "blog": "Gekirock",
-          "url": "https://gekirock.com/news/2026/07/verde_reimei_mv.php"
+          "url": "https://gekirock.com/news/2026/07/chelsea_wolfe_cold.php"
+        }
+      ],
+      "youtube": {
+        "videoId": "TKwxZ8Ni-hY",
+        "viewCount": 2016,
+        "publishedAt": "2017-09-22T18:02:09Z",
+        "channelSubscriberCount": 1520,
+        "viewVelocity": 0.6249645945105452
+      }
+    },
+    {
+      "artist": "IMMINENCE",
+      "title": "False Light",
+      "firstSeen": "2026-07-23T10:30:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=IMMINENCE%20False%20Light",
+      "sources": [
+        {
+          "blog": "Gekirock",
+          "url": "https://gekirock.com/news/2026/07/imminence_axis_mundi.php"
+        }
+      ],
+      "youtube": {
+        "videoId": "C-I6KkSRLH8",
+        "viewCount": 105663,
+        "publishedAt": "2026-07-21T16:00:06Z",
+        "channelSubscriberCount": 2970000,
+        "viewVelocity": 56580.11324447488
+      }
+    },
+    {
+      "artist": "JUBEE",
+      "title": "REBIRTH OF NOISE",
+      "firstSeen": "2026-07-23T09:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=JUBEE%20REBIRTH%20OF%20NOISE",
+      "sources": [
+        {
+          "blog": "Gekirock",
+          "url": "https://gekirock.com/news/2026/07/jubee_3rd_album_tour.php"
+        }
+      ],
+      "youtube": {
+        "videoId": "Ad__XSLZPbc",
+        "viewCount": 3295,
+        "publishedAt": "2026-01-20T15:00:18Z",
+        "channelSubscriberCount": 9680,
+        "viewVelocity": 17.91646747460248
+      }
+    },
+    {
+      "artist": "VivaOla",
+      "title": "understand",
+      "firstSeen": "2026-07-22T09:00:56.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=VivaOla%20understand",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/vivaola-understand"
+        }
+      ],
+      "youtube": {
+        "videoId": "lXSkaCa8HP0",
+        "viewCount": 315,
+        "publishedAt": "2026-07-21T10:05:32Z",
+        "channelSubscriberCount": 402,
+        "viewVelocity": 149.02632846655632
+      }
+    },
+    {
+      "artist": "Sala × me-mai",
+      "title": "Palette",
+      "firstSeen": "2026-07-22T09:00:55.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Sala%20%C3%97%20me-mai%20Palette",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/sala-me-mai-palette"
+        }
+      ],
+      "youtube": {
+        "videoId": "9gK41uQgGxc",
+        "viewCount": 216,
+        "publishedAt": "2026-07-21T10:04:34Z",
+        "channelSubscriberCount": 44,
+        "viewVelocity": 102.15703833223029
+      }
+    },
+    {
+      "artist": "BANNY BUGS",
+      "title": "HOLLYWOOD",
+      "firstSeen": "2026-07-22T09:00:20.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=BANNY%20BUGS%20HOLLYWOOD",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/banny-bugs-hollywood"
+        }
+      ],
+      "youtube": {
+        "videoId": "vfzY4ZuwQxk",
+        "viewCount": 148504,
+        "publishedAt": "2013-06-21T20:11:28Z",
+        "channelSubscriberCount": 650,
+        "viewVelocity": 31.069778345270656
+      }
+    },
+    {
+      "artist": "(sic)boyインディーズ回帰後初の",
+      "title": "DOOMSDAY",
+      "firstSeen": "2026-07-22T02:00:42.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=(sic)boy%E3%82%A4%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%82%BA%E5%9B%9E%E5%B8%B0%E5%BE%8C%E5%88%9D%E3%81%AE%20DOOMSDAY",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/sicboy-doomsday-prod-km"
         }
       ],
       "youtube": null
     },
     {
-      "artist": "coldrain",
-      "title": "EX-HUMANITY",
-      "firstSeen": "2026-07-17T12:00:00.000Z",
+      "artist": "Hikoichi",
+      "title": "%",
+      "firstSeen": "2026-07-21T15:00:06.000Z",
       "youtubeId": null,
       "newcomer": false,
       "snsBuzz": false,
       "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=coldrain%20EX-HUMANITY",
+      "tiktokUrl": "https://www.tiktok.com/search?q=Hikoichi%20%25",
       "sources": [
         {
-          "blog": "Gekirock",
-          "url": "https://gekirock.com/news/2026/07/coldrain_ex-humanity_mv.php"
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/hikoichi-percent"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "s-KgsxRS_p0",
+        "viewCount": 175,
+        "publishedAt": "2025-11-18T10:03:04Z",
+        "channelSubscriberCount": 58,
+        "viewVelocity": 0.708171066346842
+      }
     },
     {
       "artist": "SUKISHA",
@@ -114,7 +446,13 @@
           "url": "https://spincoaster.com/news/sukisha-necchushou-zettakun"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "8Z37kjdcV0E",
+        "viewCount": 2707,
+        "publishedAt": "2026-07-09T10:01:31Z",
+        "channelSubscriberCount": 698,
+        "viewVelocity": 191.7612806218639
+      }
     },
     {
       "artist": "Cloudy",
@@ -131,7 +469,13 @@
           "url": "https://rockinon.com/news/detail/215512"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "58-0cxKLkww",
+        "viewCount": 62034,
+        "publishedAt": "2026-07-15T11:00:27Z",
+        "channelSubscriberCount": 3,
+        "viewVelocity": 7681.673654006854
+      }
     },
     {
       "artist": "SANDEI",
@@ -148,7 +492,13 @@
           "url": "https://spincoaster.com/news/sandei-one-step"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "OCXZFg4ZGps",
+        "viewCount": 193,
+        "publishedAt": "2026-07-14T10:04:06Z",
+        "channelSubscriberCount": 149,
+        "viewVelocity": 21.174549325408663
+      }
     },
     {
       "artist": "諭吉佳作/men",
@@ -165,7 +515,13 @@
           "url": "https://spincoaster.com/news/yukichikasakumen-sorehaitsudemoii"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "1M7tpRo5GE0",
+        "viewCount": 695,
+        "publishedAt": "2026-07-15T11:00:36Z",
+        "channelSubscriberCount": 9810,
+        "viewVelocity": 86.0629985965402
+      }
     },
     {
       "artist": "lili maua",
@@ -182,7 +538,13 @@
           "url": "https://spincoaster.com/news/lili-maua-sweat-prod-matt-cab"
         }
       ],
-      "youtube": null
+      "youtube": {
+        "videoId": "klb8oQ8R0cw",
+        "viewCount": 9085,
+        "publishedAt": "2026-07-15T11:00:22Z",
+        "channelSubscriberCount": 3210,
+        "viewVelocity": 1124.9879911504797
+      }
     },
     {
       "artist": "Doona",
@@ -201,10 +563,10 @@
       ],
       "youtube": {
         "videoId": "Z9He4RkHsrQ",
-        "viewCount": 2203,
+        "viewCount": 2405,
         "publishedAt": "2026-07-15T11:00:34Z",
-        "channelSubscriberCount": 8610,
-        "viewVelocity": 404.26414446465617
+        "channelSubscriberCount": 8630,
+        "viewVelocity": 297.8142709631281
       }
     },
     {
@@ -224,210 +586,10 @@
       ],
       "youtube": {
         "videoId": "-QRErM9VXXs",
-        "viewCount": 24452,
+        "viewCount": 56396,
         "publishedAt": "2026-07-15T10:00:38Z",
         "channelSubscriberCount": 7850,
-        "viewVelocity": 4453.082600794505
-      }
-    },
-    {
-      "artist": "Lilhana",
-      "title": "somehow",
-      "firstSeen": "2026-07-15T09:00:56.000Z",
-      "youtubeId": null,
-      "newcomer": false,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Lilhana%20somehow",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/lilhana-somehow-ft-agul"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "Lil’ Leise But Gold",
-      "title": "EXTRA 15",
-      "firstSeen": "2026-07-15T08:00:44.000Z",
-      "youtubeId": null,
-      "newcomer": false,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Lil%E2%80%99%20Leise%20But%20Gold%20EXTRA%2015",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/lil-leise-but-gold-extra-15"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "DURDN",
-      "title": "motion",
-      "firstSeen": "2026-07-15T01:00:11.000Z",
-      "youtubeId": "A1iNIRV1pno",
-      "newcomer": false,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=DURDN%20motion",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/durdn-motion"
-        }
-      ],
-      "youtube": {
-        "videoId": "A1iNIRV1pno",
-        "viewCount": 3969205,
-        "publishedAt": "2026-07-05T15:01:11Z",
-        "channelSubscriberCount": 212000,
-        "viewVelocity": 259725.41884812302
-      }
-    },
-    {
-      "artist": "otuyyuto",
-      "title": "TRAVEL",
-      "firstSeen": "2026-07-14T15:00:15.000Z",
-      "youtubeId": null,
-      "newcomer": false,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=otuyyuto%20TRAVEL",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/otuyyuto-travel-ft-only-u"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "PM Kenobi",
-      "title": "親父が言うとった",
-      "firstSeen": "2026-07-14T12:42:57.000Z",
-      "youtubeId": "nAWIOZB6p-0",
-      "newcomer": false,
-      "snsBuzz": true,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=PM%20Kenobi%20%E8%A6%AA%E7%88%B6%E3%81%8C%E8%A8%80%E3%81%86%E3%81%A8%E3%81%A3%E3%81%9F",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/pm-kenobi-my-dad-said"
-        }
-      ],
-      "youtube": {
-        "videoId": "nAWIOZB6p-0",
-        "viewCount": 445172,
-        "publishedAt": "2026-02-11T11:01:28Z",
-        "channelSubscriberCount": 12000,
-        "viewVelocity": 2791.9435535362845
-      }
-    },
-    {
-      "artist": "cero",
-      "title": "Globster",
-      "firstSeen": "2026-07-14T12:00:07.000Z",
-      "youtubeId": null,
-      "newcomer": false,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=cero%20Globster",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/cero-globster"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "Manaka",
-      "title": "Summer Time",
-      "firstSeen": "2026-07-14T11:00:58.000Z",
-      "youtubeId": "tk0q6VXlw68",
-      "newcomer": false,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Manaka%20Summer%20Time",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/manaka-summer-time-ft-dada"
-        }
-      ],
-      "youtube": {
-        "videoId": "tk0q6VXlw68",
-        "viewCount": 351391,
-        "publishedAt": "2026-07-14T11:00:06Z",
-        "channelSubscriberCount": 40200,
-        "viewVelocity": 54481.493401978165
-      }
-    },
-    {
-      "artist": "Sad Kid Yaz",
-      "title": "夜だけのフレンド",
-      "firstSeen": "2026-07-14T10:00:35.000Z",
-      "youtubeId": "6o_F-vf0V1E",
-      "newcomer": false,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=Sad%20Kid%20Yaz%20%E5%A4%9C%E3%81%A0%E3%81%91%E3%81%AE%E3%83%95%E3%83%AC%E3%83%B3%E3%83%89",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/sad-kid-yaz-yoruakenofriends"
-        }
-      ],
-      "youtube": {
-        "videoId": "6o_F-vf0V1E",
-        "viewCount": 25465,
-        "publishedAt": "2026-07-14T10:00:06Z",
-        "channelSubscriberCount": 12000,
-        "viewVelocity": 3922.883737193556
-      }
-    },
-    {
-      "artist": "in-d × ziproom",
-      "title": "I got new shoes",
-      "firstSeen": "2026-07-14T09:00:08.000Z",
-      "youtubeId": null,
-      "newcomer": false,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=in-d%20%C3%97%20ziproom%20I%20got%20new%20shoes",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/in-d-ziproom-i-got-new-shoes"
-        }
-      ],
-      "youtube": null
-    },
-    {
-      "artist": "3Li¥en",
-      "title": "Mooove Bitch",
-      "firstSeen": "2026-07-13T11:28:53.000Z",
-      "youtubeId": "TCeUEeTcjQU",
-      "newcomer": false,
-      "snsBuzz": false,
-      "inCircuitScene": false,
-      "tiktokUrl": "https://www.tiktok.com/search?q=3Li%C2%A5en%20Mooove%20Bitch",
-      "sources": [
-        {
-          "blog": "Spincoaster",
-          "url": "https://spincoaster.com/news/3liyen-mooove-bitch-feat-anarchy"
-        }
-      ],
-      "youtube": {
-        "videoId": "TCeUEeTcjQU",
-        "viewCount": 325330,
-        "publishedAt": "2026-07-13T10:00:06Z",
-        "channelSubscriberCount": 23000,
-        "viewVelocity": 43427.14084600688
+        "viewVelocity": 6947.781661973817
       }
     }
   ]
