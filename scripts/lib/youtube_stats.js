@@ -53,9 +53,14 @@ export function createYoutubeStatsClient(apiKey) {
     const uniqueIds = [...new Set(channelIds.filter(Boolean))];
     for (const batch of chunk(uniqueIds, 50)) {
       try {
-        const res = await youtube.channels.list({ part: ["statistics"], id: batch });
+        const res = await youtube.channels.list({ part: ["statistics", "snippet"], id: batch });
         for (const item of res.data.items || []) {
-          results.set(item.id, Number(item.statistics?.subscriberCount || 0));
+          results.set(item.id, {
+            subscriberCount: Number(item.statistics?.subscriberCount || 0),
+            // ISO 3166-1 alpha-2 country the channel owner set (e.g. "JP", "US") — not every
+            // channel sets this, so treat absence as "unknown", not "confirmed Japanese".
+            country: item.snippet?.country || null,
+          });
         }
       } catch (err) {
         console.warn(`[warn] YouTube channels.list failed: ${err.message}`);
@@ -87,12 +92,13 @@ export function createYoutubeStatsClient(apiKey) {
       if (!stats || !stats.publishedAt) {
         song.youtube = null;
       } else {
-        const subscriberCount = channelStats.get(stats.channelId) ?? null;
+        const channel = channelStats.get(stats.channelId);
         song.youtube = {
           videoId: song._videoId,
           viewCount: stats.viewCount,
           publishedAt: stats.publishedAt,
-          channelSubscriberCount: subscriberCount,
+          channelSubscriberCount: channel?.subscriberCount ?? null,
+          channelCountry: channel?.country ?? null,
           viewVelocity: stats.viewCount / daysSince(stats.publishedAt, now),
         };
       }

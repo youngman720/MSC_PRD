@@ -1,5 +1,5 @@
 {
-  "_comment": "Cross-validation allowlist for the 'is this band actually part of the touring circuit scene, not just an obscure upload' check. Compiled from the lineup pages of two real Japanese live-house circuit events (each a one-time-per-event announcement, so this is a static curated list refreshed manually rather than scraped weekly). Source event pages: 見放題東京2026 (https://tokyo.mihoudai.jp/artists/), Maxell presents FM802 MINAMI WHEEL 2026 1st lineup (https://minamiwheel.jp/artist/). Add more circuit-event lineups here as they're announced.",
+  "_comment": "Cross-validation allowlist for the 'is this band actually part of the touring circuit scene, not just an obscure upload' check. Compiled from real event lineups and TV/web programs that specifically discover/support young Japanese bands (each source updates on its own schedule, not weekly, so this is a static curated list refreshed manually rather than scraped). Sources: 見放題東京2026 (https://tokyo.mihoudai.jp/artists/), Maxell presents FM802 MINAMI WHEEL 2026 1st lineup (https://minamiwheel.jp/artist/), 音いたち (関西テレビ, https://www.ktv.jp/nmb-music/ — featured-artist names pulled from several recent episode pages; note the show also occasionally features already-major/veteran acts like 純烈, which stay excluded via excludeArtists in blogs.json rather than here). Add more circuit-event lineups or program guest lists here as they're found.",
   "artists": [
     "愛しておくれ", "Ivy to Fraudulent Game", "akebono", "アシュラシンドローム", "Atomic Skipper",
     "Arakezuri", "アルステイク", "アンと私", "UNFAIR RULE", "anewhite", "稲生 司", "EVE OF THE LAIN",
@@ -22,6 +22,7 @@
     "幻想痛", "コロブチカ", "sanetii", "三四少女", "TheΣ", "ざらばんし", "水平線", "ステレオドロシー",
     "スーパー登山部", "Chimothy→", "Tyrkouaz", "デビューまでスラストンズ", "なきごと", "Natsudaidai",
     "niina", "NELKE", "ハク。", "harha", "FUJIBASE", "Fluffy", "Baby Canta", "the Po", "Messy last girl",
-    "MONONOKE", "MON7A", "『ユイカ』", "Luov", "Leina", "レトロマイガール!!", "ん・フェニ"
+    "MONONOKE", "MON7A", "『ユイカ』", "Luov", "Leina", "レトロマイガール!!", "ん・フェニ",
+    "ペイトン尚未", "モナキ", "パンダドラゴン", "Rain Tree", "Patrick's", "Buttercup Yellow"
   ]
 }

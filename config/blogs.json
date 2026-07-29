@@ -1,11 +1,13 @@
 {
-  "_comment": "Japanese-band-only mode. RSS sources: Spincoaster (indie/R&B/hip-hop), ROCKIN'ON JAPAN news (broader rock/live-house scene), Gekirock (rock/metal/visual-kei), BARKS (broad, but only returns ~10 latest items so its net contribution is small/inconsistent). All share a compatible “…”/「…」-for-songs, 『』-for-albums convention. Plus a non-RSS source: eggs.mu's daily song ranking (scripts/lib/eggs.js, config below under 'eggs') — a Japan-only unsigned/indie artist distribution platform, so every entry is trustworthy as indie/newcomer without needing the nationality or newcomer-keyword heuristics. excludeKeywords is a best-effort nationality filter for the RSS sources (see README). excludeArtists is a manual safety net for major-label/veteran/idol acts that slip through (either because they still match the release-announcement format, or because the YouTube search fallback occasionally attaches the wrong channel's stats and skews the buzz ratio).",
+  "_comment": "Japanese-band-only mode. RSS sources: Spincoaster (indie/R&B/hip-hop), ROCKIN'ON JAPAN news (broader rock/live-house scene), BARKS (broad, but only returns ~10 latest items so its net contribution is small/inconsistent). All share a compatible “…”/「…」-for-songs, 『』-for-albums convention. Gekirock was tried and removed: it structurally covers Western rock/metal (Tom Morello, MGK, FROM FIRST TO LAST, etc.) using the exact same release-announcement phrasing as Japanese acts, so it kept leaking foreign artists past every filter for very little genuine Japanese-scene content in return — not worth the ongoing excludeArtists maintenance. Plus a non-RSS source: eggs.mu's daily song ranking (scripts/lib/eggs.js, config below under 'eggs') — a Japan-only unsigned/indie artist distribution platform, so every entry is trustworthy as indie/newcomer without needing the nationality or newcomer-keyword heuristics. excludeKeywords is a best-effort nationality filter for the RSS sources (see README) — it only catches a foreign act when the headline itself mentions a country/city. fetch_songs.js also cross-checks the resolved YouTube channel's declared country (when set) as a second, independent nationality signal. excludeArtists is a manual safety net for major-label/veteran/idol/international acts that slip past both of those (either because they still match the release-announcement format, the channel didn't declare a country, or the YouTube search fallback attached the wrong channel's stats).",
   "lookbackDays": 21,
   "maxSongsPerWeek": 50,
   "excludeKeywords": [
     "韓国", "台湾", "中国", "香港", "タイ拠点", "タイ出身",
-    "アメリカ", "イギリス", "フランス", "ドイツ",
+    "アメリカ", "イギリス", "フランス", "ドイツ", "オーストラリア", "カナダ", "スペイン", "イタリア",
     "ロンドン", "ニューヨーク", "ロサンゼルス", "パリ", "ベルリン", "ソウル拠点", "ソウル出身",
+    "北京", "上海", "釜山",
+    "US発", "UK発", "洋楽", "海外の", "海外発", "海外出身",
     "来日", "海外アーティスト"
   ],
   "newcomerKeywords": [
@@ -13,6 +15,9 @@
     "待望のデビュー", "結成"
   ],
   "popularWithinDays": 365,
+  "surgingMinViewCount": 10000,
+  "popularMinViewCount": 10000,
+  "youthMinViewCount": 1000,
   "snsKeywords": [
     "Z世代", "TikTok", "ティックトック", "SNSで話題", "SNS発", "バズ", "バイラル", "話題沸騰"
   ],
@@ -37,11 +42,6 @@
       "name": "ROCKIN'ON JAPAN",
       "feedUrl": "https://rockinon.com/news.rss",
       "homepage": "https://rockinon.com"
-    },
-    {
-      "name": "Gekirock",
-      "feedUrl": "https://gekirock.com/news/index.xml",
-      "homepage": "https://gekirock.com"
     },
     {
       "name": "BARKS",

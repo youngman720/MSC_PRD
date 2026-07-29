@@ -201,17 +201,33 @@ async function main() {
     console.log("Fetching YouTube stats (views/subscribers)...");
     await youtubeStats.enrichSongs(songs, now);
 
+    // The excludeKeywords text filter only catches a foreign act when the source headline
+    // happens to mention a country/city — some outlets (Gekirock in particular, which covers
+    // Western rock/metal alongside Japanese acts) name overseas artists with no such mention at
+    // all (e.g. "Tom Morello", "FROM FIRST TO LAST", "MGK"). The YouTube channel's own declared
+    // country (when set) is real structural data instead of a text guess, so use it as a second,
+    // independent nationality check regardless of source.
+    const beforeNationality = songs.length;
+    let afterNationality = songs.filter((song) => {
+      const country = song.youtube?.channelCountry;
+      return !country || country === "JP";
+    });
+    const droppedForNationality = beforeNationality - afterNationality.length;
+    if (droppedForNationality > 0) {
+      console.log(`Dropped ${droppedForNationality} song(s): YouTube channel country was not Japan.`);
+    }
+
     // eggs.mu entries have no external editorial curation behind them (unlike the RSS sources),
     // so a song that isn't corroborated by a real touring-circuit lineup needs a minimum view
     // count to prove it's not just an obscure upload with near-zero listeners.
     const minViewCount = config.eggs?.minViewCount ?? 1000;
-    finalSongs = songs.filter((song) => {
+    finalSongs = afterNationality.filter((song) => {
       const isEggsOnly = song.sources.length === 1 && song.sources[0].blog === "eggs";
       if (!isEggsOnly) return true;
       if (song.inCircuitScene) return true;
       return song.youtube && song.youtube.viewCount >= minViewCount;
     });
-    const droppedCount = songs.length - finalSongs.length;
+    const droppedCount = afterNationality.length - finalSongs.length;
     if (droppedCount > 0) {
       console.log(
         `Dropped ${droppedCount} eggs-only song(s): not in the circuit-scene allowlist and under ${minViewCount} views.`

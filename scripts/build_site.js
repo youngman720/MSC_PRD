@@ -155,24 +155,36 @@ function categorize(songs, config, referenceDate) {
       .slice(0, 10)
   );
 
+  // Absolute view-count floors matter as much as the ratio/velocity ranking itself: without one,
+  // a song with e.g. 23 total views can still win "surging" purely because nothing else was left
+  // to rank against, which reads as broken rather than genuinely trending.
+  const youthMinViews = config.youthMinViewCount ?? 1000;
   const buzzThreshold = config.snsBuzzRatioThreshold ?? 0.5;
   const youth = claim(
-    unclaimed(withStats.filter((s) => s.snsBuzz || velocityRatio(s) >= buzzThreshold))
+    unclaimed(
+      withStats.filter(
+        (s) => s.youtube.viewCount >= youthMinViews && (s.snsBuzz || velocityRatio(s) >= buzzThreshold)
+      )
+    )
       .sort((a, b) => velocityRatio(b) - velocityRatio(a))
       .slice(0, 10)
   );
 
+  const surgingMinViews = config.surgingMinViewCount ?? 10000;
   const surging = claim(
-    unclaimed(withStats)
+    unclaimed(withStats.filter((s) => s.youtube.viewCount >= surgingMinViews))
       .sort((a, b) => b.youtube.viewVelocity - a.youtube.viewVelocity)
       .slice(0, 10)
   );
 
   const popularWithinDays = config.popularWithinDays ?? 365;
+  const popularMinViews = config.popularMinViewCount ?? 10000;
   const popularCutoff = referenceDate.getTime() - popularWithinDays * 24 * 60 * 60 * 1000;
   const popular = claim(
     unclaimed(withStats)
-      .filter((s) => new Date(s.youtube.publishedAt).getTime() >= popularCutoff)
+      .filter(
+        (s) => s.youtube.viewCount >= popularMinViews && new Date(s.youtube.publishedAt).getTime() >= popularCutoff
+      )
       .sort((a, b) => b.youtube.viewCount - a.youtube.viewCount)
       .slice(0, 10)
   );
@@ -214,11 +226,27 @@ function weekBody(week, config) {
   const { hasStats, newcomers, youth, surging, popular } = categorize(week.songs, config, referenceDate);
   const noStatsNote = "YouTube APIキーが未設定のため、この項目は表示できません（README参照）。";
 
+  const surgingMinViews = config.surgingMinViewCount ?? 10000;
+  const popularMinViews = config.popularMinViewCount ?? 10000;
   const tabs = [
-    { id: "surging", label: "🔥 急上昇", list: surging, emptyNote: hasStats ? "対象曲がありませんでした。" : noStatsNote },
+    {
+      id: "surging",
+      label: "🔥 急上昇",
+      list: surging,
+      emptyNote: hasStats
+        ? `対象曲がありませんでした（再生数${surgingMinViews.toLocaleString("en-US")}回以上のみ対象）。`
+        : noStatsNote,
+    },
     { id: "youth", label: "🎓 大学生世代に人気", list: youth, emptyNote: hasStats ? "対象曲がありませんでした（SNSでの話題性/伸び率で判定）。" : noStatsNote },
     { id: "newcomer", label: "🌱 若手バンド", list: newcomers, emptyNote: "対象曲が見つかりませんでした（デビュー/初シングル等のキーワード検出）。" },
-    { id: "popular", label: "⭐ いま売れている", list: popular, emptyNote: hasStats ? "対象曲がありませんでした。" : noStatsNote },
+    {
+      id: "popular",
+      label: "⭐ いま売れている",
+      list: popular,
+      emptyNote: hasStats
+        ? `対象曲がありませんでした（再生数${popularMinViews.toLocaleString("en-US")}回以上のみ対象）。`
+        : noStatsNote,
+    },
   ];
 
   return [

@@ -47,19 +47,36 @@ const JP_ARTIST_TITLE = new RegExp(
 );
 
 const JP_SCRIPT_CHAR = new RegExp("[\\u3040-\\u30ff\\u4e00-\\u9fff]");
-const JP_PARTICLE = new RegExp("[\\u304c\\u3092\\u3068\\u306b\\u3067]"); // が を と に で
-const LATIN_RUN = "[A-Za-z0-9$&¥.\\-' ]+";
+const JP_PARTICLE = new RegExp("[\\u304c\\u3092\\u3068\\u306b\\u3067\\u306e]"); // が を と に で の
+// Parens included so stylized names like "(sic)boy" survive as a Latin run instead of getting cut
+// at the "(" (e.g. the bug case "(sic)boyインディーズ回帰後初の新曲..." needs "(sic)boy" intact).
+const LATIN_RUN = "[A-Za-z0-9$&¥.\\-'() ]+";
 const TRAILING_LATIN_RUN = new RegExp(`(${LATIN_RUN})$`);
 const LEADING_LATIN_RUN = new RegExp(`^(${LATIN_RUN})`);
 
 // A discarded remainder only looks like a real grammatical clause (safe to drop) once it's long
 // enough and contains a particle — a short kanji run with no particle (e.g. "諭吉佳作" in
-// "諭吉佳作/men") is more likely part of the artist's actual name, not a description.
+// "諭吉佳作/men") is more likely part of the artist's actual name, not a description. The one
+// exception: a remainder that is itself just a bare particle stuck to the seam (e.g. "PAS TASTA"
+// + "が") is always safe to drop regardless of length — a band name essentially never ends in a
+// lone hiragana particle character.
 function looksLikeClause(remainder) {
-  return remainder.trim().length >= 6 && JP_PARTICLE.test(remainder);
+  const trimmed = remainder.trim();
+  if (!JP_PARTICLE.test(trimmed)) return false;
+  return trimmed.length >= 6 || JP_PARTICLE.test(trimmed[0]);
 }
 
+// Some outlets introduce the artist with a long descriptive clause and put the actual name in
+// quotes mid-sentence (e.g. "声優アーティスト...結成されたガールズ・バンド"終末のダイヤモンド"、
+// デビュー・シングル..."). When that happens, the "・" split below picks up whatever follows the
+// last "・" in the *description* instead (here: "バンド"終末のダイヤモンド""), so check for an
+// explicitly quoted name first and prefer it over the positional heuristics.
+const QUOTED_NAME = /["'“‘]([^"'”’]{1,40})["'”’]/;
+
 function extractJpArtist(candidate) {
+  const quoted = candidate.match(QUOTED_NAME);
+  if (quoted) return quoted[1].trim();
+
   const firstSegment = candidate.split("、")[0]; // 、 ideographic comma
   const lastSlash = firstSegment.lastIndexOf("・"); // ・ katakana middle dot
   let artist = (lastSlash === -1 ? firstSegment : firstSegment.slice(lastSlash + 1)).trim();
