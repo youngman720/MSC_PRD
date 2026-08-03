@@ -1,0 +1,428 @@
+{
+  "weekOf": "2026-08-03",
+  "generatedAt": "2026-08-03T13:30:44.873Z",
+  "blogsChecked": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "blogsWithResults": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "eggs"
+  ],
+  "songs": [
+    {
+      "artist": "the奥歯's",
+      "title": "指先",
+      "firstSeen": "2026-08-03T13:30:44.873Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=the%E5%A5%A5%E6%AD%AF's%20%E6%8C%87%E5%85%88",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/okuba_010101/song/4f5e3632-59fa-4a0a-826a-d50769941de9"
+        }
+      ],
+      "youtube": {
+        "videoId": "NgykMBnrZJk",
+        "viewCount": 4519438,
+        "publishedAt": "2023-10-28T12:00:30Z",
+        "channelSubscriberCount": 514000,
+        "channelCountry": "JP",
+        "viewVelocity": 4474.413444483964
+      }
+    },
+    {
+      "artist": "Atlas Youth",
+      "title": "星に揺られて",
+      "firstSeen": "2026-08-03T13:30:44.873Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Atlas%20Youth%20%E6%98%9F%E3%81%AB%E6%8F%BA%E3%82%89%E3%82%8C%E3%81%A6",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/atlas_youth/song/2d706f24-ab7f-4f86-a739-ea8fa2802ad3"
+        }
+      ],
+      "youtube": {
+        "videoId": "eCvyQx16DJ0",
+        "viewCount": 4268,
+        "publishedAt": "2026-04-26T10:03:28Z",
+        "channelSubscriberCount": 26,
+        "channelCountry": null,
+        "viewVelocity": 43.04851887368242
+      }
+    },
+    {
+      "artist": "Lil’Lit",
+      "title": "哀愁",
+      "firstSeen": "2026-08-03T13:30:44.873Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Lil%E2%80%99Lit%20%E5%93%80%E6%84%81",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/lillit_official/song/c573808a-40f9-4d53-b5b2-e60f217d012b"
+        }
+      ],
+      "youtube": {
+        "videoId": "VRxwPkPO_44",
+        "viewCount": 2207,
+        "publishedAt": "2026-03-11T10:04:46Z",
+        "channelSubscriberCount": 53,
+        "channelCountry": null,
+        "viewVelocity": 15.205689241521917
+      }
+    },
+    {
+      "artist": "goethe",
+      "title": "ぬれ手でアワ",
+      "firstSeen": "2026-08-02T09:00:24.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=goethe%20%E3%81%AC%E3%82%8C%E6%89%8B%E3%81%A7%E3%82%A2%E3%83%AF",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/goethe-nuretedeawa"
+        }
+      ],
+      "youtube": null
+    },
+    {
+      "artist": "鈴木真海子",
+      "title": "Parmesan",
+      "firstSeen": "2026-07-31T09:16:21.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E9%88%B4%E6%9C%A8%E7%9C%9F%E6%B5%B7%E5%AD%90%20Parmesan",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/mamiko-suzuki-parmesan"
+        }
+      ],
+      "youtube": {
+        "videoId": "ez3ZOKBOBPg",
+        "viewCount": 385,
+        "publishedAt": "2026-07-28T10:05:28Z",
+        "channelSubscriberCount": 7920,
+        "channelCountry": null,
+        "viewVelocity": 62.67748717309012
+      }
+    },
+    {
+      "artist": "SKyNet",
+      "title": "C*MEL MENTHOL",
+      "firstSeen": "2026-07-30T23:15:03.000Z",
+      "youtubeId": "hO1Mpktljvw",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=SKyNet%20C*MEL%20MENTHOL",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/harka-enel-skynet-camel-menthol"
+        }
+      ],
+      "youtube": {
+        "videoId": "hO1Mpktljvw",
+        "viewCount": 47173,
+        "publishedAt": "2026-06-03T12:00:06Z",
+        "channelSubscriberCount": 687,
+        "channelCountry": "JP",
+        "viewVelocity": 772.5306435832086
+      }
+    },
+    {
+      "artist": "MIKADO",
+      "title": "Bling Blaow",
+      "firstSeen": "2026-07-30T22:59:33.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=MIKADO%20Bling%20Blaow",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/mikado-bling-blaow"
+        }
+      ],
+      "youtube": {
+        "videoId": "c702p2nEGK8",
+        "viewCount": 45819,
+        "publishedAt": "2026-07-31T12:00:06Z",
+        "channelSubscriberCount": 20300,
+        "channelCountry": "JP",
+        "viewVelocity": 14959.10844511494
+      }
+    },
+    {
+      "artist": "Kouichi Arakawa",
+      "title": "RPG",
+      "firstSeen": "2026-07-30T11:26:09.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Kouichi%20Arakawa%20RPG",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/kouichi-arakawa-rpg"
+        }
+      ],
+      "youtube": {
+        "videoId": "Hf6xuDjGYBs",
+        "viewCount": 168,
+        "publishedAt": "2026-07-28T10:04:09Z",
+        "channelSubscriberCount": 139,
+        "channelCountry": null,
+        "viewVelocity": 27.346105609227298
+      }
+    },
+    {
+      "artist": "【JAPAN最新号】「マルシィの夏休み」──初の全国ホールツアー完走！",
+      "title": "花火が瞬いて",
+      "firstSeen": "2026-07-30T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%90JAPAN%E6%9C%80%E6%96%B0%E5%8F%B7%E3%80%91%E3%80%8C%E3%83%9E%E3%83%AB%E3%82%B7%E3%82%A3%E3%81%AE%E5%A4%8F%E4%BC%91%E3%81%BF%E3%80%8D%E2%94%80%E2%94%80%E5%88%9D%E3%81%AE%E5%85%A8%E5%9B%BD%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%84%E3%82%A2%E3%83%BC%E5%AE%8C%E8%B5%B0%EF%BC%81%20%E8%8A%B1%E7%81%AB%E3%81%8C%E7%9E%AC%E3%81%84%E3%81%A6",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215589"
+        }
+      ],
+      "youtube": null
+    },
+    {
+      "artist": "【JAPAN最新号】ロングツアー「CEN+RAL」で見せたロックの王者のファイティングポーズ。ネクストフェーズを示す",
+      "title": "GO GHOST",
+      "firstSeen": "2026-07-30T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%90JAPAN%E6%9C%80%E6%96%B0%E5%8F%B7%E3%80%91%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%84%E3%82%A2%E3%83%BC%E3%80%8CCEN%2BRAL%E3%80%8D%E3%81%A7%E8%A6%8B%E3%81%9B%E3%81%9F%E3%83%AD%E3%83%83%E3%82%AF%E3%81%AE%E7%8E%8B%E8%80%85%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9D%E3%83%BC%E3%82%BA%E3%80%82%E3%83%8D%E3%82%AF%E3%82%B9%E3%83%88%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA%E3%82%92%E7%A4%BA%E3%81%99%20GO%20GHOST",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215583"
+        }
+      ],
+      "youtube": null
+    },
+    {
+      "artist": "orlik",
+      "title": "EOV",
+      "firstSeen": "2026-07-29T12:30:09.000Z",
+      "youtubeId": "_wstRubGqRE",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=orlik%20EOV",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/orlik-eov"
+        }
+      ],
+      "youtube": {
+        "videoId": "_wstRubGqRE",
+        "viewCount": 103,
+        "publishedAt": "2026-07-29T11:00:36Z",
+        "channelSubscriberCount": 113,
+        "channelCountry": null,
+        "viewVelocity": 20.179185827855214
+      }
+    },
+    {
+      "artist": "Kzyboost",
+      "title": "Duality",
+      "firstSeen": "2026-07-29T11:00:24.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Kzyboost%20Duality",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/kzyboost-duality"
+        }
+      ],
+      "youtube": {
+        "videoId": "AJT85QTCxPQ",
+        "viewCount": 1178,
+        "publishedAt": "2026-07-28T10:04:02Z",
+        "channelSubscriberCount": 418,
+        "channelCountry": null,
+        "viewVelocity": 191.745759446935
+      }
+    },
+    {
+      "artist": "It-Works",
+      "title": "loose",
+      "firstSeen": "2026-07-29T11:00:19.000Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=It-Works%20loose",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/it-works-loose"
+        }
+      ],
+      "youtube": {
+        "videoId": "pEszX7vHkPc",
+        "viewCount": 478,
+        "publishedAt": "2026-07-28T10:03:53Z",
+        "channelSubscriberCount": 285,
+        "channelCountry": null,
+        "viewVelocity": 77.8038361624967
+      }
+    },
+    {
+      "artist": "永井琳子",
+      "title": "i i n e",
+      "firstSeen": "2026-07-29T10:00:11.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E6%B0%B8%E4%BA%95%E7%90%B3%E5%AD%90%20i%20i%20n%20e",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/rinko-nagai-iine"
+        }
+      ],
+      "youtube": {
+        "videoId": "XjkeAwydchU",
+        "viewCount": 952,
+        "publishedAt": "2026-07-28T10:03:01Z",
+        "channelSubscriberCount": 40,
+        "channelCountry": null,
+        "viewVelocity": 154.94141564988357
+      }
+    },
+    {
+      "artist": "Pikes",
+      "title": "Tururu",
+      "firstSeen": "2026-07-29T08:05:03.000Z",
+      "youtubeId": "ELxC-0pZU70",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Pikes%20Tururu",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/punipuni-denki-pikes-tururu"
+        }
+      ],
+      "youtube": {
+        "videoId": "ELxC-0pZU70",
+        "viewCount": 10772,
+        "publishedAt": "2026-07-28T15:04:34Z",
+        "channelSubscriberCount": 57900,
+        "channelCountry": "JP",
+        "viewVelocity": 1815.0422518246273
+      }
+    },
+    {
+      "artist": "YDIZZY",
+      "title": "roLL caLL",
+      "firstSeen": "2026-07-29T08:00:17.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=YDIZZY%20roLL%20caLL",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/ydizzy-roll-call"
+        }
+      ],
+      "youtube": {
+        "videoId": "7fJXcln8iTI",
+        "viewCount": 957,
+        "publishedAt": "2026-07-28T10:05:22Z",
+        "channelSubscriberCount": 743,
+        "channelCountry": null,
+        "viewVelocity": 155.79656390652679
+      }
+    },
+    {
+      "artist": "Gimgigam",
+      "title": "Naoshima",
+      "firstSeen": "2026-07-29T04:04:43.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Gimgigam%20Naoshima",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/gimgigam-zin-naoshima-remix"
+        }
+      ],
+      "youtube": {
+        "videoId": "z64tEJLn-Yc",
+        "viewCount": 2280,
+        "publishedAt": "2024-07-23T10:03:46Z",
+        "channelSubscriberCount": 50,
+        "channelCountry": null,
+        "viewVelocity": 3.076326340372625
+      }
+    },
+    {
+      "artist": "jean",
+      "title": "ENERGY",
+      "firstSeen": "2026-07-29T03:35:20.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=jean%20ENERGY",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/jean-energy"
+        }
+      ],
+      "youtube": {
+        "videoId": "0b_KvqAdeMs",
+        "viewCount": 2759240,
+        "publishedAt": "2023-03-22T17:00:11Z",
+        "channelSubscriberCount": 66300,
+        "channelCountry": null,
+        "viewVelocity": 2243.549841277442
+      }
+    }
+  ]
+}
