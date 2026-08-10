@@ -1,0 +1,608 @@
+{
+  "weekOf": "2026-08-10",
+  "generatedAt": "2026-08-10T08:18:25.687Z",
+  "blogsChecked": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "blogsWithResults": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "songs": [
+    {
+      "artist": "あっこゴリラ",
+      "title": "クレイジージャーニー",
+      "firstSeen": "2026-08-04T09:00:36.000Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%81%82%E3%81%A3%E3%81%93%E3%82%B3%E3%82%99%E3%83%AA%E3%83%A9%20%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8B%E3%83%BC",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/akko-gorilla-crazy-journey"
+        },
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/nankyoku_pengins/song/34823298-22d5-413e-8d06-0c2ee4da959c"
+        }
+      ],
+      "youtube": {
+        "videoId": "DDmGvwgY00w",
+        "viewCount": 243,
+        "publishedAt": "2026-08-04T10:03:34Z",
+        "channelSubscriberCount": 352,
+        "channelCountry": null,
+        "viewVelocity": 40.998908072491325
+      }
+    },
+    {
+      "artist": "the奥歯's",
+      "title": "指先",
+      "firstSeen": "2026-08-10T08:18:25.687Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=the%E5%A5%A5%E6%AD%AF's%20%E6%8C%87%E5%85%88",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/okuba_010101/song/4f5e3632-59fa-4a0a-826a-d50769941de9"
+        }
+      ],
+      "youtube": {
+        "videoId": "NgykMBnrZJk",
+        "viewCount": 4605623,
+        "publishedAt": "2023-10-28T12:00:30Z",
+        "channelSubscriberCount": 514000,
+        "channelCountry": "JP",
+        "viewVelocity": 4529.323005633458
+      }
+    },
+    {
+      "artist": "Sick Lily",
+      "title": "青春のエンドロール",
+      "firstSeen": "2026-08-10T08:18:25.687Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Sick%20Lily%20%E9%9D%92%E6%98%A5%E3%81%AE%E3%82%A8%E3%83%B3%E3%83%89%E3%83%AD%E3%83%BC%E3%83%AB",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/sick_lily_band/song/fd39fd2e-6f3f-49b2-b763-f2de00d65686"
+        }
+      ],
+      "youtube": {
+        "videoId": "Ucbp-Ej5RpI",
+        "viewCount": 45485193,
+        "publishedAt": "2017-08-01T02:59:51Z",
+        "channelSubscriberCount": 1760000,
+        "channelCountry": "JP",
+        "viewVelocity": 13799.193003110156
+      }
+    },
+    {
+      "artist": "Atlas Youth",
+      "title": "星に揺られて",
+      "firstSeen": "2026-08-10T08:18:25.687Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Atlas%20Youth%20%E6%98%9F%E3%81%AB%E6%8F%BA%E3%82%89%E3%82%8C%E3%81%A6",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/atlas_youth/song/2d706f24-ab7f-4f86-a739-ea8fa2802ad3"
+        }
+      ],
+      "youtube": {
+        "videoId": "eCvyQx16DJ0",
+        "viewCount": 5925,
+        "publishedAt": "2026-04-26T10:03:28Z",
+        "channelSubscriberCount": 26,
+        "channelCountry": null,
+        "viewVelocity": 55.93471764698833
+      }
+    },
+    {
+      "artist": "cotan.",
+      "title": "心の蛇口",
+      "firstSeen": "2026-08-10T08:18:25.687Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=cotan.%20%E5%BF%83%E3%81%AE%E8%9B%87%E5%8F%A3",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/cotan_band/song/f541f170-246e-4530-8aaf-52f226c2db3c"
+        }
+      ],
+      "youtube": {
+        "videoId": "VosDLpIeP9k",
+        "viewCount": 5027,
+        "publishedAt": "2023-02-24T15:51:40Z",
+        "channelSubscriberCount": 1830,
+        "channelCountry": "JP",
+        "viewVelocity": 3.98119800321668
+      }
+    },
+    {
+      "artist": "青い春",
+      "title": "首元を切ったTシャツ demo",
+      "firstSeen": "2026-08-10T08:18:25.687Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E9%9D%92%E3%81%84%E6%98%A5%20%E9%A6%96%E5%85%83%E3%82%92%E5%88%87%E3%81%A3%E3%81%9FT%E3%82%B7%E3%83%A3%E3%83%84%20demo",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/A0IHARU/song/2b7a41ec-2947-4de9-8b4f-a1dd940eb4c4"
+        }
+      ],
+      "youtube": {
+        "videoId": "OL5zpjBNCEE",
+        "viewCount": 8211477,
+        "publishedAt": "2023-09-01T14:00:18Z",
+        "channelSubscriberCount": 164000,
+        "channelCountry": "JP",
+        "viewVelocity": 7647.386009115399
+      }
+    },
+    {
+      "artist": "軟式ゴルフ46",
+      "title": "余光",
+      "firstSeen": "2026-08-10T08:18:25.687Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E8%BB%9F%E5%BC%8F%E3%82%B4%E3%83%AB%E3%83%9546%20%E4%BD%99%E5%85%89",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/nangol_46/song/c636f689-eef5-4d3a-a847-1c9bee77ecd2"
+        }
+      ],
+      "youtube": {
+        "videoId": "0DYAIVrbMhw",
+        "viewCount": 6664,
+        "publishedAt": "2023-06-14T09:00:00Z",
+        "channelSubscriberCount": 66000,
+        "channelCountry": "JP",
+        "viewVelocity": 5.779849835720255
+      }
+    },
+    {
+      "artist": "LoopsTop",
+      "title": "君なり",
+      "firstSeen": "2026-08-10T08:18:25.687Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=LoopsTop%20%E5%90%9B%E3%81%AA%E3%82%8A",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/loopstop_band/song/fec07f44-74a1-49b4-b451-a5801311079b"
+        }
+      ],
+      "youtube": {
+        "videoId": "2mcbDnQ6C9s",
+        "viewCount": 889619,
+        "publishedAt": "2022-09-22T03:53:21Z",
+        "channelSubscriberCount": 13600,
+        "channelCountry": "JP",
+        "viewVelocity": 627.2944473678187
+      }
+    },
+    {
+      "artist": "新浜レオン",
+      "title": "愛のFIRE",
+      "firstSeen": "2026-08-10T05:55:00.000Z",
+      "youtubeId": "uyKZvvQ6yNM",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E6%96%B0%E6%B5%9C%E3%83%AC%E3%82%AA%E3%83%B3%20%E6%84%9B%E3%81%AEFIRE",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1082475"
+        }
+      ],
+      "youtube": {
+        "videoId": "uyKZvvQ6yNM",
+        "viewCount": 15624,
+        "publishedAt": "2026-08-08T08:00:16Z",
+        "channelSubscriberCount": 34700,
+        "channelCountry": null,
+        "viewVelocity": 7763.045775106836
+      }
+    },
+    {
+      "artist": "jjean",
+      "title": "gossip boy",
+      "firstSeen": "2026-08-07T13:07:50.000Z",
+      "youtubeId": "AnM0pqbrko8",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=jjean%20gossip%20boy",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/jjean-sheida-gossip-boy"
+        }
+      ],
+      "youtube": {
+        "videoId": "AnM0pqbrko8",
+        "viewCount": 6607,
+        "publishedAt": "2026-08-07T12:00:31Z",
+        "channelSubscriberCount": 3720,
+        "channelCountry": "JP",
+        "viewVelocity": 2321.6899916175594
+      }
+    },
+    {
+      "artist": "ICHIRO",
+      "title": "幸せでいい",
+      "firstSeen": "2026-08-07T11:00:57.000Z",
+      "youtubeId": "LHZSL-1mh_A",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=ICHIRO%20%E5%B9%B8%E3%81%9B%E3%81%A7%E3%81%84%E3%81%84",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/ichiro-shiawasedeii"
+        }
+      ],
+      "youtube": {
+        "videoId": "LHZSL-1mh_A",
+        "viewCount": 5487,
+        "publishedAt": "2026-08-07T11:02:59Z",
+        "channelSubscriberCount": 3440,
+        "channelCountry": null,
+        "viewVelocity": 1901.4282253708363
+      }
+    },
+    {
+      "artist": "TOKYO世界",
+      "title": "Don’t ride on",
+      "firstSeen": "2026-08-07T11:00:53.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=TOKYO%E4%B8%96%E7%95%8C%20Don%E2%80%99t%20ride%20on",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/tokyo-sekai-dont-ride-on"
+        }
+      ],
+      "youtube": {
+        "videoId": "xdBXaH_bwpk",
+        "viewCount": 535,
+        "publishedAt": "2026-08-07T10:03:39Z",
+        "channelSubscriberCount": 1490,
+        "channelCountry": null,
+        "viewVelocity": 182.78542278502783
+      }
+    },
+    {
+      "artist": "isa",
+      "title": "pretty girl has problems",
+      "firstSeen": "2026-08-07T09:00:41.000Z",
+      "youtubeId": "JKLkZFBefTM",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=isa%20pretty%20girl%20has%20problems",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/isa-pretty-girl-has-problems"
+        }
+      ],
+      "youtube": {
+        "videoId": "JKLkZFBefTM",
+        "viewCount": 154,
+        "publishedAt": "2026-08-07T09:00:24Z",
+        "channelSubscriberCount": 450,
+        "channelCountry": null,
+        "viewVelocity": 51.8369664603303
+      }
+    },
+    {
+      "artist": "舐達麻のG PLANTSがソロデビュー 5年間温めてきた",
+      "title": "Ryuchijo",
+      "firstSeen": "2026-08-07T07:20:22.000Z",
+      "youtubeId": "A7F5F_osIGA",
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E8%88%90%E9%81%94%E9%BA%BB%E3%81%AEG%20PLANTS%E3%81%8C%E3%82%BD%E3%83%AD%E3%83%87%E3%83%93%E3%83%A5%E3%83%BC%205%E5%B9%B4%E9%96%93%E6%B8%A9%E3%82%81%E3%81%A6%E3%81%8D%E3%81%9F%20Ryuchijo",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/g-plants-ryuchijo"
+        }
+      ],
+      "youtube": {
+        "videoId": "A7F5F_osIGA",
+        "viewCount": 100834,
+        "publishedAt": "2026-08-07T07:20:27Z",
+        "channelSubscriberCount": 4930,
+        "channelCountry": "JP",
+        "viewVelocity": 33166.21420450453
+      }
+    },
+    {
+      "artist": "killwiz",
+      "title": "NEW ASIA",
+      "firstSeen": "2026-08-06T11:00:28.000Z",
+      "youtubeId": "2_6PyI5USxA",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=killwiz%20NEW%20ASIA",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/killwiz-new-asia"
+        }
+      ],
+      "youtube": {
+        "videoId": "2_6PyI5USxA",
+        "viewCount": 14266,
+        "publishedAt": "2026-08-06T11:00:06Z",
+        "channelSubscriberCount": 7650,
+        "channelCountry": "JP",
+        "viewVelocity": 3669.4955300747274
+      }
+    },
+    {
+      "artist": "IBUKI × idom",
+      "title": "SLIDE LIKE THIS",
+      "firstSeen": "2026-08-05T11:00:57.000Z",
+      "youtubeId": "DfwEPrpB2fA",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=IBUKI%20%C3%97%20idom%20SLIDE%20LIKE%20THIS",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/ibuki-slide-like-this-idom-reggae-rmx"
+        }
+      ],
+      "youtube": {
+        "videoId": "DfwEPrpB2fA",
+        "viewCount": 12543,
+        "publishedAt": "2026-07-06T11:00:01Z",
+        "channelSubscriberCount": 1460,
+        "channelCountry": null,
+        "viewVelocity": 359.5241067281
+      }
+    },
+    {
+      "artist": "大橋トリオ",
+      "title": "Day of the green",
+      "firstSeen": "2026-08-05T08:14:22.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E5%A4%A7%E6%A9%8B%E3%83%88%E3%83%AA%E3%82%AA%20Day%20of%20the%20green",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/ohashi-trio-day-of-the-green"
+        }
+      ],
+      "youtube": {
+        "videoId": "DyNkFeq5BZE",
+        "viewCount": 6,
+        "publishedAt": "2026-08-05T06:32:02Z",
+        "channelSubscriberCount": 22,
+        "channelCountry": null,
+        "viewVelocity": 1.182525753974965
+      }
+    },
+    {
+      "artist": "DJ KRUTCH",
+      "title": "A.S.A.P",
+      "firstSeen": "2026-08-04T15:00:45.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=DJ%20KRUTCH%20A.S.A.P",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/dj-krutch-asap"
+        }
+      ],
+      "youtube": {
+        "videoId": "iBCi75Wov2U",
+        "viewCount": 957,
+        "publishedAt": "2026-08-04T10:03:22Z",
+        "channelSubscriberCount": 118,
+        "channelCountry": null,
+        "viewVelocity": 161.46105192950895
+      }
+    },
+    {
+      "artist": "関谷拳四郎",
+      "title": "CHANGE MY LIFE",
+      "firstSeen": "2026-08-04T15:00:43.000Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E9%96%A2%E8%B0%B7%E6%8B%B3%E5%9B%9B%E9%83%8E%20CHANGE%20MY%20LIFE",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/kenshiro-sekiya-change-my-life"
+        }
+      ],
+      "youtube": {
+        "videoId": "LHqppreVdBA",
+        "viewCount": 35,
+        "publishedAt": "2026-08-04T10:04:19Z",
+        "channelSubscriberCount": 23,
+        "channelCountry": null,
+        "viewVelocity": 5.905711484468603
+      }
+    },
+    {
+      "artist": "寺久保伶矢",
+      "title": "REM",
+      "firstSeen": "2026-08-04T15:00:22.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E5%AF%BA%E4%B9%85%E4%BF%9D%E4%BC%B6%E7%9F%A2%20REM",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/reiya-terakubo-rem"
+        }
+      ],
+      "youtube": {
+        "videoId": "kGBRBk9Hnw8",
+        "viewCount": 210,
+        "publishedAt": "2026-08-04T10:03:27Z",
+        "channelSubscriberCount": 250,
+        "channelCountry": null,
+        "viewVelocity": 35.4306708074024
+      }
+    },
+    {
+      "artist": "MERI",
+      "title": "あと何回",
+      "firstSeen": "2026-08-04T15:00:05.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=MERI%20%E3%81%82%E3%81%A8%E4%BD%95%E5%9B%9E",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/meri-atonankai"
+        }
+      ],
+      "youtube": {
+        "videoId": "Lo-PaJ8KkzU",
+        "viewCount": 2864,
+        "publishedAt": "2026-08-04T10:02:43Z",
+        "channelSubscriberCount": 1870,
+        "channelCountry": null,
+        "viewVelocity": 483.1653488005385
+      }
+    },
+    {
+      "artist": "森田美勇人",
+      "title": "hi-lite",
+      "firstSeen": "2026-08-04T11:00:11.000Z",
+      "youtubeId": "slzUbRSrPIE",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E6%A3%AE%E7%94%B0%E7%BE%8E%E5%8B%87%E4%BA%BA%20hi-lite",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/myuto-morita-hi-lite-mv"
+        }
+      ],
+      "youtube": {
+        "videoId": "slzUbRSrPIE",
+        "viewCount": 31967,
+        "publishedAt": "2026-08-04T11:00:06Z",
+        "channelSubscriberCount": 12300,
+        "channelCountry": "JP",
+        "viewVelocity": 5429.428935347468
+      }
+    },
+    {
+      "artist": "80KIDZ",
+      "title": "Keep Moving",
+      "firstSeen": "2026-08-04T03:00:34.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=80KIDZ%20Keep%20Moving",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/80kidz-keep-moving-taichi-mukai"
+        }
+      ],
+      "youtube": {
+        "videoId": "UcwF8Zg0Jg4",
+        "viewCount": 4152,
+        "publishedAt": "2026-08-04T10:03:57Z",
+        "channelSubscriberCount": 2340,
+        "channelCountry": null,
+        "viewVelocity": 700.5560174000642
+      }
+    },
+    {
+      "artist": "【JAPAN最新号】「マルシィの夏休み」──初の全国ホールツアー完走！",
+      "title": "花火が瞬いて",
+      "firstSeen": "2026-07-30T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%90JAPAN%E6%9C%80%E6%96%B0%E5%8F%B7%E3%80%91%E3%80%8C%E3%83%9E%E3%83%AB%E3%82%B7%E3%82%A3%E3%81%AE%E5%A4%8F%E4%BC%91%E3%81%BF%E3%80%8D%E2%94%80%E2%94%80%E5%88%9D%E3%81%AE%E5%85%A8%E5%9B%BD%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%84%E3%82%A2%E3%83%BC%E5%AE%8C%E8%B5%B0%EF%BC%81%20%E8%8A%B1%E7%81%AB%E3%81%8C%E7%9E%AC%E3%81%84%E3%81%A6",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215589"
+        }
+      ],
+      "youtube": null
+    },
+    {
+      "artist": "【JAPAN最新号】ロングツアー「CEN+RAL」で見せたロックの王者のファイティングポーズ。ネクストフェーズを示す",
+      "title": "GO GHOST",
+      "firstSeen": "2026-07-30T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%90JAPAN%E6%9C%80%E6%96%B0%E5%8F%B7%E3%80%91%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%84%E3%82%A2%E3%83%BC%E3%80%8CCEN%2BRAL%E3%80%8D%E3%81%A7%E8%A6%8B%E3%81%9B%E3%81%9F%E3%83%AD%E3%83%83%E3%82%AF%E3%81%AE%E7%8E%8B%E8%80%85%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9D%E3%83%BC%E3%82%BA%E3%80%82%E3%83%8D%E3%82%AF%E3%82%B9%E3%83%88%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA%E3%82%92%E7%A4%BA%E3%81%99%20GO%20GHOST",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215583"
+        }
+      ],
+      "youtube": null
+    }
+  ]
+}
