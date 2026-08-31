@@ -1,0 +1,474 @@
+{
+  "weekOf": "2026-08-31",
+  "generatedAt": "2026-08-31T09:33:24.937Z",
+  "blogsChecked": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "blogsWithResults": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "songs": [
+    {
+      "artist": "Atlas Youth",
+      "title": "春愁",
+      "firstSeen": "2026-08-31T09:33:24.937Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Atlas%20Youth%20%E6%98%A5%E6%84%81",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/atlas_youth/song/a1330f56-9d9a-47e0-b3d4-42571042b14e"
+        }
+      ],
+      "youtube": {
+        "videoId": "70PmYkCSiCA",
+        "viewCount": 1180,
+        "publishedAt": "2026-08-30T08:00:51Z",
+        "channelSubscriberCount": 367,
+        "channelCountry": "JP",
+        "viewVelocity": 1108.7290368002405
+      }
+    },
+    {
+      "artist": "the奥歯's",
+      "title": "指先",
+      "firstSeen": "2026-08-31T09:33:24.937Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=the%E5%A5%A5%E6%AD%AF's%20%E6%8C%87%E5%85%88",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/okuba_010101/song/4f5e3632-59fa-4a0a-826a-d50769941de9"
+        }
+      ],
+      "youtube": {
+        "videoId": "NgykMBnrZJk",
+        "viewCount": 4900073,
+        "publishedAt": "2023-10-28T12:00:30Z",
+        "channelSubscriberCount": 515000,
+        "channelCountry": "JP",
+        "viewVelocity": 4721.151471615303
+      }
+    },
+    {
+      "artist": "SuperJaded.",
+      "title": "パノラマオレンジ",
+      "firstSeen": "2026-08-31T09:33:24.937Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=SuperJaded.%20%E3%83%91%E3%83%8E%E3%83%A9%E3%83%9E%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/SuperJaded_jp/song/c274fde5-16a6-489c-bfd7-eca06e287843"
+        }
+      ],
+      "youtube": {
+        "videoId": "G3RYVDj9nk4",
+        "viewCount": 5360,
+        "publishedAt": "2026-08-24T03:00:03Z",
+        "channelSubscriberCount": 40,
+        "channelCountry": "JP",
+        "viewVelocity": 736.9550803914851
+      }
+    },
+    {
+      "artist": "worryheart",
+      "title": "破顔",
+      "firstSeen": "2026-08-31T09:33:24.937Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=worryheart%20%E7%A0%B4%E9%A1%94",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/worryheart/song/14d1e7e7-7773-4e46-b7c6-054c5bbbd752"
+        }
+      ],
+      "youtube": {
+        "videoId": "KcJOCLPxlOQ",
+        "viewCount": 2461,
+        "publishedAt": "2026-06-29T13:00:07Z",
+        "channelSubscriberCount": 54700,
+        "channelCountry": "JP",
+        "viewVelocity": 39.152699560289314
+      }
+    },
+    {
+      "artist": "SWEET GIRL",
+      "title": "ユメウツツ",
+      "firstSeen": "2026-08-31T09:33:24.937Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=SWEET%20GIRL%20%E3%83%A6%E3%83%A1%E3%82%A6%E3%83%84%E3%83%84",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/sweetgirl_mygn/song/ab52e7b2-aa88-4d93-a78f-07401c155816"
+        }
+      ],
+      "youtube": {
+        "videoId": "UeDB0hsVDso",
+        "viewCount": 58895,
+        "publishedAt": "2026-07-04T03:00:04Z",
+        "channelSubscriberCount": 132000,
+        "channelCountry": "JP",
+        "viewVelocity": 1010.6711394695207
+      }
+    },
+    {
+      "artist": "MAZZEL",
+      "title": "Touch",
+      "firstSeen": "2026-08-31T09:30:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=MAZZEL%20Touch",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1086203"
+        }
+      ],
+      "youtube": {
+        "videoId": "D-6zWGgatX8",
+        "viewCount": 2161010,
+        "publishedAt": "2026-04-17T11:00:03Z",
+        "channelSubscriberCount": 508000,
+        "channelCountry": "JP",
+        "viewVelocity": 15896.811736528598
+      }
+    },
+    {
+      "artist": "Zilqy",
+      "title": "CAVEAT",
+      "firstSeen": "2026-08-31T09:00:00.000Z",
+      "youtubeId": "DCQljFuV-jE",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Zilqy%20CAVEAT",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1086158"
+        }
+      ],
+      "youtube": {
+        "videoId": "DCQljFuV-jE",
+        "viewCount": 172,
+        "publishedAt": "2026-08-31T09:00:36Z",
+        "channelSubscriberCount": 26100,
+        "channelCountry": "JP",
+        "viewVelocity": 172
+      }
+    },
+    {
+      "artist": "heykazma",
+      "title": "blueberry",
+      "firstSeen": "2026-08-31T05:00:40.000Z",
+      "youtubeId": "H_Dre6et2h0",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=heykazma%20blueberry",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/heykazma-blueberry-ft-fuki-kitamura"
+        }
+      ],
+      "youtube": {
+        "videoId": "H_Dre6et2h0",
+        "viewCount": 1538,
+        "publishedAt": "2026-08-30T15:18:52Z",
+        "channelSubscriberCount": 611000,
+        "channelCountry": "JP",
+        "viewVelocity": 1538
+      }
+    },
+    {
+      "artist": "【JAPAN最新号】唯一無二のパイオニア",
+      "title": "Stella",
+      "firstSeen": "2026-08-31T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%90JAPAN%E6%9C%80%E6%96%B0%E5%8F%B7%E3%80%91%E5%94%AF%E4%B8%80%E7%84%A1%E4%BA%8C%E3%81%AE%E3%83%91%E3%82%A4%E3%82%AA%E3%83%8B%E3%82%A2%20Stella",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215740"
+        }
+      ],
+      "youtube": {
+        "videoId": "L_GJXWzLJ-Q",
+        "viewCount": 232,
+        "publishedAt": "2022-05-20T08:00:13Z",
+        "channelSubscriberCount": 4050,
+        "channelCountry": "JP",
+        "viewVelocity": 0.14833145765127476
+      }
+    },
+    {
+      "artist": "【JAPAN最新号】人は何を纏い",
+      "title": "見知らぬ糸",
+      "firstSeen": "2026-08-31T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%90JAPAN%E6%9C%80%E6%96%B0%E5%8F%B7%E3%80%91%E4%BA%BA%E3%81%AF%E4%BD%95%E3%82%92%E7%BA%8F%E3%81%84%20%E8%A6%8B%E7%9F%A5%E3%82%89%E3%81%AC%E7%B3%B8",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215738"
+        }
+      ],
+      "youtube": {
+        "videoId": "z8UdXGPKrqU",
+        "viewCount": 6159,
+        "publishedAt": "2022-08-27T09:38:39Z",
+        "channelSubscriberCount": 117000,
+        "channelCountry": "JP",
+        "viewVelocity": 4.2041059944550385
+      }
+    },
+    {
+      "artist": "Kohjiya",
+      "title": "So Far",
+      "firstSeen": "2026-08-28T10:00:40.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Kohjiya%20So%20Far",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/kohjiya-so-far"
+        }
+      ],
+      "youtube": {
+        "videoId": "zNc-lSuwc6k",
+        "viewCount": 758,
+        "publishedAt": "2021-04-18T15:22:17Z",
+        "channelSubscriberCount": 1510,
+        "channelCountry": null,
+        "viewVelocity": 0.3865852410583975
+      }
+    },
+    {
+      "artist": "blend house × Natsu Summer",
+      "title": "メロい夏",
+      "firstSeen": "2026-08-28T03:00:34.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=blend%20house%20%C3%97%20Natsu%20Summer%20%E3%83%A1%E3%83%AD%E3%81%84%E5%A4%8F",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/blend-house-natsu-summer-meroinatsu"
+        }
+      ],
+      "youtube": {
+        "videoId": "6Nr-P4wkE60",
+        "viewCount": 211,
+        "publishedAt": "2026-08-27T10:03:59Z",
+        "channelSubscriberCount": 45,
+        "channelCountry": null,
+        "viewVelocity": 53.03143225618657
+      }
+    },
+    {
+      "artist": "HOME",
+      "title": "Summer Luv",
+      "firstSeen": "2026-08-27T12:12:03.000Z",
+      "youtubeId": "4fv3p5QhzOI",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=HOME%20Summer%20Luv",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/bby-bussin-o-png-summer-luv"
+        }
+      ],
+      "youtube": {
+        "videoId": "4fv3p5QhzOI",
+        "viewCount": 6,
+        "publishedAt": "2026-04-30T10:05:38Z",
+        "channelSubscriberCount": 6,
+        "channelCountry": null,
+        "viewVelocity": 0.04878936247660692
+      }
+    },
+    {
+      "artist": "18scott",
+      "title": "Black Ink",
+      "firstSeen": "2026-08-27T10:00:52.000Z",
+      "youtubeId": "FfV5ZArRgsA",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=18scott%20Black%20Ink",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/18scott-black-ink"
+        }
+      ],
+      "youtube": {
+        "videoId": "FfV5ZArRgsA",
+        "viewCount": 7097,
+        "publishedAt": "2026-08-27T10:00:29Z",
+        "channelSubscriberCount": 4830,
+        "channelCountry": "JP",
+        "viewVelocity": 1782.627021377952
+      }
+    },
+    {
+      "artist": "Tina",
+      "title": "Filter",
+      "firstSeen": "2026-08-26T09:00:15.000Z",
+      "youtubeId": "Ei749e0i8j0",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Tina%20Filter",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/tina-filter-ft-arche"
+        }
+      ],
+      "youtube": {
+        "videoId": "Ei749e0i8j0",
+        "viewCount": 30724,
+        "publishedAt": "2026-08-26T09:00:24Z",
+        "channelSubscriberCount": 69400,
+        "channelCountry": "JP",
+        "viewVelocity": 6116.751621281467
+      }
+    },
+    {
+      "artist": "YRD Leo",
+      "title": "summer",
+      "firstSeen": "2026-08-26T09:00:12.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=YRD%20Leo%20summer",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/yrd-leo"
+        }
+      ],
+      "youtube": {
+        "videoId": "ACb0UOJGAGI",
+        "viewCount": 55769,
+        "publishedAt": "2026-08-18T10:04:45Z",
+        "channelSubscriberCount": 3370,
+        "channelCountry": null,
+        "viewVelocity": 4297.115783824684
+      }
+    },
+    {
+      "artist": "めっちゃ美人",
+      "title": "Nerine",
+      "firstSeen": "2026-08-26T03:05:55.000Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%82%81%E3%81%A3%E3%81%A1%E3%82%83%E7%BE%8E%E4%BA%BA%20Nerine",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/mettya-bizin-nerine"
+        }
+      ],
+      "youtube": {
+        "videoId": "txWxGAC2hUM",
+        "viewCount": 305,
+        "publishedAt": "2026-08-25T10:05:22Z",
+        "channelSubscriberCount": 153,
+        "channelCountry": null,
+        "viewVelocity": 51.022014692423426
+      }
+    },
+    {
+      "artist": "OZworld",
+      "title": "等身大",
+      "firstSeen": "2026-08-25T15:00:58.000Z",
+      "youtubeId": "8NQuG6gSx2E",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=OZworld%20%E7%AD%89%E8%BA%AB%E5%A4%A7",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/ozworld-toushindai-okumaleo"
+        }
+      ],
+      "youtube": {
+        "videoId": "8NQuG6gSx2E",
+        "viewCount": 306754,
+        "publishedAt": "2026-08-25T15:00:18Z",
+        "channelSubscriberCount": 1,
+        "channelCountry": "JP",
+        "viewVelocity": 53136.00584531748
+      }
+    },
+    {
+      "artist": "NFN TEFER",
+      "title": "White",
+      "firstSeen": "2026-08-25T15:00:06.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=NFN%20TEFER%20White",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/nfn-tefer-agul-masagotta4l-white"
+        }
+      ],
+      "youtube": {
+        "videoId": "K5lmRN0hlKo",
+        "viewCount": 135,
+        "publishedAt": "2026-08-21T10:03:17Z",
+        "channelSubscriberCount": 124,
+        "channelCountry": null,
+        "viewVelocity": 13.528059183245492
+      }
+    }
+  ]
+}
