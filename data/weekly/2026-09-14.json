@@ -1,0 +1,574 @@
+{
+  "weekOf": "2026-09-14",
+  "generatedAt": "2026-09-14T08:44:57.642Z",
+  "blogsChecked": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "blogsWithResults": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "songs": [
+    {
+      "artist": "折坂悠太",
+      "title": "シミレ",
+      "firstSeen": "2026-09-09T03:00:15.000Z",
+      "youtubeId": "b6Zi9uxRumc",
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E6%8A%98%E5%9D%82%E6%82%A0%E5%A4%AA%20%E3%82%B7%E3%83%9F%E3%83%AC",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/yuta-orisaka-shimire-ft-satoko-shibata"
+        },
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/furaFlower/song/55c95064-7720-48f6-9425-8c17e279c2c7"
+        }
+      ],
+      "youtube": {
+        "videoId": "b6Zi9uxRumc",
+        "viewCount": 156019,
+        "publishedAt": "2026-06-23T23:00:06Z",
+        "channelSubscriberCount": 49400,
+        "channelCountry": "JP",
+        "viewVelocity": 1893.2930833499897
+      }
+    },
+    {
+      "artist": "SuperJaded.",
+      "title": "パノラマオレンジ",
+      "firstSeen": "2026-09-14T08:44:57.642Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=SuperJaded.%20%E3%83%91%E3%83%8E%E3%83%A9%E3%83%9E%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/SuperJaded_jp/song/c274fde5-16a6-489c-bfd7-eca06e287843"
+        }
+      ],
+      "youtube": {
+        "videoId": "G3RYVDj9nk4",
+        "viewCount": 5438,
+        "publishedAt": "2026-08-24T03:00:03Z",
+        "channelSubscriberCount": 43,
+        "channelCountry": "JP",
+        "viewVelocity": 256.03213548045443
+      }
+    },
+    {
+      "artist": "the奥歯's",
+      "title": "初期衝動継続時間",
+      "firstSeen": "2026-09-14T08:44:57.642Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=the%E5%A5%A5%E6%AD%AF's%20%E5%88%9D%E6%9C%9F%E8%A1%9D%E5%8B%95%E7%B6%99%E7%B6%9A%E6%99%82%E9%96%93",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/okuba_010101/song/32c44ee0-db06-48cd-90eb-a439c27b08cb"
+        }
+      ],
+      "youtube": {
+        "videoId": "3NuG2_zRaWc",
+        "viewCount": 22565,
+        "publishedAt": "2026-02-14T12:00:14Z",
+        "channelSubscriberCount": 515000,
+        "channelCountry": "JP",
+        "viewVelocity": 106.5068064221632
+      }
+    },
+    {
+      "artist": "Atlas Youth",
+      "title": "星に揺られて",
+      "firstSeen": "2026-09-14T08:44:57.642Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Atlas%20Youth%20%E6%98%9F%E3%81%AB%E6%8F%BA%E3%82%89%E3%82%8C%E3%81%A6",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/atlas_youth/song/2d706f24-ab7f-4f86-a739-ea8fa2802ad3"
+        }
+      ],
+      "youtube": {
+        "videoId": "eCvyQx16DJ0",
+        "viewCount": 18873,
+        "publishedAt": "2026-04-26T10:03:28Z",
+        "channelSubscriberCount": 25,
+        "channelCountry": null,
+        "viewVelocity": 133.90283772515278
+      }
+    },
+    {
+      "artist": "Moe Tsuki (萌月)",
+      "title": "霧なの？ 煙なの？",
+      "firstSeen": "2026-09-14T08:44:57.642Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Moe%20Tsuki%20(%E8%90%8C%E6%9C%88)%20%E9%9C%A7%E3%81%AA%E3%81%AE%EF%BC%9F%20%E7%85%99%E3%81%AA%E3%81%AE%EF%BC%9F",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/MoetsukiJp/song/45d58966-01fe-4372-afc3-ca8980dacf3f"
+        }
+      ],
+      "youtube": {
+        "videoId": "MNBrYjpX3fE",
+        "viewCount": 11278939,
+        "publishedAt": "2023-09-11T09:01:00Z",
+        "channelSubscriberCount": 600000,
+        "channelCountry": "JP",
+        "viewVelocity": 10263.014844033709
+      }
+    },
+    {
+      "artist": "JUNK MARTINI",
+      "title": "ミッドナイト・サーキット",
+      "firstSeen": "2026-09-14T08:44:57.642Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=JUNK%20MARTINI%20%E3%83%9F%E3%83%83%E3%83%89%E3%83%8A%E3%82%A4%E3%83%88%E3%83%BB%E3%82%B5%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/junkmartini/song/c129707a-200d-4c52-9395-8ac3eb8acbb4"
+        }
+      ],
+      "youtube": {
+        "videoId": "CzfZUKnn6G0",
+        "viewCount": 24674,
+        "publishedAt": "2026-02-28T12:00:30Z",
+        "channelSubscriberCount": 2740,
+        "channelCountry": "JP",
+        "viewVelocity": 124.7016837821113
+      }
+    },
+    {
+      "artist": "JUNK MARTINI",
+      "title": "ICY WALK",
+      "firstSeen": "2026-09-14T08:44:57.642Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=JUNK%20MARTINI%20ICY%20WALK",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/junkmartini/song/1456b643-eb9f-488a-9b3a-bacf8e0ba670"
+        }
+      ],
+      "youtube": {
+        "videoId": "GLslgADib3g",
+        "viewCount": 12459,
+        "publishedAt": "2025-12-07T11:00:28Z",
+        "channelSubscriberCount": 2740,
+        "channelCountry": "JP",
+        "viewVelocity": 44.3529312149535
+      }
+    },
+    {
+      "artist": "JUNK MARTINI",
+      "title": "Graphic",
+      "firstSeen": "2026-09-14T08:44:57.642Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=JUNK%20MARTINI%20Graphic",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/junkmartini/song/10e263e2-98f5-4193-a711-0dcc716350b1"
+        }
+      ],
+      "youtube": {
+        "videoId": "yVEMk1pQRdU",
+        "viewCount": 27458,
+        "publishedAt": "2025-08-04T13:01:47Z",
+        "channelSubscriberCount": 2740,
+        "channelCountry": "JP",
+        "viewVelocity": 67.6602639011137
+      }
+    },
+    {
+      "artist": "JUNK MARTINI",
+      "title": "Cyan",
+      "firstSeen": "2026-09-14T08:44:57.642Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=JUNK%20MARTINI%20Cyan",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/junkmartini/song/d56c696c-91c0-475a-b19f-9d10fca1757e"
+        }
+      ],
+      "youtube": {
+        "videoId": "t8LJ3EEsqNE",
+        "viewCount": 18260,
+        "publishedAt": "2023-08-06T01:00:31Z",
+        "channelSubscriberCount": 2740,
+        "channelCountry": "JP",
+        "viewVelocity": 16.0835353022479
+      }
+    },
+    {
+      "artist": "Summer Eye",
+      "title": "徒歩",
+      "firstSeen": "2026-09-14T08:38:30.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Summer%20Eye%20%E5%BE%92%E6%AD%A9",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/summer-eye-toho"
+        }
+      ],
+      "youtube": {
+        "videoId": "OAAIbYLeA_4",
+        "viewCount": 55,
+        "publishedAt": "2026-09-13T10:02:59Z",
+        "channelSubscriberCount": 41,
+        "channelCountry": null,
+        "viewVelocity": 55
+      }
+    },
+    {
+      "artist": "櫻坂46",
+      "title": "愛MUST BE",
+      "firstSeen": "2026-09-14T04:18:49.000Z",
+      "youtubeId": "uPgpBFOuwIk",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E6%AB%BB%E5%9D%8246%20%E6%84%9BMUST%20BE",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1088357"
+        }
+      ],
+      "youtube": {
+        "videoId": "uPgpBFOuwIk",
+        "viewCount": 45060,
+        "publishedAt": "2026-09-14T01:00:33Z",
+        "channelSubscriberCount": 1200000,
+        "channelCountry": "JP",
+        "viewVelocity": 45060
+      }
+    },
+    {
+      "artist": "なにわ男子",
+      "title": "BLACK OUT MISSION",
+      "firstSeen": "2026-09-13T23:00:07.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%81%AA%E3%81%AB%E3%82%8F%E7%94%B7%E5%AD%90%20BLACK%20OUT%20MISSION",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1088271"
+        }
+      ],
+      "youtube": {
+        "videoId": "IfatRrK5NnU",
+        "viewCount": 1225,
+        "publishedAt": "2026-09-13T10:00:23Z",
+        "channelSubscriberCount": 5430,
+        "channelCountry": null,
+        "viewVelocity": 1225
+      }
+    },
+    {
+      "artist": "SEKAI NO OWARI",
+      "title": "Supermarket",
+      "firstSeen": "2026-09-13T21:00:00.000Z",
+      "youtubeId": "J9HWAlxmUdg",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=SEKAI%20NO%20OWARI%20Supermarket",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1088330"
+        }
+      ],
+      "youtube": {
+        "videoId": "J9HWAlxmUdg",
+        "viewCount": 52807,
+        "publishedAt": "2026-09-13T21:00:37Z",
+        "channelSubscriberCount": 432000,
+        "channelCountry": "JP",
+        "viewVelocity": 52807
+      }
+    },
+    {
+      "artist": "TREKKIE TRAX CREW",
+      "title": "Rhythm",
+      "firstSeen": "2026-09-11T10:45:09.000Z",
+      "youtubeId": "uQsWBDlQlQ4",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=TREKKIE%20TRAX%20CREW%20Rhythm",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/trekkie-trax-crew-rhythm"
+        }
+      ],
+      "youtube": {
+        "videoId": "uQsWBDlQlQ4",
+        "viewCount": 4238,
+        "publishedAt": "2026-01-15T10:03:35Z",
+        "channelSubscriberCount": 50,
+        "channelCountry": null,
+        "viewVelocity": 17.516348661209047
+      }
+    },
+    {
+      "artist": "北村蕗",
+      "title": "midi u",
+      "firstSeen": "2026-09-09T11:00:14.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E5%8C%97%E6%9D%91%E8%95%97%20midi%20u",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/fuki-kitamura-midi-u"
+        }
+      ],
+      "youtube": {
+        "videoId": "M7twJbhfANk",
+        "viewCount": 260,
+        "publishedAt": "2026-09-08T10:04:58Z",
+        "channelSubscriberCount": 644,
+        "channelCountry": null,
+        "viewVelocity": 43.73834824440941
+      }
+    },
+    {
+      "artist": "Skaai",
+      "title": "Confidence",
+      "firstSeen": "2026-09-09T10:00:04.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Skaai%20Confidence",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/skaai-confidence"
+        }
+      ],
+      "youtube": {
+        "videoId": "yFAcp0s7NIw",
+        "viewCount": 1246,
+        "publishedAt": "2026-09-01T10:04:06Z",
+        "channelSubscriberCount": 711,
+        "channelCountry": null,
+        "viewVelocity": 96.25306625460702
+      }
+    },
+    {
+      "artist": "Sagiri Sól",
+      "title": "sad mark girl :(",
+      "firstSeen": "2026-09-09T03:00:29.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Sagiri%20S%C3%B3l%20sad%20mark%20girl%20%3A(",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/sagiri-sol-sad-mark-girl-80kidz-ali"
+        }
+      ],
+      "youtube": {
+        "videoId": "3Dyk7Ne5t4w",
+        "viewCount": 489,
+        "publishedAt": "2026-09-08T15:04:18Z",
+        "channelSubscriberCount": 76,
+        "channelCountry": null,
+        "viewVelocity": 85.24257629901201
+      }
+    },
+    {
+      "artist": "Michael Kaneko",
+      "title": "break away",
+      "firstSeen": "2026-09-09T03:00:22.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Michael%20Kaneko%20break%20away",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/michael-kaneko-break-away"
+        }
+      ],
+      "youtube": {
+        "videoId": "RzHCTIkuSAI",
+        "viewCount": 818,
+        "publishedAt": "2026-09-08T10:01:36Z",
+        "channelSubscriberCount": 18,
+        "channelCountry": null,
+        "viewVelocity": 137.5534724351854
+      }
+    },
+    {
+      "artist": "PAS TASTA",
+      "title": "LAG",
+      "firstSeen": "2026-09-08T15:00:57.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=PAS%20TASTA%20LAG",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/pas-tasta-lag"
+        }
+      ],
+      "youtube": {
+        "videoId": "6GOwhIyz9yY",
+        "viewCount": 6701,
+        "publishedAt": "2026-09-08T10:01:44Z",
+        "channelSubscriberCount": 276,
+        "channelCountry": null,
+        "viewVelocity": 1126.8461745581508
+      }
+    },
+    {
+      "artist": "T-STONE × MINMI",
+      "title": "超楽しい",
+      "firstSeen": "2026-09-08T15:00:10.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=T-STONE%20%C3%97%20MINMI%20%E8%B6%85%E6%A5%BD%E3%81%97%E3%81%84",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/t-stone-very-happy-ft-minmi"
+        }
+      ],
+      "youtube": {
+        "videoId": "0sLT84ktI48",
+        "viewCount": 7881,
+        "publishedAt": "2026-09-08T10:04:21Z",
+        "channelSubscriberCount": 858,
+        "channelCountry": null,
+        "viewVelocity": 1325.6811222591864
+      }
+    },
+    {
+      "artist": "関谷拳四郎",
+      "title": "MUGEN",
+      "firstSeen": "2026-09-08T15:00:07.000Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E9%96%A2%E8%B0%B7%E6%8B%B3%E5%9B%9B%E9%83%8E%20MUGEN",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/kenshiro-sekiya-change-my-life-2"
+        }
+      ],
+      "youtube": {
+        "videoId": "tghOrHYdRxQ",
+        "viewCount": 92,
+        "publishedAt": "2026-09-08T10:03:36Z",
+        "channelSubscriberCount": 23,
+        "channelCountry": null,
+        "viewVelocity": 15.474175734705348
+      }
+    },
+    {
+      "artist": "AKLO",
+      "title": "ZOOM",
+      "firstSeen": "2026-09-08T12:00:38.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=AKLO%20ZOOM",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/aklo-bachlogic-zoom"
+        }
+      ],
+      "youtube": {
+        "videoId": "s5fcXa3n78o",
+        "viewCount": 16505,
+        "publishedAt": "2026-09-08T10:00:31Z",
+        "channelSubscriberCount": 326,
+        "channelCountry": null,
+        "viewVelocity": 2775.101326775751
+      }
+    },
+    {
+      "artist": "【JAPAN最新号】唯一無二のパイオニア",
+      "title": "Stella",
+      "firstSeen": "2026-08-31T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%90JAPAN%E6%9C%80%E6%96%B0%E5%8F%B7%E3%80%91%E5%94%AF%E4%B8%80%E7%84%A1%E4%BA%8C%E3%81%AE%E3%83%91%E3%82%A4%E3%82%AA%E3%83%8B%E3%82%A2%20Stella",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/215740"
+        }
+      ],
+      "youtube": {
+        "videoId": "LWo33Qp6NQU",
+        "viewCount": 1749489,
+        "publishedAt": "2024-11-09T00:45:01Z",
+        "channelSubscriberCount": 249000,
+        "channelCountry": "JP",
+        "viewVelocity": 2594.3980734056395
+      }
+    }
+  ]
+}
