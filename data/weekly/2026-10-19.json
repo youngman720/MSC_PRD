@@ -1,0 +1,574 @@
+{
+  "weekOf": "2026-10-19",
+  "generatedAt": "2026-10-19T08:40:29.620Z",
+  "blogsChecked": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "blogsWithResults": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "songs": [
+    {
+      "artist": "小袋成彬",
+      "title": "戯言",
+      "firstSeen": "2026-10-17T03:00:00.000Z",
+      "youtubeId": "a3gTkcduwv8",
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E5%B0%8F%E8%A2%8B%E6%88%90%E5%BD%AC%20%E6%88%AF%E8%A8%80",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/nariaki-obukuro-unreleased"
+        },
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/ayaho_uta/song/4abc5041-adf4-4473-a798-e58787349ca5"
+        }
+      ],
+      "youtube": {
+        "videoId": "a3gTkcduwv8",
+        "viewCount": 6656,
+        "publishedAt": "2026-10-09T23:30:05Z",
+        "channelSubscriberCount": 19400,
+        "channelCountry": "JP",
+        "viewVelocity": 709.4262693378348
+      }
+    },
+    {
+      "artist": "SuperJaded.",
+      "title": "パノラマオレンジ",
+      "firstSeen": "2026-10-19T08:40:29.620Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=SuperJaded.%20%E3%83%91%E3%83%8E%E3%83%A9%E3%83%9E%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/SuperJaded_jp/song/c274fde5-16a6-489c-bfd7-eca06e287843"
+        }
+      ],
+      "youtube": {
+        "videoId": "G3RYVDj9nk4",
+        "viewCount": 6533,
+        "publishedAt": "2026-08-24T03:00:03Z",
+        "channelSubscriberCount": 44,
+        "channelCountry": "JP",
+        "viewVelocity": 116.17026993237309
+      }
+    },
+    {
+      "artist": "氷菓",
+      "title": "Hash",
+      "firstSeen": "2026-10-19T08:40:29.620Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E6%B0%B7%E8%8F%93%20Hash",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/sakura_gogo0413/song/f16e7059-59ed-4643-847e-344b8f1abacd"
+        }
+      ],
+      "youtube": {
+        "videoId": "cjwio5AYZuw",
+        "viewCount": 12411,
+        "publishedAt": "2025-08-19T11:29:32Z",
+        "channelSubscriberCount": 2420,
+        "channelCountry": "JP",
+        "viewVelocity": 29.141833147106876
+      }
+    },
+    {
+      "artist": "CEyes",
+      "title": "回想列車",
+      "firstSeen": "2026-10-19T08:40:29.620Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=CEyes%20%E5%9B%9E%E6%83%B3%E5%88%97%E8%BB%8A",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/ceyes/song/461c6295-5bd4-4f64-b51b-8e38cc7eb412"
+        }
+      ],
+      "youtube": {
+        "videoId": "hWJCr7tEts0",
+        "viewCount": 1242,
+        "publishedAt": "2026-08-26T08:45:31Z",
+        "channelSubscriberCount": 24,
+        "channelCountry": "JP",
+        "viewVelocity": 23.00148580842613
+      }
+    },
+    {
+      "artist": "the奥歯's",
+      "title": "初期衝動継続時間",
+      "firstSeen": "2026-10-19T08:40:29.620Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=the%E5%A5%A5%E6%AD%AF's%20%E5%88%9D%E6%9C%9F%E8%A1%9D%E5%8B%95%E7%B6%99%E7%B6%9A%E6%99%82%E9%96%93",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/okuba_010101/song/32c44ee0-db06-48cd-90eb-a439c27b08cb"
+        }
+      ],
+      "youtube": {
+        "videoId": "3NuG2_zRaWc",
+        "viewCount": 25393,
+        "publishedAt": "2026-02-14T12:00:14Z",
+        "channelSubscriberCount": 515000,
+        "channelCountry": "JP",
+        "viewVelocity": 102.86343316422743
+      }
+    },
+    {
+      "artist": "ender:tic",
+      "title": "モット",
+      "firstSeen": "2026-10-19T08:40:29.620Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=ender%3Atic%20%E3%83%A2%E3%83%83%E3%83%88",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/endertic/song/1f1d399a-40c2-430d-9d08-ced2b13fda1b"
+        }
+      ],
+      "youtube": {
+        "videoId": "jYjLybf3VaY",
+        "viewCount": 1128,
+        "publishedAt": "2026-10-03T14:59:19Z",
+        "channelSubscriberCount": 12,
+        "channelCountry": null,
+        "viewVelocity": 71.67853637964171
+      }
+    },
+    {
+      "artist": "Ours!!",
+      "title": "セカンドハンド",
+      "firstSeen": "2026-10-19T08:40:29.620Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Ours!!%20%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%8F%E3%83%B3%E3%83%89",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/Ours_tokyo/song/adf34c73-87e5-4097-b113-6c7d8b819a38"
+        }
+      ],
+      "youtube": {
+        "videoId": "SqGREpn1_TI",
+        "viewCount": 49221,
+        "publishedAt": "2024-10-01T19:13:07Z",
+        "channelSubscriberCount": 9510,
+        "channelCountry": null,
+        "viewVelocity": 65.84214688845348
+      }
+    },
+    {
+      "artist": "Atlas Youth",
+      "title": "星に揺られて",
+      "firstSeen": "2026-10-19T08:40:29.620Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Atlas%20Youth%20%E6%98%9F%E3%81%AB%E6%8F%BA%E3%82%89%E3%82%8C%E3%81%A6",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/atlas_youth/song/2d706f24-ab7f-4f86-a739-ea8fa2802ad3"
+        }
+      ],
+      "youtube": {
+        "videoId": "eCvyQx16DJ0",
+        "viewCount": 40923,
+        "publishedAt": "2026-04-26T10:03:28Z",
+        "channelSubscriberCount": 25,
+        "channelCountry": null,
+        "viewVelocity": 232.59319347791367
+      }
+    },
+    {
+      "artist": "sorato",
+      "title": "tomato(three-piece ver.)",
+      "firstSeen": "2026-10-19T08:40:29.620Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=sorato%20tomato(three-piece%20ver.)",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/mrkmsorajiroo/song/21282647-6f23-4851-a4f9-2fa2817c17f5"
+        }
+      ],
+      "youtube": {
+        "videoId": "3MrOOK2cqhE",
+        "viewCount": 1945,
+        "publishedAt": "2026-09-18T12:25:16Z",
+        "channelSubscriberCount": 6250,
+        "channelCountry": "JP",
+        "viewVelocity": 63.05945481264792
+      }
+    },
+    {
+      "artist": "3Li¥en & Crystal Kay",
+      "title": "Oishii",
+      "firstSeen": "2026-10-19T02:35:31.000Z",
+      "youtubeId": "0STqDnGWQoA",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=3Li%C2%A5en%20%26%20Crystal%20Kay%20Oishii",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/3liyen-crystal-kay-oishii"
+        }
+      ],
+      "youtube": {
+        "videoId": "0STqDnGWQoA",
+        "viewCount": 75764,
+        "publishedAt": "2026-08-21T09:00:07Z",
+        "channelSubscriberCount": 343000,
+        "channelCountry": "JP",
+        "viewVelocity": 1284.4322553454172
+      }
+    },
+    {
+      "artist": "乃木坂46",
+      "title": "君ロス",
+      "firstSeen": "2026-10-19T01:42:26.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E4%B9%83%E6%9C%A8%E5%9D%8246%20%E5%90%9B%E3%83%AD%E3%82%B9",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1094894"
+        }
+      ],
+      "youtube": {
+        "videoId": "ifxnw1qUbm8",
+        "viewCount": 19519,
+        "publishedAt": "2026-10-12T09:14:49Z",
+        "channelSubscriberCount": 12100,
+        "channelCountry": "JP",
+        "viewVelocity": 2797.9557773955903
+      }
+    },
+    {
+      "artist": "XG",
+      "title": "S.A.D",
+      "firstSeen": "2026-10-15T10:00:02.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=XG%20S.A.D",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/xg-sad-lyrics"
+        }
+      ],
+      "youtube": {
+        "videoId": "K4RBZfh_W_o",
+        "viewCount": 99465,
+        "publishedAt": "2026-10-15T09:02:52Z",
+        "channelSubscriberCount": 160000,
+        "channelCountry": "JP",
+        "viewVelocity": 24963.212143278048
+      }
+    },
+    {
+      "artist": "eyed",
+      "title": "silence",
+      "firstSeen": "2026-10-14T12:40:40.000Z",
+      "youtubeId": "3NOtCzd5L64",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=eyed%20silence",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/eyed-silence-teaser"
+        }
+      ],
+      "youtube": {
+        "videoId": "3NOtCzd5L64",
+        "viewCount": 5699,
+        "publishedAt": "2026-10-14T11:00:22Z",
+        "channelSubscriberCount": 1590,
+        "channelCountry": null,
+        "viewVelocity": 1162.3813565959933
+      }
+    },
+    {
+      "artist": "BREIMEN",
+      "title": "さよならリバー",
+      "firstSeen": "2026-10-14T12:00:16.000Z",
+      "youtubeId": "v-1IBKD1vUw",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=BREIMEN%20%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%83%AA%E3%83%90%E3%83%BC",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/breimen-goodbye-river"
+        }
+      ],
+      "youtube": {
+        "videoId": "v-1IBKD1vUw",
+        "viewCount": 76619,
+        "publishedAt": "2026-10-14T12:00:06Z",
+        "channelSubscriberCount": 1750,
+        "channelCountry": "JP",
+        "viewVelocity": 15760.73650334236
+      }
+    },
+    {
+      "artist": "pami",
+      "title": "bow wow",
+      "firstSeen": "2026-10-14T12:00:16.000Z",
+      "youtubeId": "SQ6F6hag8A4",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=pami%20bow%20wow",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/ako-bow-wow-feat-pami"
+        }
+      ],
+      "youtube": {
+        "videoId": "SQ6F6hag8A4",
+        "viewCount": 308660,
+        "publishedAt": "2026-10-14T12:00:10Z",
+        "channelSubscriberCount": 3040,
+        "channelCountry": "JP",
+        "viewVelocity": 63492.80540751882
+      }
+    },
+    {
+      "artist": "梅井美咲",
+      "title": "doodle spring",
+      "firstSeen": "2026-10-14T11:58:43.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E6%A2%85%E4%BA%95%E7%BE%8E%E5%92%B2%20doodle%20spring",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/misaki-umei-doodle-spring"
+        }
+      ],
+      "youtube": {
+        "videoId": "KPYQ89baf84",
+        "viewCount": 341,
+        "publishedAt": "2026-10-13T10:04:53Z",
+        "channelSubscriberCount": 326,
+        "channelCountry": null,
+        "viewVelocity": 57.393918244133836
+      }
+    },
+    {
+      "artist": "『RAPSTAR 2026』出演のksr:3",
+      "title": "How to swim",
+      "firstSeen": "2026-10-14T10:00:27.000Z",
+      "youtubeId": "mB2qmfs2qfY",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%8ERAPSTAR%202026%E3%80%8F%E5%87%BA%E6%BC%94%E3%81%AEksr%3A3%20How%20to%20swim",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/ksr3-how-to-swim"
+        }
+      ],
+      "youtube": {
+        "videoId": "mB2qmfs2qfY",
+        "viewCount": 41352,
+        "publishedAt": "2026-10-14T10:00:10Z",
+        "channelSubscriberCount": 1150,
+        "channelCountry": "JP",
+        "viewVelocity": 8362.9417581524
+      }
+    },
+    {
+      "artist": "DOGGIE",
+      "title": "GIRL",
+      "firstSeen": "2026-10-14T09:00:58.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=DOGGIE%20GIRL",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/doggie-girl"
+        }
+      ],
+      "youtube": {
+        "videoId": "0IjeNhxrQJ4",
+        "viewCount": 689359,
+        "publishedAt": "2022-09-08T18:42:00Z",
+        "channelSubscriberCount": 8530,
+        "channelCountry": null,
+        "viewVelocity": 459.0883935198726
+      }
+    },
+    {
+      "artist": "EAERAN × 諭吉佳作/men",
+      "title": "エスケープ・エンド",
+      "firstSeen": "2026-10-13T15:00:04.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=EAERAN%20%C3%97%20%E8%AB%AD%E5%90%89%E4%BD%B3%E4%BD%9C%2Fmen%20%E3%82%A8%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%97%E3%83%BB%E3%82%A8%E3%83%B3%E3%83%89",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/eaeran-yukichi-kasaku-men-escape-end"
+        }
+      ],
+      "youtube": {
+        "videoId": "DleXufLrimE",
+        "viewCount": 99,
+        "publishedAt": "2026-10-13T10:03:32Z",
+        "channelSubscriberCount": 29,
+        "channelCountry": null,
+        "viewVelocity": 16.66012163743036
+      }
+    },
+    {
+      "artist": "Filix王",
+      "title": "ちょ待って",
+      "firstSeen": "2026-10-13T15:00:03.000Z",
+      "youtubeId": "LvRiQLwPWO8",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Filix%E7%8E%8B%20%E3%81%A1%E3%82%87%E5%BE%85%E3%81%A3%E3%81%A6",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/filix-wang-chomatte-ft-sad-kid-yaz"
+        }
+      ],
+      "youtube": {
+        "videoId": "LvRiQLwPWO8",
+        "viewCount": 393815,
+        "publishedAt": "2026-10-13T10:58:38Z",
+        "channelSubscriberCount": 13200,
+        "channelCountry": null,
+        "viewVelocity": 66702.29547015612
+      }
+    },
+    {
+      "artist": "ZIN × Fujimoto Tetsuro",
+      "title": "2wks",
+      "firstSeen": "2026-10-13T15:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=ZIN%20%C3%97%20Fujimoto%20Tetsuro%202wks",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/zin-fujimoto-tetsuro-2wks"
+        }
+      ],
+      "youtube": {
+        "videoId": "gqx5fFsuvbc",
+        "viewCount": 10,
+        "publishedAt": "2026-10-13T10:02:57Z",
+        "channelSubscriberCount": 14,
+        "channelCountry": null,
+        "viewVelocity": 1.6827258569641734
+      }
+    },
+    {
+      "artist": "the bercedes menz",
+      "title": "Next Satan’s Hint",
+      "firstSeen": "2026-10-13T11:00:30.000Z",
+      "youtubeId": "TW-nBiCVCU8",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=the%20bercedes%20menz%20Next%20Satan%E2%80%99s%20Hint",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/the-bercedes-menz-next-satans-hint"
+        }
+      ],
+      "youtube": {
+        "videoId": "TW-nBiCVCU8",
+        "viewCount": 13661,
+        "publishedAt": "2026-10-13T15:00:18Z",
+        "channelSubscriberCount": 11300,
+        "channelCountry": null,
+        "viewVelocity": 2381.522854528713
+      }
+    },
+    {
+      "artist": "RADWIMPS",
+      "title": "娑婆堕罵 -Shabadaba-",
+      "firstSeen": "2026-10-01T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=RADWIMPS%20%E5%A8%91%E5%A9%86%E5%A0%95%E7%BD%B5%20-Shabadaba-",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/216040"
+        }
+      ],
+      "youtube": {
+        "videoId": "eRG2hFO1z8Q",
+        "viewCount": 27617,
+        "publishedAt": "2026-10-08T08:29:23Z",
+        "channelSubscriberCount": 8860,
+        "channelCountry": "JP",
+        "viewVelocity": 2508.8766126604255
+      }
+    }
+  ]
+}
