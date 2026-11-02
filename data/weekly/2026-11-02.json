@@ -1,0 +1,591 @@
+{
+  "weekOf": "2026-11-02",
+  "generatedAt": "2026-11-02T10:48:19.712Z",
+  "blogsChecked": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "blogsWithResults": [
+    "Spincoaster",
+    "ROCKIN'ON JAPAN",
+    "BARKS",
+    "eggs"
+  ],
+  "songs": [
+    {
+      "artist": "サンボマスター",
+      "title": "花束 サンボマスターとアイナ・ジ・エンド",
+      "firstSeen": "2026-11-02T09:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%82%B5%E3%83%B3%E3%83%9C%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%20%E8%8A%B1%E6%9D%9F%20%E3%82%B5%E3%83%B3%E3%83%9C%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%A8%E3%82%A2%E3%82%A4%E3%83%8A%E3%83%BB%E3%82%B8%E3%83%BB%E3%82%A8%E3%83%B3%E3%83%89",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1102014"
+        },
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/kento_maybelied/song/fa4aad42-d5f5-4bfc-a44d-0465ec01da1d"
+        }
+      ],
+      "youtube": {
+        "videoId": "v03zRqF3o0U",
+        "viewCount": 5498284,
+        "publishedAt": "2020-04-15T04:00:14Z",
+        "channelSubscriberCount": 241000,
+        "channelCountry": "JP",
+        "viewVelocity": 2298.3414094153127
+      }
+    },
+    {
+      "artist": "the奥歯's",
+      "title": "花冷えて",
+      "firstSeen": "2026-11-02T10:48:19.712Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=the%E5%A5%A5%E6%AD%AF's%20%E8%8A%B1%E5%86%B7%E3%81%88%E3%81%A6",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/okuba_010101/song/ba50e47d-736a-4870-a818-d53f39aaa5cc"
+        }
+      ],
+      "youtube": {
+        "videoId": "XyT-OZ1jGhw",
+        "viewCount": 153952,
+        "publishedAt": "2026-08-07T11:00:31Z",
+        "channelSubscriberCount": 515000,
+        "channelCountry": "JP",
+        "viewVelocity": 1769.735390891674
+      }
+    },
+    {
+      "artist": "たなか けんと",
+      "title": "Teenager",
+      "firstSeen": "2026-11-02T10:48:19.712Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%81%9F%E3%81%AA%E3%81%8B%20%E3%81%91%E3%82%93%E3%81%A8%20Teenager",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/kento_maybelied/song/92ed7e63-33e0-4375-af76-d1474d423afd"
+        }
+      ],
+      "youtube": {
+        "videoId": "-0i7Pl7q8dw",
+        "viewCount": 937021,
+        "publishedAt": "2026-08-18T03:00:35Z",
+        "channelSubscriberCount": 196000,
+        "channelCountry": null,
+        "viewVelocity": 12276.752994474133
+      }
+    },
+    {
+      "artist": "月と徒花",
+      "title": "バンドマン（demo）",
+      "firstSeen": "2026-11-02T10:48:19.712Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E6%9C%88%E3%81%A8%E5%BE%92%E8%8A%B1%20%E3%83%90%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%EF%BC%88demo%EF%BC%89",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/adahana0717_1/song/c7b4b151-b281-4d96-9f87-76b66029c787"
+        }
+      ],
+      "youtube": {
+        "videoId": "xlmsjAcCuwE",
+        "viewCount": 16106,
+        "publishedAt": "2021-11-10T05:06:04Z",
+        "channelSubscriberCount": 107000,
+        "channelCountry": "JP",
+        "viewVelocity": 8.858027836930672
+      }
+    },
+    {
+      "artist": "ender:tic",
+      "title": "モット",
+      "firstSeen": "2026-11-02T10:48:19.712Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=ender%3Atic%20%E3%83%A2%E3%83%83%E3%83%88",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/endertic/song/1f1d399a-40c2-430d-9d08-ced2b13fda1b"
+        }
+      ],
+      "youtube": {
+        "videoId": "jYjLybf3VaY",
+        "viewCount": 1158,
+        "publishedAt": "2026-10-03T14:59:19Z",
+        "channelSubscriberCount": 32,
+        "channelCountry": null,
+        "viewVelocity": 38.825573104609326
+      }
+    },
+    {
+      "artist": "Atlas Youth",
+      "title": "春愁",
+      "firstSeen": "2026-11-02T10:48:19.712Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Atlas%20Youth%20%E6%98%A5%E6%84%81",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/atlas_youth/song/a1330f56-9d9a-47e0-b3d4-42571042b14e"
+        }
+      ],
+      "youtube": {
+        "videoId": "j1aT2yCBTeU",
+        "viewCount": 1492,
+        "publishedAt": "2026-09-12T08:00:17Z",
+        "channelSubscriberCount": 1010,
+        "channelCountry": "JP",
+        "viewVelocity": 29.188113801451696
+      }
+    },
+    {
+      "artist": "氷菓",
+      "title": "Hash",
+      "firstSeen": "2026-11-02T10:48:19.712Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E6%B0%B7%E8%8F%93%20Hash",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/sakura_gogo0413/song/f16e7059-59ed-4643-847e-344b8f1abacd"
+        }
+      ],
+      "youtube": {
+        "videoId": "cjwio5AYZuw",
+        "viewCount": 12650,
+        "publishedAt": "2025-08-19T11:29:32Z",
+        "channelSubscriberCount": 2430,
+        "channelCountry": "JP",
+        "viewVelocity": 28.751869815412515
+      }
+    },
+    {
+      "artist": "kingmura",
+      "title": "Oh my god",
+      "firstSeen": "2026-11-02T10:48:19.712Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=kingmura%20Oh%20my%20god",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/kingmura55/song/6a4063a6-47ee-4ae1-ba15-61fdf2535634"
+        }
+      ],
+      "youtube": {
+        "videoId": "6lGaCxk36qM",
+        "viewCount": 1032,
+        "publishedAt": "2026-04-25T00:00:00Z",
+        "channelSubscriberCount": 123,
+        "channelCountry": "JP",
+        "viewVelocity": 5.390434944801513
+      }
+    },
+    {
+      "artist": "kingmura",
+      "title": "Funky girl",
+      "firstSeen": "2026-11-02T10:48:19.712Z",
+      "youtubeId": null,
+      "newcomer": true,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=kingmura%20Funky%20girl",
+      "sources": [
+        {
+          "blog": "eggs",
+          "url": "https://eggs.mu/artist/kingmura55/song/70a211f2-5cc0-4919-95d6-cac106676b4e"
+        }
+      ],
+      "youtube": {
+        "videoId": "k0iUCjUKvxA",
+        "viewCount": 2168,
+        "publishedAt": "2024-06-07T15:00:52Z",
+        "channelSubscriberCount": 123,
+        "channelCountry": "JP",
+        "viewVelocity": 2.4697416033396
+      }
+    },
+    {
+      "artist": "ヒトリエ",
+      "title": "KEDAMONO_AYAKASHI",
+      "firstSeen": "2026-11-02T09:00:34.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%83%92%E3%83%88%E3%83%AA%E3%82%A8%20KEDAMONO_AYAKASHI",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1102010"
+        }
+      ],
+      "youtube": null
+    },
+    {
+      "artist": "BAND-MAID",
+      "title": "BONDS",
+      "firstSeen": "2026-11-02T09:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=BAND-MAID%20BONDS",
+      "sources": [
+        {
+          "blog": "BARKS",
+          "url": "https://barks.jp/news/1101930"
+        }
+      ],
+      "youtube": {
+        "videoId": "8PhLFS-Ij5A",
+        "viewCount": 8,
+        "publishedAt": "2026-11-02T09:21:48Z",
+        "channelSubscriberCount": 5850,
+        "channelCountry": "JP",
+        "viewVelocity": 8
+      }
+    },
+    {
+      "artist": "宇多田ヒカル",
+      "title": "Intentions",
+      "firstSeen": "2026-11-01T03:00:35.000Z",
+      "youtubeId": "TmyQDEM73nU",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E5%AE%87%E5%A4%9A%E7%94%B0%E3%83%92%E3%82%AB%E3%83%AB%20Intentions",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/hikaru-utada-intentions"
+        }
+      ],
+      "youtube": {
+        "videoId": "TmyQDEM73nU",
+        "viewCount": 297827,
+        "publishedAt": "2026-08-27T06:01:12Z",
+        "channelSubscriberCount": 52100,
+        "channelCountry": "JP",
+        "viewVelocity": 4431.989318069586
+      }
+    },
+    {
+      "artist": "VIDA Hollywood",
+      "title": "ほどじゃない",
+      "firstSeen": "2026-10-31T08:59:56.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=VIDA%20Hollywood%20%E3%81%BB%E3%81%A9%E3%81%98%E3%82%83%E3%81%AA%E3%81%84",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/vida-hollywood-hodojanai"
+        }
+      ],
+      "youtube": {
+        "videoId": "Q5XEvJ9WcmM",
+        "viewCount": 102,
+        "publishedAt": "2026-10-27T10:02:54Z",
+        "channelSubscriberCount": 60,
+        "channelCountry": null,
+        "viewVelocity": 16.911082675575216
+      }
+    },
+    {
+      "artist": "Joe Cupertino",
+      "title": "B.E.W.A.M",
+      "firstSeen": "2026-10-30T11:00:16.000Z",
+      "youtubeId": "0Dbe_6UGz5s",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Joe%20Cupertino%20B.E.W.A.M",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/joe-cupertino-b-e-w-a-m"
+        }
+      ],
+      "youtube": {
+        "videoId": "0Dbe_6UGz5s",
+        "viewCount": 71257,
+        "publishedAt": "2026-10-30T11:00:02Z",
+        "channelSubscriberCount": 1520,
+        "channelCountry": null,
+        "viewVelocity": 23816.86380264751
+      }
+    },
+    {
+      "artist": "MIYACHI",
+      "title": "CHOTTO CHIGAU",
+      "firstSeen": "2026-10-30T10:00:22.000Z",
+      "youtubeId": "yo00Wcayu0A",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=MIYACHI%20CHOTTO%20CHIGAU",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/miyachi-chico-carlito-chotto-chigau"
+        }
+      ],
+      "youtube": {
+        "videoId": "yo00Wcayu0A",
+        "viewCount": 94439,
+        "publishedAt": "2026-10-30T10:00:07Z",
+        "channelSubscriberCount": 212000,
+        "channelCountry": "JP",
+        "viewVelocity": 31132.226217721003
+      }
+    },
+    {
+      "artist": "HANA",
+      "title": "Slidin",
+      "firstSeen": "2026-10-30T06:30:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=HANA%20Slidin",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/216197"
+        }
+      ],
+      "youtube": {
+        "videoId": "RbFJ-eb_7vs",
+        "viewCount": 2348639,
+        "publishedAt": "2026-10-31T11:00:09Z",
+        "channelSubscriberCount": 450000,
+        "channelCountry": "JP",
+        "viewVelocity": 1179159.567891148
+      }
+    },
+    {
+      "artist": "【JAPAN最新号】10-FEET",
+      "title": "Fortress Defense",
+      "firstSeen": "2026-10-30T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%90JAPAN%E6%9C%80%E6%96%B0%E5%8F%B7%E3%80%9110-FEET%20Fortress%20Defense",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/216182"
+        }
+      ],
+      "youtube": {
+        "videoId": "rjsQt6LYBUM",
+        "viewCount": 12070,
+        "publishedAt": "2026-10-02T11:00:01Z",
+        "channelSubscriberCount": 249000,
+        "channelCountry": "JP",
+        "viewVelocity": 389.45681055397245
+      }
+    },
+    {
+      "artist": "【JAPAN最新号】",
+      "title": "Everything I Need",
+      "firstSeen": "2026-10-30T03:00:00.000Z",
+      "youtubeId": null,
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=%E3%80%90JAPAN%E6%9C%80%E6%96%B0%E5%8F%B7%E3%80%91%20Everything%20I%20Need",
+      "sources": [
+        {
+          "blog": "ROCKIN'ON JAPAN",
+          "url": "https://rockinon.com/news/detail/216174"
+        }
+      ],
+      "youtube": {
+        "videoId": "W1JTpsyelyI",
+        "viewCount": 125249,
+        "publishedAt": "2021-08-27T02:51:18Z",
+        "channelSubscriberCount": 1970,
+        "channelCountry": null,
+        "viewVelocity": 66.15271294402194
+      }
+    },
+    {
+      "artist": "Watson",
+      "title": "2024",
+      "firstSeen": "2026-10-29T10:00:48.000Z",
+      "youtubeId": "yZnNdmEhJPQ",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=Watson%202024",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/watson-2024-koshy-stuts"
+        }
+      ],
+      "youtube": {
+        "videoId": "yZnNdmEhJPQ",
+        "viewCount": 99604,
+        "publishedAt": "2026-10-29T10:00:30Z",
+        "channelSubscriberCount": 3270,
+        "channelCountry": null,
+        "viewVelocity": 24695.935697275174
+      }
+    },
+    {
+      "artist": "SPENSR",
+      "title": "Back Of The Closet",
+      "firstSeen": "2026-10-29T05:28:38.000Z",
+      "youtubeId": "Ofntmrd46Ug",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=SPENSR%20Back%20Of%20The%20Closet",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/spensr-back-of-the-closet"
+        }
+      ],
+      "youtube": {
+        "videoId": "Ofntmrd46Ug",
+        "viewCount": 297,
+        "publishedAt": "2026-10-27T15:00:21Z",
+        "channelSubscriberCount": 1770,
+        "channelCountry": "JP",
+        "viewVelocity": 50.98725495069221
+      }
+    },
+    {
+      "artist": "killwiz",
+      "title": "OOC",
+      "firstSeen": "2026-10-28T11:00:36.000Z",
+      "youtubeId": "qY8QZqW84h8",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=killwiz%20OOC",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/killwiz-ooc"
+        }
+      ],
+      "youtube": {
+        "videoId": "qY8QZqW84h8",
+        "viewCount": 19853,
+        "publishedAt": "2026-10-28T11:00:09Z",
+        "channelSubscriberCount": 8870,
+        "channelCountry": "JP",
+        "viewVelocity": 3977.1299317941257
+      }
+    },
+    {
+      "artist": "HOME",
+      "title": "Mirror Muscle",
+      "firstSeen": "2026-10-28T10:00:18.000Z",
+      "youtubeId": "eF1yiicGynQ",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=HOME%20Mirror%20Muscle",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/home-mirror-muscle"
+        }
+      ],
+      "youtube": {
+        "videoId": "eF1yiicGynQ",
+        "viewCount": 1443,
+        "publishedAt": "2026-10-28T10:00:09Z",
+        "channelSubscriberCount": 27300,
+        "channelCountry": null,
+        "viewVelocity": 286.6816801550823
+      }
+    },
+    {
+      "artist": "blend house × sucola",
+      "title": "メタセコイア",
+      "firstSeen": "2026-10-28T03:00:56.000Z",
+      "youtubeId": "1CTKsMC07Qs",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=blend%20house%20%C3%97%20sucola%20%E3%83%A1%E3%82%BF%E3%82%BB%E3%82%B3%E3%82%A4%E3%82%A2",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/blend-house-sucola-meta-sequoia"
+        }
+      ],
+      "youtube": {
+        "videoId": "1CTKsMC07Qs",
+        "viewCount": 24914,
+        "publishedAt": "2026-10-28T12:00:20Z",
+        "channelSubscriberCount": 1940,
+        "channelCountry": "JP",
+        "viewVelocity": 5033.134702447612
+      }
+    },
+    {
+      "artist": "mabanua",
+      "title": "Blessed",
+      "firstSeen": "2026-10-28T03:00:55.000Z",
+      "youtubeId": "VO7jHnZ_DNM",
+      "newcomer": false,
+      "snsBuzz": false,
+      "inCircuitScene": false,
+      "tiktokUrl": "https://www.tiktok.com/search?q=mabanua%20Blessed",
+      "sources": [
+        {
+          "blog": "Spincoaster",
+          "url": "https://spincoaster.com/news/mabanua-blessed-feat-daichi-yamamoto"
+        }
+      ],
+      "youtube": {
+        "videoId": "VO7jHnZ_DNM",
+        "viewCount": 585380,
+        "publishedAt": "2026-07-30T21:57:56Z",
+        "channelSubscriberCount": 50000,
+        "channelCountry": "JP",
+        "viewVelocity": 6192.204163967636
+      }
+    }
+  ]
+}
